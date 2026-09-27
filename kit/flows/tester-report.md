@@ -1,0 +1,23 @@
+# Optional tester report
+
+For the agent. Use this only when your human asks to “make a tester report.” It is a local, human-reviewed draft for reporting how this XO setup went. It is not a transcript export or an anonymization guarantee. Do not send, upload, publish, or put it in a connected app; your human decides whether to copy and send it. If they stop, stop without a report.
+
+## Select the evidence
+
+1. Ask whether they want a report, and which sitting(s) it should cover. Explain that material you read or paste into this chat is processed by this agent's provider, even if the resulting file stays local. Do not open unrelated files, inboxes, or connected sources.
+2. Ask what they want to include: an actual app conversation export **if they can locate and approve one**, the visible conversation in this session, or just the selected handoff and permissions ledger entries. Do not claim access to the desktop app's stored transcript. If an export is inaccessible, do not scrape app storage or use a broader filesystem search; offer the narrower sources instead. Confirm exact files and scope before reading them. A handoff may contain private details; include only the relevant parts.
+3. Record the evidence level plainly: `Actual app export (selected scope)`, `Visible conversation only`, or `Handoff and ledger only`. If several are used, list each with its scope. State what was **not** inspected. Do not imply that a narrower source covers unseen prompts, tool calls, or logs.
+
+## Draft locally
+
+4. Propose a new report file under `~/xo/drafts/` (Codex: `~/xo/work/drafts/`) with a date-based, non-identifying name. Wait for a yes before writing. Never overwrite a previous report. Do not add it to git, backup, a remote, or a connector without a separate explicit decision; avoid a tracked drafts directory for this file. If the proposed location is tracked or automatically synced, ask your human to choose a private local destination instead.
+5. Write a short account of the path the tester saw: app and OS/version if they choose to disclose it, steps attempted, what worked, where they stopped, permission prompts and surprising behavior, with exact error text only when it is safe to include. Separate observed events from guesses. Prefer a concise summary and selected short excerpts over a full transcript dump. Never invent missing observations.
+6. Replace likely identifiers in the **draft** with descriptive placeholders: names, handles, emails, phone numbers, home paths and usernames, device names, account and organization names, links with private tokens, addresses, IDs, and credentials. Do not copy secrets into the draft even as examples. Mark uncertain excerpts `[REVIEW: possible identifier]` rather than silently guessing. If a credential appeared in the conversation, say `Credential appeared; omitted from report` without reproducing it, and tell your human to consider rotation. Redaction is fallible; context can identify someone even after obvious strings are masked.
+7. Start the report with its evidence level, date, scope and exclusions, and `DRAFT — NOT ANONYMIZED OR SENT`. Add a short `Review before sharing` section naming any uncertain passages and anything omitted. Show your human the **entire draft**, not just a summary or a link. If it is too long for one display, show consecutive parts and make clear when all parts have been shown.
+8. Invite the human to remove or rewrite anything they do not want the recipient to see. Make requested changes locally, then show the complete final draft again. No automatic transfer: the human copies it and chooses the recipient and channel. Do not say the report or any unseen logs are anonymous or safe to share.
+
+## Done when
+
+- [ ] The human chose the sitting and exact evidence sources, or declined and no report was created.
+- [ ] The draft states its evidence level and exclusions and marks uncertain identifiers for human review.
+- [ ] The full draft was shown to the human; no report was sent or uploaded by the agent.
