@@ -1,173 +1,55 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>xo</title>
   <style>
-    html {
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 12px;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      html {
-        background-color: white;
-      }
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-      font-size: 85%;
-      margin: 0;
-      hyphens: manual;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+:root { color-scheme: light dark; --paper:#fcfaf5; --ink:#222827; --muted:#505d59; --line:#b7c4bc; --accent:#174c54; --panel:#f0f5f1; }
+@media (prefers-color-scheme: dark) { :root { --paper:#182320; --ink:#f1f2e9; --muted:#c4d0c9; --line:#547069; --accent:#a3d7de; --panel:#243832; } }
+html { background:var(--paper); color:var(--ink); scroll-behavior:smooth; }
+body { max-width:39rem; margin:0 auto; padding:2rem clamp(1.1rem,5vw,3rem) 5rem; font: 1.08rem/1.65 Charter, 'Iowan Old Style', Georgia, serif; }
+h1,h2 { font-family:system-ui,sans-serif; line-height:1.2; letter-spacing:-.035em; }
+h1#xo { font-size:clamp(3.3rem,12vw,6rem); margin:.3rem 0 0; color:var(--accent); }
+h2 { margin-top:2.4rem; font-size:1.65rem; }
+p,li { overflow-wrap:break-word; }
+a { color:var(--accent); text-underline-offset:.18em; text-decoration-thickness:.09em; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+#xo + p { margin:.1rem 0 0; }
+#xo + p + ul { padding:0; margin:.2rem 0 1.4rem; list-style:none; color:var(--muted); font: .94rem/1.55 system-ui,sans-serif; }
+#xo + p + ul + p + ul { border-block:1px solid var(--line); padding:1rem 0 1rem 1.5rem; }
+a[href="#pick-a-door"] { display:inline-block; padding:.7rem 1rem; margin:1.5rem 0; font:600 1.05rem/1.4 system-ui,sans-serif; background:var(--accent); color:var(--paper); border-radius:.35rem; text-decoration:none; }
+a[href="#pick-a-door"]:hover,a[href="#pick-a-door"]:focus-visible { text-decoration:underline; }
+#pick-a-door { scroll-margin-top:1rem; }
+#pick-a-door ~ ol { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.85rem; list-style:none; padding:0; font:1rem/1.5 system-ui,sans-serif; }
+#pick-a-door ~ ol li { position:relative; border:2px solid var(--line); background:var(--panel); border-radius:.5rem; padding:1rem; }
+#pick-a-door ~ ol li:has(a:hover),#pick-a-door ~ ol li:has(a:focus-visible) { border-color:var(--accent); }
+#pick-a-door ~ ol a { font-weight:750; font-size:1.22rem; }
+#pick-a-door ~ ol a::after { content:''; position:absolute; inset:0; }
+#pick-a-door ~ ol li:has(a[href="door-local.html"]) { grid-column:1/-1; border:0; border-left:3px solid var(--line); border-radius:0; background:none; color:var(--muted); padding:.25rem 0 .25rem 1rem; font-size:.94rem; }
+#pick-a-door ~ ol li:has(a[href="door-local.html"]) a { font-size:1rem; }
+@media (max-width:34rem) { body { padding-top:1rem; } #pick-a-door ~ ol { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+</style>
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">xo</h1>
-</header>
 <h1 id="xo">xo</h1>
 <p>xo stands for:</p>
 <ul>
@@ -175,8 +57,8 @@
 <li>executive officer</li>
 <li>hugs and kisses</li>
 </ul>
-<p>This is an intimate and kind of weird relationship with an LLM. Don't
-overanthropomorphize it, and don't think about it too hard. The goal is
+<p>This is an intimate and kind of weird relationship with an LLM. Don&#39;t
+overanthropomorphize it, and don&#39;t think about it too hard. The goal is
 functionality.</p>
 <ul>
 <li><strong>Context is disposable; continuity is not.</strong></li>
@@ -189,6 +71,7 @@ decisions.</strong></li>
 <li><strong>Memory should be owned by you and should live in universal
 formats.</strong></li>
 </ul>
+<p><a href="#pick-a-door">Pick your starting app</a></p>
 <h2 id="what-xo-is">What xo is</h2>
 <p>xo is first a set of instructions to you, the human, for getting an
 agentic framework installed.</p>
@@ -197,8 +80,8 @@ help it work with you to improve itself and integrate itself into your
 digital life.</p>
 <p>This is intended for people who are starting from a base where they
 maybe have used chatbots but have not done agentic work previously. If
-you're more advanced than that, then you can probably skip ahead.</p>
-<h2 id="what-xo-isnt">What xo isn't</h2>
+you&#39;re more advanced than that, then you can probably skip ahead.</p>
+<h2 id="what-xo-isnt">What xo isn&#39;t</h2>
 <p>This is not a code framework.</p>
 <p>This is not an app.</p>
 <p>This is not a larger holistic system for running your life.</p>
@@ -209,25 +92,25 @@ all of those things.</p>
 <h2 id="what-am-i-showing-to-who-here">What am I showing to who,
 here?</h2>
 <p>Everything you say or show to your agent goes to the AI company that
-runs it: that's how cloud LLMs work.</p>
-<p>xo will help you find the provider's training setting when you get
-started. Turning training off does not erase what you've already sent or
+runs it: that&#39;s how cloud LLMs work.</p>
+<p>xo will help you find the provider&#39;s training setting when you get
+started. Turning training off does not erase what you&#39;ve already sent or
 necessarily shorten how long the provider keeps it.</p>
-<p>xo's memory stays on your computer in plain and portable file
+<p>xo&#39;s memory stays on your computer in plain and portable file
 formats.</p>
-<h2 id="ok-whats-the-catch">OK, what's the catch?</h2>
-<p>You'll need access to Claude Code or Codex in the desktop app; check
+<h2 id="ok-whats-the-catch">OK, what&#39;s the catch?</h2>
+<p>You&#39;ll need access to Claude Code or Codex in the desktop app; check
 your existing plan before spending anything to test this.</p>
-<p>It'll take some startup effort to get things rolling and most of that
+<p>It&#39;ll take some startup effort to get things rolling and most of that
 will be frustrating work hooking your agent up to things.</p>
 <p>The apps have usage limits and we might max out a five-hour window
-while setting up. If we do, that'll be annoying and you'll have to pick
+while setting up. If we do, that&#39;ll be annoying and you&#39;ll have to pick
 up later.</p>
-<p>AI makes mistakes and you'll have to correct it sometimes; I feel
+<p>AI makes mistakes and you&#39;ll have to correct it sometimes; I feel
 that these are valuable opportunities to demonstrate continued human
 relevance but they are, also, very annoying.</p>
-<p>This is brand new and not everything is tested yet-- if you're seeing
-this you've volunteered to be a guinea pig, so thanks and good luck!</p>
+<p>This is brand new and not everything is tested yet-- if you&#39;re seeing
+this you&#39;ve volunteered to be a guinea pig, so thanks and good luck!</p>
 <h2 id="how-you-start">How you start</h2>
 <p>You pick a model, install a harness, and paste an initial prompt that
 points it at the xo repository.</p>
@@ -236,7 +119,7 @@ Connecting mail, calendar, or other personal sources is a later step and
 is not yet verified for these desktop apps; leave those connectors off
 during the first sitting.</p>
 <h2 id="pick-a-door">Pick a door</h2>
-<p>This isn't a big decision. You can switch models, apps, or both later
+<p>This isn&#39;t a big decision. You can switch models, apps, or both later
 without losing ~anything.</p>
 <ol type="1">
 <li><strong><a href="door-claude.html">Claude</a>:</strong> Claude
