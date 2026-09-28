@@ -1,7 +1,7 @@
 # xo — exploratory test
 
-This is a clean-history public export of the xo setup kit for a small, unattended exploratory test. It is **Untried as a full install**: app permissions, protected-file prompts, re-entry, and connector controls have not passed a clean-account test. Testers should use only a personal account they already have, avoid secrets and private mail, stop at an unexpected permission request, and keep connectors off in the first sitting.
+XO helps you set up an AI assistant that can remember where you left off, work from files you own, and help you decide what to do next. You don't need to install a separate “harness.” Start at the [XO test page](https://proptermalone.github.io/xo-kit/index.html), pick Claude or ChatGPT, and paste the instructions shown there. The raw files in this repo aren't the starting prompt.
 
-Start at the hosted front page, choose Claude or ChatGPT, and paste only the rendered seed containing a full commit-pinned `raw.githubusercontent.com` kit URL. The source Markdown in this repo does not carry a ready-to-paste seed. The optional “make a tester report” flow creates a draft for the tester to review and send themselves.
+This is an exploratory test, **untried as a full clean-account install**. App permissions and connector controls have not been verified across both desktop apps. If you already connected mail, messages, or a calendar, XO can help you examine what this session can actually read and do; a connection alone doesn't prove it can block sending. Keep work or client material within its applicable rules. Stop at a permission request you didn't expect.
 
-The `kit/` directory is pinned by the full SHA in the rendered door pages. [Patch notes](CHANGELOG.md) describe changes; reviewing an update never installs it automatically. No private handoffs, test records, or internal XO Git history are part of this export.
+The `kit/` folder is the versioned instruction set used by the test page. XO can draft a tester report for you to review; it will not send it for you. [Detailed changes and update guidance](CHANGELOG.md).

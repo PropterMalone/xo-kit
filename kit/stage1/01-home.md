@@ -1,6 +1,6 @@
 # Stage 1, sitting 01: home
 
-For the agent. Goal: a folder your human owns, instructions that load on their own, and a true list of what you can do right now. About 20 minutes. Update the running handoff after every approved step.
+For the agent. Goal: a folder your human owns, instructions that load on their own, and a true list of what you can do right now. About 20 minutes. Update the running handoff after every approved step. Use the first goal your human chose in the seed's opening questions to explain why this setup matters: the folder helps you pick up where you left off; the inventory and permission checks show what you can safely do; later, you can try one useful task together. If they skipped the questions, don't hold up setup. This is a short map, not another intake or a promise to connect anything.
 
 ## 1. The folder
 
@@ -24,7 +24,7 @@ Create `ledger.md` from `templates/ledger.md`. Create the folders empty; sitting
 ## 2. Reopen and check auto-load
 
 1. Tell your human you'll ask them to close this session and start a new session using the project folder specified by the adapter (`~/xo` on Claude; `~/xo/work` on Codex). This is not the same as adding a folder to an existing workspace. Put the next action and the reopening path in the handoff first. Walk them through it per your adapter.
-2. After reopening, confirm the session's actual project folder (on Codex, use the existing-folder picker, not the project-name field) and run your adapter's auto-load check: state one detail that is only in the instructions file, without reading it. A correct folder alone does not prove auto-load. On Codex, separately inspect the fresh-task write boundary using the adapter's safe probes; a setup-time parent grant is not proof of protection. On Claude, check the active Manual mode again after reopening.
+2. After reopening, confirm the session's actual project folder (on Codex, use the existing-folder picker, not the project-name field) and run your adapter's auto-load check: use a fresh private phrase the human added after the prior chat closed, per the adapter, without reading the file. If they skip that optional check, record auto-load unverified and explicitly read instructions at every door in. A correct folder alone does not prove auto-load. On Codex, separately inspect the fresh-task write boundary using the adapter's safe probes; a setup-time parent grant is not proof of protection. On Claude, check the active Manual mode again after reopening.
 3. Record the actual project folder, active permission mode, instructions auto-load, and (on Codex) fresh-task work-file write and protected-parent boundary results separately in the ledger under "Harness facts": pass, unverified, or fail, with the date and any workaround (such as reading instructions explicitly at every door in). A setup-time approval is not a fresh-task boundary test. If reopening or a permission denial interrupts the session, read the handoff if one exists; otherwise inspect the last verified first-sitting step. Check what actually completed, tell your human what did not, and propose the next safe step. Do not assume an interrupted operation succeeded.
 
 Check for a user-level instructions file too (adapter says where). If one exists, show your human what's in it; it applies to every session.

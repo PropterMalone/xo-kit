@@ -6,7 +6,7 @@ For the agent, if you are Claude Code. The stage 1 sittings say *what* to set; t
 
 - Name: `~/xo/CLAUDE.md`. Claude Code loads `CLAUDE.md` from the folder a session opens in.
 - Reopening in `~/xo`: in the desktop app, click **Code → + New session**, then choose `~/xo` as that session's **Project folder** (https://code.claude.com/docs/en/desktop). Check on the app if those labels have changed. Do not merely add `xo` to an existing workspace or continue an old session in another project; confirm the new session shows `xo` as its project folder before the auto-load check. Walk your human through it once, then ask them to do it cold next time.
-- Auto-load check, after reopening: without reading any file, state one detail that is only in `CLAUDE.md` (for example the kit's pinned SHA once it's there). If you can't, auto-load failed: say so, and read `CLAUDE.md` explicitly at every door in until it's fixed.
+- Auto-load check, after reopening: the human privately writes a fresh, harmless random phrase to `CLAUDE.md` after the prior chat closes; do not put it in chat, a handoff, memory, or a source file the agent has already seen. In the new session, without reading any file, ask the agent to state that phrase. A phrase already proposed or shown in the old chat (or the kit's pinned SHA) is not a valid test. A correct answer is evidence of instruction loading, but also check for user-level or other injection routes; if uncertain record unverified and read `CLAUDE.md` explicitly at every door in until resolved. The human may skip this test and use explicit reads.
 - A user-level `~/.claude/CLAUDE.md` also loads everywhere if it exists. Check for one in sitting 01 and tell your human what's in it.
 
 ## Permissions

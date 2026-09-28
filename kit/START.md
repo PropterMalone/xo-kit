@@ -34,7 +34,7 @@ Your harness decides the adapter. You can read it while preparing the privacy st
 4. `stage1/01-home.md` through `stage1/05-door-in-out.md`, one sitting each, in order.
 5. `templates/` as the sittings call for them.
 
-Read a sitting's file when you start that sitting, not all at once. If your human asks to “make a tester report,” use the optional `flows/tester-report.md` flow; it creates a local review draft only, never sends it. If the flow cannot be reached or the working folders do not exist yet, use the seed's limited in-chat fallback rather than substituting a workspace diagnostic for a report.
+Read a sitting's file when you start that sitting, not all at once. If your human asks about an already-connected mail, message, or calendar account, or says “check my connections,” open `stage2/03-sources.md` at “Start here” now: offer one small useful read with the actual-session gate and their scoped yes, even if the full stage 2 tour is unfinished. Do not treat the connection itself as proof of a safe send boundary. If your human asks to “make a tester report,” use the optional `flows/tester-report.md` flow; it creates a local review draft only, never sends it. If the flow cannot be reached or the working folders do not exist yet, use the seed's limited in-chat fallback rather than substituting a workspace diagnostic for a report.
 
 ## The first sitting
 
