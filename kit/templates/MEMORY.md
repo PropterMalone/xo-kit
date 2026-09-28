@@ -11,7 +11,7 @@ Read at the start of every sitting. One line each: - [Title](file.md) — hook
 - [How you like to work](user-working-style.md) — one question at a time; short replies
 
 ## How we work
-- Secret scan: follow the kit's `stage1/04-backup.md` before each commit; do not invent a memory file for it
+- Secret scan: follow the canonical procedure in the installed `~/xo/kit/stage1/04-backup.md` before each commit (Codex also reads this from `~/xo/work`); do not copy its command or patterns into memory
 
 ## Going on now
 - <project or area> — one line on where it stands

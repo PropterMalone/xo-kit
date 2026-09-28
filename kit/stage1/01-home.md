@@ -16,6 +16,7 @@ Propose this layout, adjusted by your adapter (Codex puts the working folders un
   memory/                  MEMORY.md and one file per memory
   handoffs/                one dated handoff per sitting
   drafts/                  anything you draft for your human to send
+  sources.md                inventory of unassessed and connected sources (created during discovery)
 ```
 
 Create `ledger.md` from `templates/ledger.md`. Create the folders empty; sitting 03 fills `memory/`.
@@ -24,7 +25,7 @@ Create `ledger.md` from `templates/ledger.md`. Create the folders empty; sitting
 
 1. Tell your human you'll ask them to close this session and start a new session using the project folder specified by the adapter (`~/xo` on Claude; `~/xo/work` on Codex). This is not the same as adding a folder to an existing workspace. Put the next action and the reopening path in the handoff first. Walk them through it per your adapter.
 2. After reopening, confirm the session's actual project folder (on Codex, use the existing-folder picker, not the project-name field) and run your adapter's auto-load check: state one detail that is only in the instructions file, without reading it. A correct folder alone does not prove auto-load. On Codex, separately inspect the fresh-task write boundary using the adapter's safe probes; a setup-time parent grant is not proof of protection. On Claude, check the active Manual mode again after reopening.
-3. Record the folder, auto-load, active permission mode, and (on Codex) fresh-task protection results separately in the ledger under "Harness facts": pass, unverified, or fail plus the workaround (reading the file explicitly at every door in). If reopening or a permission denial interrupts the session, read the handoff if one exists; otherwise inspect the last verified first-sitting step. Check what actually completed, tell your human what did not, and propose the next safe step. Do not assume an interrupted operation succeeded.
+3. Record the actual project folder, active permission mode, instructions auto-load, and (on Codex) fresh-task work-file write and protected-parent boundary results separately in the ledger under "Harness facts": pass, unverified, or fail, with the date and any workaround (such as reading instructions explicitly at every door in). A setup-time approval is not a fresh-task boundary test. If reopening or a permission denial interrupts the session, read the handoff if one exists; otherwise inspect the last verified first-sitting step. Check what actually completed, tell your human what did not, and propose the next safe step. Do not assume an interrupted operation succeeded.
 
 Check for a user-level instructions file too (adapter says where). If one exists, show your human what's in it; it applies to every session.
 
@@ -35,7 +36,7 @@ Check for a user-level instructions file too (adapter says where). If one exists
 1. List every tool you can call, by its exact name, from your own tool list.
 2. For each: what it does in plain words; whether it can act outside `~/xo` (send, reply, forward, delete, trash, publish, pay, change settings, reach the network); its current setting, if you can tell.
 3. Write the list into the ledger's "Capability inventory" section.
-4. Show your human the short version: which tools could act outside the folder. Propose, one yes each or as one batch they can see in full, turning off or setting to "ask" anything they haven't chosen. Send-type tools get "block" where the harness allows it.
+4. Show your human the short version: which tools could act outside the folder. Propose, one yes each or as one batch they can see in full, turning off or setting to "ask" anything they haven't chosen. Send, reply, forward, delete, trash, publish, and other connected-account or outbound mutation tools must be blocked with an enforceable setting or their capability/connector left off; an "ask" setting or chat override is not enough for stage 1. Ordinary approved edits inside the work folder are not this category. If the human wants a different boundary, record the request but do not mark sitting 01 complete or enable the capability; revisit it through the later rung/self-edit process only after a verified safe path exists.
 5. Record each yes verbatim, with a timestamp, per `templates/ledger.md`.
 
 On Codex, this step also answers the connector-reach question (adapter, "open v0 blocker"). Record the answer either way.
@@ -43,8 +44,8 @@ On Codex, this step also answers the connector-reach question (adapter, "open v0
 ## Done when
 
 - [ ] `~/xo` has the layout above (as adjusted by your adapter) and `ledger.md` exists.
-- [ ] The project folder and auto-load were checked separately after a real reopen, and both results are in the ledger.
+- [ ] After a real reopen, the actual project folder, active permission mode, auto-load, and (on Codex) fresh-task write/boundary checks are recorded separately in the ledger; unverified or failed protection is not marked pass.
 - [ ] Any user-level instructions file has been shown to your human.
 - [ ] Every callable tool is in the ledger's inventory with its setting.
-- [ ] Every tool that can act outside the folder is off, ask, or block, or your human chose otherwise and the ledger quotes that choice.
+- [ ] Send/reply/forward/delete/trash/publish and other connected-account or outbound mutation capabilities are mechanically blocked or off; none is left on allow or ask by override. Other outside-folder tools are off, ask, or block as approved and recorded. If a mutation gate cannot be verified, stop here and record the gap.
 - [ ] The handoff names the next step: sitting 02.

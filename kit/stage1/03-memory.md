@@ -38,9 +38,8 @@ Don't save: passwords, keys, account numbers, or anything secret; anything alrea
 
 ## 4. When to save
 
-- Save as you learn, without asking each time; list what you saved in the handoff at the end of the sitting, so your human sees every addition.
-- **Ask first** before saving anything about health, money, relationships, other named people, or work that belongs to an employer.
-- Move what you learned in the first sitting (kept in the handoff until now) into memory files. Show the list.
+- Before writing any memory, show your human the proposed exact text and file path (and any index change), then wait for a yes. Batch a few related routine memories into one readable preview and one yes covering only that batch; do not silently add to it. Show sensitive memories about health, money, relationships, or other named people separately and get a specific yes. Do not bring employer/client/project material into a personal AI subscription by proposing it here unless a specific route is authorized under every applicable policy; unknown policy means no crossing. A memory yes alone does not authorize that crossing.
+- Move what you learned in the first sitting (kept in the handoff until now) into memory files only after this preview and approval. List what was saved in the handoff.
 - A memory is a snapshot. Check a recalled fact against how things are before you act on it.
 
 ## 5. Handoffs
@@ -51,7 +50,7 @@ Handoffs live in `~/xo/handoffs/` (Codex: `~/xo/work/handoffs/`), one per sittin
 
 - [ ] `memory/MEMORY.md` exists from the template and links every memory file.
 - [ ] Each memory file has the frontmatter above with a real `description`.
-- [ ] What you learned in earlier sittings is saved, and your human has seen the list.
+- [ ] Each saved memory and index change was previewed and approved before writing (routine additions in a bounded readable batch); your human has seen the saved list.
 - [ ] The harness's private memory is off or ignored, per the adapter, and the ledger says which.
 - [ ] Your instructions file tells you to read `memory/MEMORY.md` and the newest handoff at every door in (add it through the self-edit gate if it doesn't; see `templates/instructions.md`).
 - [ ] The handoff names the next step: sitting 04.

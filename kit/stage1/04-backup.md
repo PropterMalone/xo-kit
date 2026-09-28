@@ -30,10 +30,11 @@ Report: on or off, and whether `~/xo` is covered. If it's off, recommend turning
 
 ## 3. Secret scan
 
-Nothing secret belongs in the folder, and a scan catches some slips before they become history. Before **every** commit, first show the file list and stage exactly the approved files, then scan the staged diff below. Never stage `~/xo/.env` or credentials. A local commit doesn't leave the machine, but history travels with any later push. A hit stops the commit; a clean scan is not proof that the files contain no private information.
+Nothing secret belongs in the folder, and a scan catches some slips before they become history. This page is the canonical scan procedure; at every door out follow it rather than copying a separate command into memory. Before **every** commit, first show the file list and stage exactly the approved files, then scan the staged diff below. Never stage `~/xo/.env` or credentials. The staged diff is a read-only git operation, but this grep pipeline is a shell command: under sitting 02's default, ask for harness approval to run it unless that exact safe route has been separately configured and recorded. Do not quietly widen the shell allowlist to automate commits. A local commit doesn't leave the machine, but history travels with any later push. A hit or scan error stops the commit; a clean scan is not proof that the files contain no private information.
 
 ```sh
-git -C ~/xo diff --cached -U0 | grep -nEi \
+# Run in Git Bash or another Bash shell; inspect both pipeline statuses.
+git -C ~/xo diff --cached -U0 | grep -Ei \
   -e '-----BEGIN [A-Z ]*PRIVATE KEY-----' \
   -e 'AKIA[0-9A-Z]{16}' \
   -e '(^|[^A-Za-z0-9])(sk|rk)-[A-Za-z0-9_-]{20,}' \
@@ -41,21 +42,27 @@ git -C ~/xo diff --cached -U0 | grep -nEi \
   -e 'github_pat_[A-Za-z0-9_]{20,}' \
   -e 'xox[abprs]-[A-Za-z0-9-]{10,}' \
   -e 'AIza[0-9A-Za-z_-]{35}' \
-  -e '(password|passwd|secret|api[_-]?key|token)[[:space:]]*[:=][[:space:]]*[^[:space:]]{6,}'
+  -e '(password|passwd|secret|api[_-]?key|token)[[:space:]]*[:=][[:space:]]*[^[:space:]]{6,}' \
+  > /dev/null
+scan_status=("${PIPESTATUS[@]}")
+diff_status=${scan_status[0]} grep_status=${scan_status[1]}
+if [ "$diff_status" -ne 0 ] || [ "$grep_status" -gt 1 ]; then printf 'STOP: scan error\n'; exit 2
+elif [ "$grep_status" -eq 0 ]; then printf 'STOP: possible secret in staged diff\n'; exit 1
+else printf 'No pattern matched; review staged files before committing\n'; fi
 ```
 
-- No output: clean. Any output: stop, show your human the file and line (mask the value), and propose removing it. If it was a real secret, walk them through revoking and reissuing it: once written down, treat it as exposed.
-- On Windows, run it in Git Bash, which ships with Git for Windows.
-- Before the first push anywhere (stage 2), scan the whole history too: `git -C ~/xo log -p | grep -nEi` with the same patterns.
+- The printed no-match result means this pattern check completed without a match; a STOP result blocks the commit. The command discards matching text so no secret value enters the chat/tool log. If it flags, inspect the staged file list and diff locally without pasting secret values, identify the file and line for your human with the value masked, and propose removing it. If it was real, walk them through revoking and reissuing it: once written down, treat it as exposed.
+- On Windows, run it in Git Bash, which ships with Git for Windows. If shell approval is denied, do not treat an unrun scan as clean or commit.
+- Before the first push anywhere (stage 2), scan the whole outgoing history too, with the same patterns and output suppressed; get separate approval for the push and do not treat a clean staged diff as a clean history.
 - The last pattern can catch ordinary prose ("password: in the manager"). False alarms are cheap; show them and move on.
 - This is a v0 net for common key shapes, not a guarantee. The rule that stops secrets is not writing them down.
 
-Save the command as a memory of type `reference` so every door out uses the same one.
+In `memory/MEMORY.md`, point to this canonical procedure so every door out uses the current command. Do not duplicate the pattern list in a memory file.
 
 ## Done when
 
 - [ ] `~/xo` is a git repository with a repo-only identity and the `.gitignore` above.
 - [ ] The secret scan ran clean and the first commit exists.
 - [ ] The machine's backup is checked, and the ledger records on or off, what it covers, and where it sends data.
-- [ ] The scan command is saved in memory.
+- [ ] `memory/MEMORY.md` points to this page's scan procedure; no second scan command is stored in memory.
 - [ ] The handoff names the next step: sitting 05.

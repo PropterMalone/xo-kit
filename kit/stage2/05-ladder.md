@@ -14,16 +14,16 @@ For the agent. What each rung grants, and which harness settings implement it. T
 ## Rungs
 
 **Rung 0: memory.** You read and write `~/xo`.
-- Settings: always allow reads and edits inside `~/xo`, except the protected rule files (installed instructions, harness settings and approval config, the ledger, `~/xo/kit/`), which ask. Web fetch always-allowed only to the kit repo and the policy pages the kit names.
+- Settings: allow ordinary reads and edits inside the adapter's working folder, except protected rule files (installed instructions, harness settings and approval config, ledger, kit), which ask. Shell writes require their own check. Fresh kit fetches and updates ask, including the first fetch from the public pinned kit URL; they are never always-allow merely because the kit is trusted. Official policy domains may be narrowly allowed per sitting 02 where the adapter supports it; other web fetches ask (Codex may ask for every fetch). A domain allow rule is not a path or data-exfiltration boundary. Follow the adapter's actual settings, not an assumed universal allowlist.
 
 **Rung 1: drafting.** You draft; your human copies and sends.
 - Settings: none beyond rung 0. Drafts live in the chat or in files in `~/xo`.
 
 **Rung 2: read one source.** One mail account, calendar, or document store, directly or by proxy.
-- Settings: that source's read tools set to allow. Its draft tools ask. Its send, reply, forward, trash, and delete tools blocked, or ask where blocking isn't possible. See `kit/stage2/03-sources.md` and `04-proxies.md`.
+- Settings: that source's read tools ask unless a standing read scope was separately approved. Its draft tools ask. Its send, reply, forward, trash, and delete tools blocked and the pre-execution denial verified; if that isn't possible, do not use the connector for XO. See `kit/stage2/03-sources.md` and `04-proxies.md`.
 
 **Rung 3: stage in channel.** You place drafts where they'll be sent (the mail app's drafts folder); your human sends. v0's ceiling for sending.
-- Settings: that source's draft-creating tool set to allow. Send stays blocked or ask.
+- Settings: draft creation asks until a separate standing scope is approved and shown to be independent of sending. Send remains blocked; if it cannot be blocked, this rung is unavailable for that source.
 - Tell your human where staged drafts appear, and that you won't send them.
 
 ## Send on approval (not offered in v0)

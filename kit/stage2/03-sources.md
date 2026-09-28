@@ -1,35 +1,44 @@
 # Stage 2: connecting sources
 
-For the agent. Connect your human's sources (mail, calendar, tasks, notes, messages) one at a time. Each connection is rung 2, "read one source" (`05-ladder.md`), and a separate yes. Work from `~/xo/sources.md`.
+For the agent. Help your human see their obligations across mail, calendars, tasks, notes, messages, voice notes, recordings and transcripts in one legible stream. That does not require XO or its model to read every source: an authorized direct read, fixed signal, or honest pointer to a source-native view may serve different boundaries. Offer sources one at a time. Rung 2 (`05-ladder.md`) requires a yes to connect each source and a separate scoped yes to read it; connecting alone never grants standing reads. Work from `~/xo/sources.md` (Codex: `~/xo/work/sources.md`).
 
-## First: personal or work?
+## First: personal, work, or client?
 
-Before the first connector or proxy, ask: "Is this account personal, or managed by an employer?" Ask again for each new account.
+Before the first connector or proxy, ask: “Is this source personal, employer-managed, client-governed, or subject to more than one of these?” Ask again for each new source, account, tenant, or client project; labels are inventory, not permission.
 
-- **Work:** the employer's policy governs. An approved enterprise account may work; verify its actual tools, data controls, and permission settings with the same gates as a personal account. Work data never goes into a personal subscription. If your human doesn't know the policy, stop and suggest they check it or ask IT. Record their answer verbatim.
-- **Personal:** continue.
+- **Work or client:** list all applicable employer and client/project authorities, including additional client restrictions; record their policy basis or authorized owner, exact allowed route, destination/provider, and fields/excerpts. Resolve conflict or uncertainty to the most restrictive boundary until an authorized owner clarifies it. A hard ban means no work/client content to personal AI; a narrow authorization permits only the specified subset; if no institutional restriction applies, the human may approve broader scope. Even a fixed event reveals activity: unknown policy means **no crossing at all**, including event-only, until that route is authorized. Keep work-native activity inside its boundary meanwhile. The human's informed source-specific yes and a verified tool gate are still required in every case; technical ability to share is not permission.
+- **Personal:** continue with an informed source-specific yes and the same verified tool gate. Do not infer that an apparently personal account contains no governed work/client items.
 
 ## Choosing how to connect
 
 1. **Prefer a CLI to a connector (MCP server) when both exist and setup costs are comparable.** A CLI runs nothing in the background, loads no tool definitions into every session, and leaves plain commands in the log. If the CLI needs much more setup, take the connector.
 2. **Hard rule:** no path that requires your human to create a cloud or developer project, or their own OAuth client. Signing in and approving is fine. If only that path exists, say so, and use a proxy (`04-proxies.md`) or skip.
 3. **Keys:** key intake isn't in v0. If a service only offers an API key, tell your human that, record "later", and don't improvise a way to store it.
-4. **Prefer draft-only commands or tools.** Record in the ledger every command or tool that can send.
+4. **Prefer truly read-only or draft-only commands or tools.** Inventory every command or tool that can send or mutate. A CLI with read and send subcommands invoked through a general Bash/PowerShell runner that stays on ask is not blocked from sending: a broad approval can run it. Unless an enforceable command-level pre-execution deny is demonstrated in the actual session, do not use that CLI for XO reads; choose a truly read-only route or defer. Record the limitation in the ledger.
 5. For current connector routes per harness (Google mail and calendar in particular), see your adapter in `kit/adapters/`.
+
+## Already connected is not verified
+
+If your human already connected an account, do not pretend setup starts from zero or disconnect it without asking. Record the source/account/tenant/project classification (personal, employer-managed, client-governed, or overlapping), every applicable authority, the app and session where it is connected, and what the human has actually seen it read or do. A useful summary of personal mail proves that read worked in that session; it does not prove Code/Codex reach, historical coverage, or a block on send, reply, forward, trash, and delete. Do not request another content read just to establish reach. Until the capability inventory and send boundary below pass in the **actual working session**, pause XO-driven use of that connector, ask the human not to authorize send-type actions through it, and offer to disconnect it or use a read-only route. For a work account with policy unknown, stop before inspecting its contents or sending an external signal; ask the human to confirm permission first.
 
 ## Connecting one source
 
-1. **Propose.** Name the source, the route, what you'll be able to read, what leaves the machine (what you read goes to your provider), and how to undo it. Ask what the human wants first: only new items, a bounded look back, or help finding a specific older item. Do not equate a connected account with permission to search all its history. Wait for a yes to connect; older content needs its own agreed scope before reading.
-2. **Your human signs in.** You can't do sign-ins; tell them exactly where to click.
-3. **List the tools it added.** Re-run the capability inventory from the first sitting. Name every new tool, including send, reply, forward, trash, delete, and label changes.
+1. **Propose connection and read separately.** Name the classified source/account/tenant/project, applicable authorities, exact route, destination/provider, fields and excerpts that may cross, what the human will see, what XO and its model provider can actually read, what remains in the source, and reversal. Training off does not make a provider-side read local; do not imply it can see content from a pointer or guarantee provider behavior. Ask for a specific informed yes to connect, then separately whether to read a bounded new item, a named item/date range, or grant a standing read scope. Record each yes separately; no standing read is implied. Confirm no content reaches the personal provider during setup or gate testing before the appropriate read/crossing approval. Older content needs its own bounded scope and yes.
+2. **Prepare the gate before enabling access.** Inspect documented tool names and app controls without source content. Set exact available send/mutation denies and confirm the working-session gate where a safe pre-connection test exists. Have your human sign in only after connection approval and policy clearance. If sign-in immediately exposes account content to the agent/provider, or tools cannot be inspected and denied without enabling it, do not claim a pre-exposure gate: keep it off and choose a read-only route or defer. Do not inspect source content merely to test setup.
+3. **List the tools it added.** After sign-in, re-run the capability inventory from the first sitting without a content read. Name every new tool, including send, reply, forward, trash, delete, and label changes; keep access paused until step 4 passes.
 4. **Set per-tool permissions.** In v0 your human sends, so:
-   - Read tools for this source: allow (rung 2's yes makes these reads always-allow).
+   - Read tools for this source: keep on ask until a separately recorded yes names the source, purpose, exact fields/items, time/history range, and whether each read or standing access is approved. Allow only that standing scope if the harness enforces it; otherwise keep on ask. A yes to connect is not a yes to read. Do not broaden permissions for other accounts or tools.
    - Draft-creating tools: ask, until rung 3 for this source.
-   - Send, reply, forward, trash, delete: block where the harness allows it. If a connector exposes these but a block cannot be verified in the Code session, leave the connector off and offer a read-only proxy; merely asking is not a substitute for the v0 human-sends boundary.
-   Check your adapter for the Code session's actual controls. On a personal Claude plan, app-side per-tool permissions are not documented as available (check on the app); do not connect a send-capable source merely because chat-side connector controls exist. If the Code harness cannot block send-type tools, leave the connector off and offer a read-only proxy instead.
-5. **Test one read.** Fetch the newest item's date, not its contents unless your human asks. That date is the first liveness point. Check the route's documented or observed reach into older items: date range, search, pagination, and any retention or permission limits. If you cannot test that without reading content, say historical reach is unknown; never infer it from a successful newest-item read.
-6. **Ledger entry** (`kit/templates/ledger.md`): source, account (personal or work), route, the per-tool settings, which tools can send, your human's yes verbatim with timestamp, reversal (turn off the connector, revoke the sign-in at the provider's account page), liveness and expiry (below), and historical reach (confirmed range or unknown). Record the human's chosen history scope separately from technical reach.
-7. **Update `~/xo/sources.md`:** status connected, route, date.
+   - Send, reply, forward, trash, delete, archive, move, change labels or permissions, and publish: inventory and block each available mutation tool that exceeds the agreed rung. Some tools combine read and mutation; classify by the most powerful action they permit. If a connector exposes these but a block cannot be verified in the actual working session, do not use it for XO and offer a read-only proxy; merely asking is not a substitute for the v0 human-sends boundary.
+   Check your adapter for the working session's actual controls. Claude documents connector Tool permissions by group or single tool (https://claude.com/docs/connectors/getting-started), but check personal-plan availability and the actual Code session's deny behavior on the app; do not connect a send-capable source merely because chat-side connector controls exist. A permission shown in the chatbot UI is not proof it governs Code/Codex. If the working session cannot block send-type tools, leave the connector off or stop XO-driven use of an already connected account and offer a read-only proxy instead.
+   **Gate-check without delivery:** with your human present, set the exact tool deny. Before any attempt, verify that the deny applies at the permission layer *before execution* and that the test operation has no real recipient or target. If either condition is unclear, do not call the tool: record the gate as unverified. Otherwise observe the permission-layer refusal, not just the agent saying it will not send. Never use a real send, delete, or trash action as a test. If a pre-execution denial cannot be safely demonstrated, record "send boundary unverified" and stop; absence of a dangerous tool in one inventory is not proof it will stay absent after a connector or session change. Repeat after reopening or changing the connector, app mode, or tool list.
+5. **Test one authorized read.** Only after the separate read approval and gate check, fetch the newest item's date if that metadata is within the approved disclosure; do not fetch contents unless specifically approved. Record the successful route-check time separately from the newest item's time. Check documented or approved observed reach into older items: date range, search, pagination, retention and permission limits. If testing requires unapproved content, mark historical reach unknown; a successful newest-item read proves neither history nor standing access.
+6. **Ledger entry** (`kit/templates/ledger.md`): source and personal/employer/client/project classification, applicable authorities and policy basis/owner, authorized route/destination/fields, actual per-tool settings and send-capable tools, separate verbatim connect and scoped read yeses with timestamps (or read pending), reversal, last successful check and newest item time separately, expiry, and historical reach (confirmed range or unknown). Record chosen history scope separately from technical reach.
+7. **Update the sources inventory (`~/xo/sources.md`; Codex: `~/xo/work/sources.md`):** record route, date, and status: `connected` only after policy, connect/read scope and gate checks pass; otherwise `setup only — read pending`, `deferred`, or `work-native only`. Do not infer active XO reads from a signed-in account.
+
+## Recordings and transcripts are separate permissions
+
+For a voice note or meeting recording, distinguish consent to **record**, **transcribe**, **store/sync**, **summarize**, and **let XO read it**. A transcript's existence does not grant XO access, and a calendar invitation does not grant recording consent. Inventory the capture app, owner and participants, storage location, transcription provider, retention, and where any automatic upload goes before proposing a connection. Personal voice notes may be manually selected for import; auto-ingest needs a separate yes and proof that a watched folder contains only material authorized for XO. Keep work/client raw audio and transcripts in their approved environment unless policy explicitly authorizes a specific export. If recording is prohibited or unavailable, offer a short human-authored post-meeting action note with confidential details left in the source system.
 
 ## Existing history: a separate read decision
 
@@ -40,17 +49,18 @@ A source can be connected without granting access to all its past content. Befor
 Connectors and tokens break silently. Record for each source:
 
 - **Expected cadence:** how often new items normally arrive (mail: daily; a quiet calendar: weekly).
-- **How to check:** the one read that returns the newest item's date.
+- **How to check:** a harmless read confirming the route works, with last successful check time and newest visible item time recorded separately; a proxy also needs destination receipt or heartbeat.
 - **Expiry:** if the sign-in or token has one, the date. If unknown, say unknown.
 
-At every door in, check each source: when did the last item arrive, and is that plausible? A stale source gets flagged to your human, never read as "nothing new." Flag expiries within two weeks.
+At every door in, compare last **successful source check** and (for a proxy) last **destination receipt** to the expected cadence. A stale or unverified source gets a visible “I can't confirm this source is current; open it directly” warning, never “nothing new.” A newest-item date alone does not prove the connector or proxy is alive. Flag expiries within two weeks.
 
 ## Done when
 
-- [ ] Personal or work was asked and answered for this account.
-- [ ] The source is connected by a route that needed no developer project or OAuth client.
-- [ ] Every tool it added is listed, and send-capable tools are blocked and gate-checked; otherwise the connector stays off and a proxy is used or the source is deferred.
-- [ ] One test read worked, and historical reach was checked or marked unknown without an unapproved content read.
+- [ ] Personal, employer-managed, and/or client-governed classification and all applicable source/tenant/project authorities were recorded; conflict or unknown policy caused no crossing, including event-only, until clarified.
+- [ ] The exact route, destination and fields obey the most restrictive applicable authority; the human's separate connect and scoped read yeses are recorded.
+- [ ] The source is connected by a route that needed no developer project or OAuth client, or left explicitly deferred/work-native when its gate cannot pass.
+- [ ] Every tool it added is listed, every out-of-rung mutation tool is blocked, and a pre-execution denial was observed in the actual working session without a real send/delete; otherwise XO stops using that connector and offers a read-only proxy or defers.
+- [ ] If reading was separately authorized and the gate passed, one scoped test read worked; otherwise no test read occurred and reach remains unknown.
 - [ ] Any historical read had a separately approved scope; incomplete coverage was named.
-- [ ] The ledger entry has settings, send-capable tools, verbatim yes, reversal, cadence, check, expiry, and historical reach.
-- [ ] `~/xo/sources.md` shows the source as connected.
+- [ ] The ledger entry distinguishes connect/read yeses (or read pending), policy authority, settings, send-capable tools, reversal, cadence, last successful check versus newest item, expiry, and historical reach.
+- [ ] The sources inventory (`~/xo/sources.md`; Codex: `~/xo/work/sources.md`) shows connected only when the gates passed; otherwise it records setup-only/read-pending, deferred, or work-native only.

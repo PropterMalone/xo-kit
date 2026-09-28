@@ -14,7 +14,7 @@ Propose these, with the exact settings from your adapter. Show the full settings
 
 **Ask**
 - Edits to the protected rule files.
-- Reading any connected source, until that source's rung 2 yes is in the ledger.
+- Reading any connected source by default. A yes to connect or enter rung 2 is not a standing read grant; each read asks until the human separately approves an exact standing source/field/time scope that the harness can enforce.
 - Any other web fetch.
 - Installing anything; changing settings; editing anything outside `~/xo`.
 - Shell commands, except a few read-only git ones.
@@ -41,16 +41,16 @@ Write one ledger entry for the defaults per `templates/ledger.md`: what, the exa
 
 Demonstrate that the harness holds, not just the prompt. For each, tell your human first: "I'm going to try X. The app should stop and ask you. Please say no." Go ahead only on their yes.
 
-1. **Protected file.** Try to append a harmless line (`gate check`) to `ledger.md` using the built-in file editor. Pass: the harness prompts, your human denies, and the file is unchanged afterwards (show them). Then test a shell write to the same file without executing it: ask the harness to run a command that would append the same line; your human denies the shell prompt. Pass: the command does not run and the file stays unchanged. If the shell write runs silently, record a gate failure.
+1. **Protected file: two genuine pre-execution requests, never an append.** With your human present and after their yes to the *test only*, request a built-in editor operation that would append the harmless line `gate check` to `ledger.md`. Do not preview-only or simulate the tool call: it must reach the harness approval gate, where your human denies it **before execution**. Verify the file is unchanged. Only if that passes, request a shell command that would append the same line; again let the real harness approval prompt appear, have your human deny before execution, and verify the command did not run and the file is unchanged. Do not grant approval, actually append, or clean up a written test line as if the gate passed. If either request runs without a pre-execution human denial, or the prompt cannot be demonstrated, stop further setup, record fail or unverified precisely, and diagnose the permission gap with the adapter before retrying. A chat-level yes to run the test is not permission to write the ledger.
 2. **Outside fetch.** Try to fetch `https://example.com/?xo-gate-check=1`. Pass: the harness prompts, your human denies, nothing is fetched. This catches an outside-domain URL, but it does **not** test an exfiltration URL on an allowlisted domain. The seed's no-data-in-URLs rule still applies to every fetch.
 
-Record both results in the ledger under "Gate checks" with the date. A fail is not a setback to hide: tell your human plainly what the harness didn't stop, record it as a known gap, and propose the fix your adapter gives, or say there isn't one.
+Record each route and the fetch result in the ledger under "Gate checks" with the date, observed prompt/denial, execution outcome, and unchanged-file check. A failed or unverified protected-file gate stops setup; tell your human plainly what happened and propose the adapter's safe correction (or say there isn't one). Never mark a missing prompt as a pass.
 
 ## Done when
 
 - [ ] The harness settings match the defaults above, as adjusted and approved by your human.
-- [ ] Built-in and shell attempts to edit protected files prompt (gate check 1 passed on both routes, or the gap is recorded).
-- [ ] A non-allowlisted fetch prompts (gate check 2 passed, or the gap is recorded).
+- [ ] Both protected-file routes produced genuine pre-execution prompts, the human denied both, neither executed, and `ledger.md` stayed unchanged. A fail or unverified gate stops setup; recording the gap does not satisfy this check.
+- [ ] A non-allowlisted fetch prompted and was denied before fetching; otherwise stop and record the gap.
 - [ ] Send-type tools are blocked and the block tested, or their connector/capability is off; the ledger records which.
 - [ ] The ledger has the defaults entry with a verbatim, timestamped yes and a reversal.
 - [ ] The handoff names the next step: sitting 03.

@@ -1,10 +1,10 @@
 # Stage 2 tour: the offers
 
-For the agent. Start here once stage 1 is done (backup, permission defaults, door in and door out, first handoff) and discovery has produced `~/xo/sources.md` or been skipped. This is a guided tour of offers, not a nag.
+For the agent. Start here once stage 1 is done (backup, permission defaults, door in and door out, first handoff) and discovery has produced the sources inventory (`~/xo/sources.md`; Codex: `~/xo/work/sources.md`) or been skipped. This is a guided tour of offers, not a nag.
 
 ## How to offer
 
-- **One offer at a time.** What it gives, what it costs, what leaves the machine, how to undo it. A few lines. Then ask: yes, no, or later?
+- **One offer at a time.** What the human gets in their view, what XO/model provider can actually see, what stays at the source, what it costs, and how to undo it. A pointer to a work-native view is not a claim that XO read its items. A few lines. For example: “I can draft a reply here; you review it and send it yourself. Nothing connects to your mail, and you can delete the draft. Try one?” For a source: “I can check dates from this one personal calendar after a separate read yes. Its data reaches this provider; send tools must be blocked first. You can turn the connection off. Review that option, skip it, or leave it for later?” Then ask: yes, no, or later?
 - **Every answer goes in the ledger** (format: `kit/templates/ledger.md`), including no and later. Quote your human's words verbatim with a timestamp.
 - **A yes changes your own rules**, so it goes through the self-edit gate: show the before-and-after of every rule file and setting you'll change, get the yes, then make the edit through the harness's ask prompt. The ledger is a protected rule file too.
 - **No means no.** Don't re-offer it. Your human can reopen it any time.
@@ -18,7 +18,7 @@ Skip anything that doesn't apply; stop the pass whenever your human wants.
 
 1. **Drafting and approval gates** (rung 1, `05-ladder.md`). Show one real draft and how approval works: you prepare, they read, they send.
 2. **Private GitHub remote** (`02-github.md`). Optional; local git plus the machine's backup is a complete setup.
-3. **Sources, one at a time** (`03-sources.md`, rung 2). Walk `~/xo/sources.md` in the order your human cares about most. Ask personal or work for each account and whether they want new items only or a separately scoped look at older items. Connection does not imply permission to import history.
+3. **Sources, one at a time** (`03-sources.md`, rung 2). Walk the sources inventory at the path in your adapter in the order your human cares about most. Ask which personal, employer, client, or project policies apply to each source and route; unknown policy means no crossing. Ask whether they want new items only or a separately scoped look at older items. Connection does not imply permission to import history.
 4. **Proxies** for any source that can't or shouldn't be connected directly (`04-proxies.md`).
 5. **Stage in channel** (rung 3) per connected source, once reading it has proved useful.
 6. **Worth considering** (`06-worth-considering.md`): password manager, two-factor auth, recovery email and phone, offsite backup, next of kin and legacy access, device basics, old accounts. One offer at a time, when it fits.

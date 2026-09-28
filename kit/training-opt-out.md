@@ -1,6 +1,6 @@
 # Turning off training on your human's data
 
-For the agent. This is the first-sitting privacy step after the seed paste. Say that the seed has already reached the provider; switching training off now cannot undo prior processing. Before collecting personal details or creating files, guide your human through the relevant setting and troubleshoot it one step at a time. Ask them to confirm its state. If they decline or cannot confirm, explain the limits and ask whether they want to continue. Re-check the decision in stage 1.
+For the agent. This is the first-sitting privacy step after the seed paste. Say that the seed has already reached the provider; switching training off now cannot undo prior processing. Before collecting personal details or creating files, guide your human through the relevant setting and troubleshoot it one step at a time. Ask them to confirm its state. If they decline or cannot confirm, explain the limits and ask whether they want to continue. Carry that recorded choice into sitting 01; do not make them repeat the same setting trip without new evidence.
 
 These policies change. Each entry has a last-verified date and an official link. **Before walking your human through it, open the official page and check it. If the page and this file disagree, trust the page and tell your human what changed.**
 
@@ -36,3 +36,9 @@ Tell your human plainly what turning it off does *not* cover.
 - **Antigravity (desktop, IDE, CLI) is separate.** It runs under the Google Privacy Policy plus Antigravity's own terms, which collect "Interactions" for research by default, with an opt-out inside the app. The Gemini app's switch doesn't cover it. (The older Gemini CLI consumer path was folded into Antigravity on 2026-06-18.)
 - Doesn't cover: about 72 hours of service retention, human safety review, and feedback your human submits.
 - Official: https://support.google.com/gemini/answer/13594961 and https://antigravity.google/terms
+
+## Done when
+
+- [ ] Your human has been told the seed already reached the provider and turning training off cannot undo that processing.
+- [ ] You checked the current official page for the provider/account in use, gave the relevant setting path and limits, and asked the human to confirm the actual state; a missing page or control stays unverified, not marked off.
+- [ ] The human's choice (off, declined, or unverified) and whether to continue despite any limits are recorded in the running handoff, without claiming training is off unless they confirmed it. Carry that choice forward in sitting 01 without an automatic repeat prompt.

@@ -8,9 +8,9 @@ For the agent. Every grant has its other half. Use this when your human wants to
 2. Your human picks one.
 3. **Show the recorded reversal.** Who does each step: you (a setting in `~/xo` or the harness) or your human (signing out, deleting a rule in another app, revoking access at a provider). If the entry has no reversal, work one out, show it, and add it.
 4. On a yes, do your steps and walk your human through theirs. Changes to harness settings or the ledger go through the harness's ask prompt.
-5. **Check it took:** re-run the capability inventory; the tools should be gone or blocked. For a source, a test read should fail.
+5. **Check it took:** re-run the capability inventory; the tools should be gone or blocked. For a source, first check the tool is unavailable or denied without opening any content. If a harmless metadata-only read is needed to verify revocation, obtain a separate yes; do not use a real send or delete as a test.
 6. **Ledger entry for the rung-down,** recorded like a rung-up: what was removed, the settings changed, your human's words verbatim with timestamp, how to reverse it (the climb back). Mark the original entry as ended; don't delete it.
-7. Update `~/xo/sources.md` and the handoff.
+7. Update the sources inventory (`~/xo/sources.md`; Codex: `~/xo/work/sources.md`) and the handoff.
 8. **Show what's left.**
 
 Common reversals:

@@ -12,13 +12,13 @@ Codex protects files by leaving them outside the folders its sandbox can write, 
   ledger.md            permissions ledger (protected)
   kit/                 vendored kit (protected)
   work/                the session folder; the only writable root
-    memory/  handoffs/  drafts/
+    memory/  handoffs/  drafts/  sources.md
 ```
 
 - **Two phases, different permissions:** creating `~/xo` and protected parent files may need a human-approved, narrowly scoped outside-workspace action during setup. Approval for that action is not evidence the later working task protects `~/xo`. Avoid permanent read/write grants to the whole parent just to create the folder; if the app offers only a persistent grant, explain that tradeoff and offer human creation of the parent files instead. Do not guess that a one-time option exists.
-- Fresh working tasks open in the existing `~/xo/work` folder. Codex may load `AGENTS.md` from the git root down to the session folder; confirm parent auto-load with the check below. Inspect the task's actual project folder and permissions, request workspace details via `/status`, and check whether `~/xo/work` is writable while `~/xo` stays protected. If `/status` omits writable roots, do not invent them: use a harmless approved work-file write, then request a write to a new disposable probe path in the parent with the human's informed yes. A prompt or denial before execution proves a gate for that operation; if the app permits the write silently, remove only that probe with a separate yes and record the failed boundary. Never test by editing `AGENTS.md`, the ledger, or real data. If the parent result cannot be established, stop and record a protection gap.
+- Fresh working tasks open in the existing `~/xo/work` folder. Codex may load `AGENTS.md` from the git root down to the session folder; confirm parent auto-load with the check below. Inspect the task's actual project folder and permissions, request workspace details via `/status`, and check whether `~/xo/work` is writable while `~/xo` stays protected. If `/status` omits writable roots, do not invent them: use a harmless approved work-file write, then, after the human agrees to the *test*, submit a write request for a disposable probe path in the parent and have the human deny the actual app prompt before execution. Verify no probe was written. A chat yes to test is not a yes to write; if the app permits the write silently, stop, remove only that probe with a separate yes, and record the failed boundary. Never test by editing `AGENTS.md`, the ledger, or real data. If the parent result cannot be established, stop and record a protection gap.
 - Git commits write `~/xo/.git`. Codex documents `.git` as read-only even inside a writable root; test whether this app requests approval before relying on a commit prompt. A chat yes is still required before the commit, whether or not the harness asks too.
-- Where other kit files say `~/xo/memory/`, `~/xo/handoffs/`, or `~/xo/drafts/`, read `~/xo/work/...`.
+- Where other kit files say `~/xo/memory/`, `~/xo/handoffs/`, `~/xo/drafts/`, or `~/xo/sources.md`, use `~/xo/work/memory/`, `~/xo/work/handoffs/`, `~/xo/work/drafts/`, or `~/xo/work/sources.md` respectively. Protected `~/xo/kit/`, `~/xo/kit/PIN`, `~/xo/ledger.md`, and `~/xo/AGENTS.md` stay in the parent.
 - If a protected-parent write fails, use the bounded diagnosis below before asking the human to do the file work. A chat yes and even an app approval are not proof that a file was saved. **Do not ask to override an enforced policy or switch to Full access.**
 - If the split layout still can't be made to work (for example the app won't open a subfolder, the working task can silently write in `~/xo`, or the parent `AGENTS.md` doesn't load), stop and tell your human. Only with their approval, fall back to one folder at `~/xo`, protection by prompt only. Record the known gap in the ledger; do not claim the harness enforces self-edit approval.
 
@@ -61,10 +61,10 @@ The system of record is `~/xo/work/memory/`. Codex local memories are off by def
 
 ## Connectors: open v0 blocker
 
-**Unknown whether a Codex session reaches the Gmail and Calendar connectors turned on in ChatGPT.** Testing that is a v0 blocker for this door. In sitting 01, the capability inventory answers it for this machine: list every tool you can call. Then:
+**Unknown whether a Codex session inherits Gmail and Calendar accounts connected on the ChatGPT chat side.** OpenAI documents Gmail as a Codex-capable plugin and separately documents MCP servers shared through Codex configuration, but neither proves that a ChatGPT-connected Google account is reachable in this Codex session (https://learn.chatgpt.com/docs/plugins; https://learn.chatgpt.com/docs/extend/mcp). Plugin presence is not account authorization, and installing it may expose send-type tools. Testing actual reach and pre-execution tool denials is a v0 blocker for this door. In sitting 01, the capability inventory answers it for this machine: list every tool you can call. Then:
 
-- If no connector tools appear: say so. Mail and calendar will go through proxies in stage 2 (a forwarding rule into a folder, a calendar feed). Record "no connector reach" in the ledger.
-- If they appear: record each one, including any send, reply, delete, or trash tools, and find where their per-tool approval is set (verify: whether the app has per-tool settings for connectors in Codex). Send-type tools must be blocked and the block verified in this Codex session before keeping the connector on. If you can't verify a block, turn that connector off and propose a read-only proxy or defer the source in stage 2.
+- If no connector tools appear: say so. Record "no connector reach in this session" in the ledger. Stage 2 may offer a personal-account proxy; a work-account forwarding rule is not a safe default and needs separate policy authorization.
+- If they appear: record each one, including send, reply, forward, delete, trash, and other mutation tools. Codex documents MCP `enabled_tools`, `disabled_tools`, and per-tool approval modes in its config (https://learn.chatgpt.com/docs/extend/mcp); verify whether those controls apply to this specific plugin/connector in the app. ChatGPT chat-side approval tiers are not a demonstrated Codex per-tool deny. Send-type tools must be blocked and the block verified in this Codex session before keeping the connector on. If you can't verify a block, turn that connector off and propose a read-only proxy or defer the source in stage 2.
 
 ## Rungs to settings
 
@@ -72,7 +72,7 @@ The system of record is `~/xo/work/memory/`. Codex local memories are off by def
 |---|---|
 | 0 memory | The config above; writable root `~/xo/work` only. |
 | 1 drafting | Same as 0. Drafts in `~/xo/work/drafts/`; your human copies and sends. |
-| 2 read one source | Connector route only when send-type tools are blocked and verified: allow that source's read tools, everything else off or ask. Otherwise use a read-only proxy in `~/xo/work`, or defer. One source per yes. |
+| 2 read one source | Connector route only when send-type tools are blocked and verified: keep reads on ask unless a standing scope was separately approved; everything else off or ask. Otherwise use a read-only proxy in `~/xo/work`, or defer. One source per yes. |
 | 3 stage in channel | Only if draft creation can be approved independently of blocked send, reply, forward, and delete tools in this Codex session. Otherwise this rung is unavailable. |
 
 Every rung change edits `ledger.md` and possibly `config.toml`, both protected, and goes through the self-edit gate.
