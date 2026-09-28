@@ -29,15 +29,15 @@ Your harness decides the adapter. You can read it while preparing the privacy st
 4. `stage1/01-home.md` through `stage1/05-door-in-out.md`, one sitting each, in order.
 5. `templates/` as the sittings call for them.
 
-Read a sitting's file when you start that sitting, not all at once. If your human asks to “make a tester report,” use the optional `flows/tester-report.md` flow; it creates a local review draft only, never sends it.
+Read a sitting's file when you start that sitting, not all at once. If your human asks to “make a tester report,” use the optional `flows/tester-report.md` flow; it creates a local review draft only, never sends it. If the flow cannot be reached or the working folders do not exist yet, use the seed's limited in-chat fallback rather than substituting a workspace diagnostic for a report.
 
 ## The first sitting
 
 The seed already told you how to open. In order:
 
 1. Introduce yourself, then guide your human through `training-opt-out.md` (seed step 1) before asking for personal details or creating files. Confirm the setting's state, or ask for an informed decision to continue without confirmation; once the handoff exists, record that decision there. The pasted seed was already sent to the provider; don't imply this can undo that.
-2. Ask to make `~/xo` and save the seed there as your standing instructions (seed step 2). Save it verbatim for now; specializing it comes later (`templates/instructions.md`).
-3. Check the adapter's working layout first (on Codex, confirm writable roots in `/status`; if they differ, stop and ask your human). Then ask to start the running handoff from `templates/handoff.md`: `~/xo/handoffs/YYYY-MM-DD.md` on Claude or `~/xo/work/handoffs/YYYY-MM-DD.md` on Codex. Update it after every approved action.
+2. Ask to make `~/xo` and save the seed there as your standing instructions (seed step 2). Save it verbatim for now; specializing it comes later (`templates/instructions.md`). If an app policy rejects the write even after your human says yes, don't override the policy: follow the adapter's bounded read/write diagnosis first, then offer its human-created folder/file fallback if needed. Verify actual saved files and layout. A chat yes does not replace the app's permission gate.
+3. Check the adapter's working layout first. On Codex, distinguish a narrow setup-time parent-file approval from the protected boundary in a fresh task; `/status` may not show roots in this app, so use the adapter's folder inspection and safe boundary checks instead of assuming it does. Connecting a project folder does not prove auto-load or finish setup. Then ask to start the running handoff from `templates/handoff.md`: `~/xo/handoffs/YYYY-MM-DD.md` on Claude or `~/xo/work/handoffs/YYYY-MM-DD.md` on Codex. Update it after every approved action. If the session stops before the handoff exists, on return identify the last verified step, say there is no handoff yet, and propose this step next. If the saved instructions cannot be found or the working layout cannot be confirmed, stop and resolve that first. Do not invent a completed step.
 4. Ask your questions about how they work and what slips (seed step 3). Keep it to a few. Save what you learn per `stage1/03-memory.md` once that folder exists; until then, keep it in the handoff.
 5. Vendor the kit (below).
 6. Begin `stage1/01-home.md`. If the sitting runs out of time, stop at a clean step; the handoff has your place.
@@ -52,12 +52,12 @@ Do this in the first sitting, with a yes.
 4. Write `~/xo/kit/PIN` with two lines: the full SHA and the seed's URL.
 5. Check: `~/xo/kit/START.md` exists and matches what you fetched from the URL.
 
-After this, read the local copy. Don't fetch the kit again except for the read-only update check in `stage1/05-door-in-out.md`.
+After this, read the local copy. Don't fetch kit instructions again except during an approved update review. At each door in, the read-only update notice in `stage1/05-door-in-out.md` checks the published pin; a newer pin never changes this local copy without review and a yes.
 
 ## Done when
 
 - [ ] `~/xo` exists and holds the seed as your instructions file (name per your adapter).
-- [ ] A running handoff exists in `~/xo/handoffs/` and reflects the last approved action.
+- [ ] A running handoff exists in `~/xo/handoffs/` (Codex: `~/xo/work/handoffs/`) and reflects the last approved action.
 - [ ] Training-off is confirmed, or walked through, or your human declined and the handoff says so.
 - [ ] `~/xo/kit/` holds the kit at the pinned SHA, and `~/xo/kit/PIN` records it.
 - [ ] You've read your adapter, or told your human there isn't one.

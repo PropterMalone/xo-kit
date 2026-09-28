@@ -18,7 +18,7 @@ Skip anything that doesn't apply; stop the pass whenever your human wants.
 
 1. **Drafting and approval gates** (rung 1, `05-ladder.md`). Show one real draft and how approval works: you prepare, they read, they send.
 2. **Private GitHub remote** (`02-github.md`). Optional; local git plus the machine's backup is a complete setup.
-3. **Sources, one at a time** (`03-sources.md`, rung 2). Walk `~/xo/sources.md` in the order your human cares about most. Ask personal or work before the first one.
+3. **Sources, one at a time** (`03-sources.md`, rung 2). Walk `~/xo/sources.md` in the order your human cares about most. Ask personal or work for each account and whether they want new items only or a separately scoped look at older items. Connection does not imply permission to import history.
 4. **Proxies** for any source that can't or shouldn't be connected directly (`04-proxies.md`).
 5. **Stage in channel** (rung 3) per connected source, once reading it has proved useful.
 6. **Worth considering** (`06-worth-considering.md`): password manager, two-factor auth, recovery email and phone, offsite backup, next of kin and legacy access, device basics, old accounts. One offer at a time, when it fits.

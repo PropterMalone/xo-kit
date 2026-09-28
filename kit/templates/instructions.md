@@ -43,8 +43,10 @@ WHERE THINGS ARE
 DOOR IN
 Read memory/MEMORY.md and the newest handoff. Check them against the folder
 and git. Compare live settings and tools to the ledger; flag anything new.
-Check every source in the ledger is alive. Tell me in a few lines where we
-are, then ask what I want to do.
+Check every source in the ledger is alive. Follow kit/flows/update.md once
+per sitting for a read-only published-pin and patch-note check; a notice is
+not approval to install. Tell me in a few lines where we are, then ask what
+I want to do.
 
 DOOR OUT
 Update the handoff (next action first, then what waits on me, then what you

@@ -19,7 +19,7 @@ Before the first connector or proxy, ask: "Is this account personal, or managed 
 
 ## Connecting one source
 
-1. **Propose.** Name the source, the route, what you'll be able to read, what leaves the machine (what you read goes to your provider), and how to undo it. Wait for a yes.
+1. **Propose.** Name the source, the route, what you'll be able to read, what leaves the machine (what you read goes to your provider), and how to undo it. Ask what the human wants first: only new items, a bounded look back, or help finding a specific older item. Do not equate a connected account with permission to search all its history. Wait for a yes to connect; older content needs its own agreed scope before reading.
 2. **Your human signs in.** You can't do sign-ins; tell them exactly where to click.
 3. **List the tools it added.** Re-run the capability inventory from the first sitting. Name every new tool, including send, reply, forward, trash, delete, and label changes.
 4. **Set per-tool permissions.** In v0 your human sends, so:
@@ -27,9 +27,13 @@ Before the first connector or proxy, ask: "Is this account personal, or managed 
    - Draft-creating tools: ask, until rung 3 for this source.
    - Send, reply, forward, trash, delete: block where the harness allows it. If a connector exposes these but a block cannot be verified in the Code session, leave the connector off and offer a read-only proxy; merely asking is not a substitute for the v0 human-sends boundary.
    Check your adapter for the Code session's actual controls. On a personal Claude plan, app-side per-tool permissions are not documented as available (check on the app); do not connect a send-capable source merely because chat-side connector controls exist. If the Code harness cannot block send-type tools, leave the connector off and offer a read-only proxy instead.
-5. **Test one read.** Fetch the newest item's date, not its contents unless your human asks. That date is the first liveness point.
-6. **Ledger entry** (`kit/templates/ledger.md`): source, account (personal or work), route, the per-tool settings, which tools can send, your human's yes verbatim with timestamp, reversal (turn off the connector, revoke the sign-in at the provider's account page), and liveness and expiry (below).
+5. **Test one read.** Fetch the newest item's date, not its contents unless your human asks. That date is the first liveness point. Check the route's documented or observed reach into older items: date range, search, pagination, and any retention or permission limits. If you cannot test that without reading content, say historical reach is unknown; never infer it from a successful newest-item read.
+6. **Ledger entry** (`kit/templates/ledger.md`): source, account (personal or work), route, the per-tool settings, which tools can send, your human's yes verbatim with timestamp, reversal (turn off the connector, revoke the sign-in at the provider's account page), liveness and expiry (below), and historical reach (confirmed range or unknown). Record the human's chosen history scope separately from technical reach.
 7. **Update `~/xo/sources.md`:** status connected, route, date.
+
+## Existing history: a separate read decision
+
+A source can be connected without granting access to all its past content. Before a historical search or import, propose the source, date range or named item, metadata-first method, why it helps, and what content will reach the provider. Ask for a separate yes. Start with dates, counts or titles where possible; have the human select what to open. Paginate until the agreed scope is covered or name the limit. Keep raw mail, chats, and documents out of XO memory unless the human explicitly approves a specific note. Never claim a complete history if the route, permissions, retention, or pagination limit what you saw. Chatbot conversation history has its own scoped discovery flow in `kit/discovery.md`; don't assume a mail or calendar connection exposes old chatbot chats.
 
 ## Liveness and expiry
 
@@ -46,6 +50,7 @@ At every door in, check each source: when did the last item arrive, and is that 
 - [ ] Personal or work was asked and answered for this account.
 - [ ] The source is connected by a route that needed no developer project or OAuth client.
 - [ ] Every tool it added is listed, and send-capable tools are blocked and gate-checked; otherwise the connector stays off and a proxy is used or the source is deferred.
-- [ ] One test read worked.
-- [ ] The ledger entry has settings, send-capable tools, verbatim yes, reversal, cadence, check, and expiry.
+- [ ] One test read worked, and historical reach was checked or marked unknown without an unapproved content read.
+- [ ] Any historical read had a separately approved scope; incomplete coverage was named.
+- [ ] The ledger entry has settings, send-capable tools, verbatim yes, reversal, cadence, check, expiry, and historical reach.
 - [ ] `~/xo/sources.md` shows the source as connected.

@@ -21,7 +21,7 @@ Current rung: <0 | 1 | 2 | 3>
 - Instructions auto-load: <pass | fail, workaround> (checked YYYY-MM-DD)
 - Harness-private memory: <off | ignored> (YYYY-MM-DD)
 - Machine backup: <on/off, covers ~/xo?, sends data to> (YYYY-MM-DD)
-- Kit update check: <every door in | weekly | never>
+- Kit update notice: every door in, read-only; last checked <date/result>, last declined pin <sha or none>
 - Known gaps: <what the harness doesn't enforce>
 
 ## Gate checks

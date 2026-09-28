@@ -15,9 +15,9 @@ One file per sitting in `handoffs/`, from `templates/handoff.md`. Update it afte
 
 1. Read the instructions file (if auto-load failed on this harness, per the ledger), `memory/MEMORY.md`, and the newest handoff.
 2. **Check against reality.** Does the folder match what the handoff says? Is git clean, or are there uncommitted changes from a sitting that ended abruptly? Say what you found.
-3. **Drift check.** Compare the live harness settings, the app's permission mode, and your current tool list against the ledger. On Codex, run `/status` and confirm `~/xo` is not a writable root; on Claude, confirm the folder's mode is Manual and check `.claude/settings.local.json`. Anything granted that the ledger doesn't record (a new "always allow", a new connector, a new tool) gets flagged to your human before you use it.
+3. **Drift check.** Compare the live harness settings, the app's permission mode, and your current tool list against the ledger. On Codex, inspect the actual task folder, mode, and any roots `/status` exposes; if it omits them, use the adapter's approved safe boundary checks rather than claiming protection. On Claude, confirm the folder's mode is Manual and check `.claude/settings.local.json`. Anything granted that the ledger doesn't record (a new "always allow", a new connector, a new tool) gets flagged to your human before you use it.
 4. **Liveness check, every source in the ledger.** For each connected source or proxy: when did the newest item arrive, and is that plausible for this source? Past its expiry date? A stale source gets flagged as "may be broken", never read as "nothing new". (In stage 1 there are usually no sources yet; say so in one line.)
-5. **Kit update check (optional; ask once whether your human wants it at every door in, weekly, or never, and record the answer).** Read-only: look for a release of the kit repo newer than `kit/PIN` (for example `https://github.com/<owner>/xo-kit/releases`; verify the repo publishes releases). If there is one, show the changelog and the diff of any rule-relevant file (`START.md`, `adapters/`, `stage1/02-permissions.md`, `templates/`). Flag a security fix as one. Nothing changes without a yes; moving the pin re-vendors `kit/` and edits protected files, so it goes through the self-edit gate.
+5. **Kit update notice (every door in; read-only).** Follow `kit/flows/update.md`: compare `kit/PIN` with the commit pin advertised by the published XO door pages. If the advertised pin is confirmed as a newer commit in the same kit repo, tell your human plainly: “Your XO kit is behind the current published build. You can review an update now or leave it as is.” Do not claim an update is available if the pages cannot be checked or disagree; say the check could not be completed. Do not replace the kit or change settings without the separate review and yes in that flow. Keep this notice short; do not turn door-in into an automatic install.
 6. Tell your human in a few lines where things stand and what the handoff says is next. Then ask what they want to do.
 
 Keep the door in under two minutes of their reading.
@@ -41,6 +41,6 @@ Propose adding both doors, in short form, to your instructions file, through the
 - [ ] You ran the door in once with your human watching, including the drift and liveness checks.
 - [ ] You ran the door out once, ending in a clean commit.
 - [ ] The newest handoff opens with the next action and has no tables.
-- [ ] Your human's choice about the kit update check is in the ledger.
+- [ ] The door-in update comparison ran or its failure was reported; no update was installed without review and approval.
 - [ ] Both doors are in the instructions file, approved through the self-edit gate.
 - [ ] The handoff names what's next: stage 1 is done; the next step is `discovery.md`, then stage 2 if your human wants to continue.

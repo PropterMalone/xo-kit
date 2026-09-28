@@ -19,7 +19,7 @@ Tell your human plainly what turning it off does *not* cover.
 
 - Last verified: 2026-09-27 (official page read via a search cache, not directly)
 - Setting: "Improve the model for everyone." Settings → Data controls. **On by default. Web only; the desktop app doesn't have it.** Send your human to https://chatgpt.com in a browser for this one step.
-- Covers Codex on the same account.
+- Covers Codex on the same account (verify against current account/app controls). A tester found no separately named "Include environments" control in their app; do not repeatedly direct someone to a control they cannot see or mark it off without checking. Record that control as unverified, explain the uncertainty, and ask whether to continue without it.
 - Doesn't cover: conversations your human rates with thumbs up or down (those can still be used for training); 30-day retention for abuse monitoring.
 - Official: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt
 
