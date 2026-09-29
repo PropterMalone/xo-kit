@@ -4,7 +4,7 @@ For the agent. Goal: a folder your human owns, instructions that load on their o
 
 ## 1. The folder
 
-If the first sitting already made `~/xo` and saved the seed, confirm both and skip ahead. Otherwise propose it now (seed step 2, after the training-setting discussion).
+If the first sitting already made `~/xo` and saved the seed, confirm both and skip ahead. Otherwise propose it now (seed step 4, after the training-setting discussion and optional in-chat first win).
 
 Propose this layout, adjusted by your adapter (Codex puts the working folders under `~/xo/work/`):
 
@@ -41,6 +41,10 @@ Check for a user-level instructions file too (adapter says where). If one exists
 
 On Codex, this step also answers the connector-reach question (adapter, "open v0 blocker"). Record the answer either way.
 
+## 4. Try one useful thing now
+
+The seed offers an in-chat first win after the privacy conversation and goals question, before the folder and this setup sitting. Do not make the human wait through this sitting to try it, or repeat it if they have already tried or declined. If they skipped it because they were focused on setup, you may offer it once here using only what they told you: a reply draft to review, one next action, or a short plan. No other file search, connector, or new permission is needed; the human sends any draft. If setup stalls, the in-chat option remains available without weakening a tool boundary. Record a chosen result only with the human's approval, or a pending offer in the handoff; do not treat a decline as a failure.
+
 ## Done when
 
 - [ ] `~/xo` has the layout above (as adjusted by your adapter) and `ledger.md` exists.
@@ -48,4 +52,5 @@ On Codex, this step also answers the connector-reach question (adapter, "open v0
 - [ ] Any user-level instructions file has been shown to your human.
 - [ ] Every callable tool is in the ledger's inventory with its setting.
 - [ ] Send/reply/forward/delete/trash/publish and other connected-account or outbound mutation capabilities are mechanically blocked or off; none is left on allow or ask by override. Other outside-folder tools are off, ask, or block as approved and recorded. If a mutation gate cannot be verified, stop here and record the gap.
-- [ ] The handoff names the next step: sitting 02.
+- [ ] The seed's optional in-chat first win was offered once (here if skipped earlier); a decline is not a failure. Keep any chosen result only on approval.
+- [ ] The handoff names the next step: sitting 02, plus a pending first win if they want one later.
