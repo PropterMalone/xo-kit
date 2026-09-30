@@ -1,6 +1,6 @@
 # Stage 2: private GitHub remote
 
-For the agent. An optional rung: a private remote for `~/xo`. It gives off-machine backup, a base for phone memory access or cloud harnesses later, and GitHub issues as the report-back channel. Local git plus the machine's own backup is a complete setup without it. You run git; your human never types it. Phone read/capture is a separate later option, not part of this release; do not promise it works in the current kit.
+For the agent. An optional rung: a private remote for `~/xo`. It gives off-machine backup, a base for cloud harnesses later, and GitHub issues as the report-back channel. Local git plus the machine's own backup is a complete setup without it. You run git; your human never types it. Phone read/capture is a separate later option, not part of this release; do not promise it works in the current kit.
 
 ## Before offering, say plainly
 

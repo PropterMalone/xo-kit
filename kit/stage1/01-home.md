@@ -39,7 +39,7 @@ Check for a user-level instructions file too (adapter says where). If one exists
 4. Show your human the short version: which tools could act outside the folder. Propose, one yes each or as one batch they can see in full, turning off or setting to "ask" anything they haven't chosen. Send, reply, forward, delete, trash, publish, and other connected-account or outbound mutation tools must be blocked with an enforceable setting or their capability/connector left off; an "ask" setting or chat override is not enough for stage 1. Ordinary approved edits inside the work folder are not this category. If the human wants a different boundary, record the request but do not mark sitting 01 complete or enable the capability; revisit it through the later rung/self-edit process only after a verified safe path exists.
 5. Record each yes verbatim, with a timestamp, per `templates/ledger.md`.
 
-On Codex, this step also answers the connector-reach question (adapter, "open v0 blocker"). Record the answer either way.
+On Codex, this inventory answers only which connector tools are exposed in this session, not whether a selected account is reachable. Record account reach as unverified until a separately approved, gated account-specific check succeeds (`adapters/codex-app.md`, connector blocker).
 
 ## 4. Try one useful thing now
 

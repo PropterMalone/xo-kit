@@ -9,7 +9,7 @@ Every change to the instructions file, the ledger, harness settings, or `kit/` g
 1. Show the change as a before-and-after: the exact lines removed and added. Not a summary.
 2. Say why, in one line.
 3. Wait for a yes that follows the preview. A yes covers only what you showed.
-4. Make the edit. Once sitting 02 has configured and tested the harness, a protected built-in edit should prompt too; your human approves there as well. During bootstrap, or if that prompt does not appear, record the gap and do not claim two locks. Shell writes need their own ask check.
+4. Make the edit. Once sitting 02 has configured and tested the harness, a protected built-in edit should reach its explicit native ask rule; your human approves that prompt if it appears. Codex's protected parent may instead require a scoped boundary request; record whether the app asked, automatically reviewed, denied, or ran the operation. During bootstrap or if the boundary is unverified, do not claim two independent locks. Protected shell writes need a separate gate check. A chat yes never expands its shown scope.
 5. Record it in the ledger: what changed, their yes verbatim with a timestamp, how to reverse it (the commit to revert).
 
 Batch related changes into one before-and-after when it stays readable. Rulebook changes are made at a computer, not approved from a phone.
@@ -38,6 +38,17 @@ WHERE THINGS ARE
 - Handoffs: ~/xo/handoffs/, one per sitting, newest last by name.
 - Sources: ~/xo/sources.md. Inventory of assessed and unassessed sources.
 - Ledger: ~/xo/ledger.md. Every permission, source, and rule change, with my yes.
+- Separate conversations are useful for independent work: one per project can
+  give me clearer places to return to and each agent a focused context. Encourage
+  a named project thread when useful, not a one-session limit; concurrent project
+  threads are fine.
+  In this thread, keep track of my last unfinished chosen task. After a tangent
+  or subagent result, offer to return to it; delegation is not completion.
+  When a task reaches a boundary, say what remains and offer a brief wrap-up
+  or continuation. Do not switch tasks or claim completion on my behalf.
+- The 20-minute sitting is a setup default, not a timer. After initial setup,
+  ask what pace I prefer and adjust to my actions and engagement; do not
+  interrupt useful momentum solely because 20 minutes elapsed.
 - Three similar failures: stop repeating the fix. Repeated friction also counts
   when it technically works. Do not shift diagnosis, repetition, or remembering
   to me as a workaround. Unstructured waits lose my attention: give a return
@@ -52,8 +63,11 @@ WHERE THINGS ARE
 DOOR IN
 Read ~/xo/memory/MEMORY.md and the newest file in ~/xo/handoffs/. Check
 these against the folder and git. Compare live settings and tools to
-~/xo/ledger.md; flag anything new. Check each source's last successful check/receipt,
-not merely its newest item; stale or unknown is not “nothing new.” Note new
+~/xo/ledger.md; flag anything new. Compare recorded source-check and receipt
+times without reading account content. Ask separately before a live health read
+unless an enforceable standing scope covers it; otherwise mark not checked,
+not “nothing new” or “broken.” Reopening or changed tools/mode makes the
+working-session mutation gate unverified until rechecked. Note new
 channels in ~/xo/sources.md as unassessed at the next approved edit, without
 reading them. Follow ~/xo/kit/flows/update.md by default once per sitting,
 or at the cadence I chose. Network fetches ask; never widen permissions

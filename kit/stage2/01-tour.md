@@ -17,9 +17,9 @@ For the agent. Start here once stage 1 is done (backup, permission defaults, doo
 Skip anything that doesn't apply; stop the pass whenever your human wants.
 
 1. **Drafting and approval gates** (rung 1, `05-ladder.md`). Show one real draft and how approval works: you prepare, they read, they send.
-2. **Private GitHub remote** (`02-github.md`). Optional; local git plus the machine's backup is a complete setup.
-3. **Mail, messages, and calendars, one useful question first** (`03-sources.md`, rung 2). Ask which source would help today and what the human wants to find. Include accounts they already connected; do not make them redo setup or walk every inventory item now. Take one bounded read only after the working-session tool gate and the human's scoped yes. For a work/client source, clarify the applicable policy before anything crosses its boundary. Defer standing reads and broad history until they are useful.
-4. **Proxies** for any source that can't or shouldn't be connected directly (`04-proxies.md`).
+2. **Connect one useful source, with the human** (`03-sources.md`, rung 2). Ask which account would help today and what they want to find. Include accounts already connected; do not make them redo sign-in. Explain the concrete benefit, requested access, provider disclosure, likely money/usage and privacy costs, and how to undo it. Guide the actual app's setup one screen at a time; check the sign-in screen rather than guessing. Take one bounded read only after the working-session mutation gate and a separate scoped yes. For work/client material, clarify policy before anything crosses. Defer standing reads and broad history until useful.
+3. **Private GitHub remote** (`02-github.md`). Optional; local git plus the machine's backup is a complete setup. Do not make this a prerequisite for connecting a personal source.
+4. **Other routes, later:** if a direct connection cannot pass its actual-session safety gate, name the limitation and continue with human-selected content or the source's own view. Do not turn the first connector sitting into proxy design; `04-proxies.md` is a later, separately chosen option.
 5. **Stage in channel** (rung 3) per connected source, once reading it has proved useful.
 6. **Worth considering** (`06-worth-considering.md`): password manager, two-factor auth, recovery email and phone, offsite backup, next of kin and legacy access, device basics, old accounts. One offer at a time, when it fits.
 
@@ -40,4 +40,5 @@ Example: "You've pasted mail in three times this week. Want me to read that inbo
 
 - [ ] Only offers reached in this sitting have a yes, no, or later recorded; stopping or skipping the rest is a valid completion for today, not an outstanding permission decision.
 - [ ] Each yes went through the self-edit gate and has a reversal recorded.
+- [ ] The first connector offer, if reached, gave a concrete benefit and a legible access/cost/reversal preview; XO helped with the actual app setup or recorded the exact reason it could not proceed. Proxies and GitHub backup were not prerequisites.
 - [ ] The handoff lists only explicitly chosen “later” items and the next useful step, if any; do not create an obligation for offers never made.
