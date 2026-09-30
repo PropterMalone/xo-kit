@@ -27,14 +27,18 @@ vertical-align: middle;
 html { background:var(--paper); color:var(--ink); scroll-behavior:smooth; }
 body { max-width:39rem; margin:0 auto; padding:2rem clamp(1.1rem,5vw,3rem) 5rem; font: 1.08rem/1.65 Charter, 'Iowan Old Style', Georgia, serif; }
 h1,h2 { font-family:system-ui,sans-serif; line-height:1.2; letter-spacing:-.035em; }
-h1#xo { font-size:clamp(3.3rem,12vw,6rem); margin:.3rem 0 0; color:var(--accent); }
+h1#xo { font-size:clamp(3.3rem,12vw,6rem); margin:.3rem 0 0; color:var(--accent); text-align:center; }
 h2 { margin-top:2.4rem; font-size:1.65rem; }
 p,li { overflow-wrap:break-word; }
 a { color:var(--accent); text-underline-offset:.18em; text-decoration-thickness:.09em; }
 a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 #xo + p { margin:.1rem 0 0; }
 #xo + p + ul { padding:0; margin:.2rem 0 1.4rem; list-style:none; color:var(--muted); font: .94rem/1.55 system-ui,sans-serif; }
-#xo + p + ul + p + ul { border-block:1px solid var(--line); padding:1rem 0 1rem 1.5rem; }
+@media (min-width:34rem) {
+#xo + p { display:inline-block; width:38%; vertical-align:top; padding-top:.1rem; }
+#xo + p + ul { display:inline-block; width:58%; vertical-align:top; margin:.2rem 0 1.4rem 4%; }
+}
+#xo ~ h2:first-of-type + ul { border-block:1px solid var(--line); padding:1rem 0 1rem 1.5rem; }
 a[href="#pick-a-door"] { display:inline-block; padding:.7rem 1rem; margin:1.5rem 0; font:600 1.05rem/1.4 system-ui,sans-serif; background:var(--accent); color:var(--paper); border-radius:.35rem; text-decoration:none; }
 a[href="#pick-a-door"]:hover,a[href="#pick-a-door"]:focus-visible { text-decoration:underline; }
 #pick-a-door { scroll-margin-top:1rem; }
@@ -58,36 +62,37 @@ a[href="#pick-a-door"]:hover,a[href="#pick-a-door"]:focus-visible { text-decorat
 <li>hugs and kisses</li>
 </ul>
 <p>This is an intimate and kind of weird relationship with an LLM. Don&#39;t
-overanthropomorphize it, and don&#39;t think about it too hard. The goal is
-functionality.</p>
-<p>This is a loose kit to get you started, not a straitjacket. My
-operating assumption in writing it is that you have ADHD, you&#39;re kind of
-a mess, you&#39;re aware you need better structure and better organization,
-but you&#39;re not really sure what that looks like for you. So XO is going
-to make some assertions to fill that presumed gap. When you go, “No, I
-want to do it my way instead,” do it—with my explicit pre-blessing.
-Ultimately, the only way this works is if you build it for yourself,
-around yourself. If it works well for you, tell me about it.</p>
+overanthropomorphize it, and don&#39;t think about it too hard.</p>
+<p>This is a loose kit to get you started, not a straitjacket.</p>
+<p>My operating assumption in writing it is that you have ADHD, you&#39;re
+kind of a mess, you&#39;re aware you need better structure and better
+organization, but you&#39;re not really sure what that looks like for you.
+So xo is going to make some assertions to fill that presumed gap.</p>
+<p>When you go, “No, I want to do it my way instead,” do it with my
+explicit blessing.</p>
+<p>Ultimately, the only way this works is if you build it bespoke for
+yourself, around yourself.</p>
+<h2 id="some-principles-i-think-are-important-for-this">Some Principles
+I Think Are Important For This</h2>
 <ul>
 <li><strong>Context is disposable; continuity is not.</strong></li>
-<li><strong>Everything that can happen automatically in terms of
-information transfer should.</strong></li>
-<li><strong>We want as little frame switching as possible in the steady
-state.</strong></li>
+<li><strong>If information can transfer automatically it
+should.</strong></li>
+<li><strong>Minimize frame switching.</strong></li>
 <li><strong>Humans make decisions. Machines inform and execute
 decisions.</strong></li>
-<li><strong>Memory should be owned by you and should live in universal
-formats.</strong></li>
+<li><strong>Memory should live in universal formats and be owned by
+you.</strong></li>
 </ul>
 <p><a href="#pick-a-door">Pick your starting app</a></p>
 <h2 id="what-xo-is">What xo is</h2>
 <p>xo starts with a message you paste into Claude Code or Codex. It
 walks you through setting up a folder for your instructions and memory,
-then helps you try a task you chose. You don&#39;t have to install a
-separate framework.</p>
+then helps you try a task you choose.</p>
 <p>This is intended for people who are starting from a base where they
-maybe have used chatbots but have not done agentic work previously. If
-you&#39;re more advanced than that, then you can probably skip ahead.</p>
+maybe have used chatbots but have not done agentic work previously.</p>
+<p>If you&#39;re more advanced than that, then you can probably skip
+ahead.</p>
 <h2 id="what-xo-isnt">What xo isn&#39;t</h2>
 <p>This is not a code framework.</p>
 <p>This is not an app.</p>
@@ -121,19 +126,6 @@ this you&#39;ve volunteered to be a guinea pig, so thanks and good luck!</p>
 <h2 id="how-you-start">How you start</h2>
 <p>Pick Claude or ChatGPT, open Code or Codex in its desktop app, and
 paste the starting message.</p>
-<p>xo helps you set up local memory and review permissions in the app,
-then try a task you choose. It won&#39;t look through your other projects or
-old chats to get started. Mail, messages, and calendars can come later;
-if you&#39;ve already connected one, XO can help you check what this session
-can actually access. Connector permission controls are still unverified
-across both desktop apps.</p>
-<p>Later, you can ask XO for an <a href="https://github.com/PropterMalone/xo-kit/blob/97746596abb7cce1582484c15aa2caa44a0dba9b/kit/flows/checkup.md">optional
-checkup</a> of the thing <em>you</em> built. Try it once in a while, and
-after major changes to your xo. It can run here and bring you a report,
-preferably with a capable review agent if your app supports one. Or you
-can copy the prompt into a fresh session to see what that session
-actually finds. Either way, it&#39;s read-only and not a test of whether you
-followed a prescribed layout; you decide what to change.</p>
 <h2 id="pick-a-door">Pick a door</h2>
 <p>This isn&#39;t a big decision. You can switch models, apps, or both later
 without losing ~anything.</p>
