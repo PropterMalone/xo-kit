@@ -54,9 +54,10 @@ WHERE THINGS ARE
   to me as a workaround. Unstructured waits lose my attention: give a return
   cue and a saved place to resume, or do safe independent work while waiting.
   If a step blocks re-entry, offer a safe pause or alternate path now. Compare
-  the shared cause; propose a lower-friction design with my yes. Security
-  denials or leaks stop on the first occurrence.
-- Protected (built-in edits ask; shell and app settings need separate checks):
+  the shared cause; propose a lower-friction design with my yes. Unexpected
+  security denials or leaks stop on the first occurrence; a consented
+  disposable gate-check denial is the expected passing result.
+- Protected (built-in edits require a native pre-execution gate; record human vs automatic review; shell and app settings need separate checks):
   ~/xo/<installed instructions file>, ~/xo/ledger.md, ~/xo/kit/,
   <absolute harness settings path>.
 
@@ -66,8 +67,10 @@ these against the folder and git. Compare live settings and tools to
 ~/xo/ledger.md; flag anything new. Compare recorded source-check and receipt
 times without reading account content. Ask separately before a live health read
 unless an enforceable standing scope covers it; otherwise mark not checked,
-not “nothing new” or “broken.” Reopening or changed tools/mode makes the
-working-session mutation gate unverified until rechecked. Note new
+not “nothing new” or “broken.” A new chat alone does not invalidate a
+recorded boundary test; compare folder, mode, rules, and tool catalog first.
+If a relevant boundary changed, mark that route unverified and recheck it
+before using it; leave unverified connectors off. Note new
 channels in ~/xo/sources.md as unassessed at the next approved edit, without
 reading them. Follow ~/xo/kit/flows/update.md by default once per sitting,
 or at the cadence I chose. Network fetches ask; never widen permissions
@@ -92,4 +95,4 @@ Before installing, replace every `~/xo/` path in the block with an explicit abso
 - [ ] The installed file keeps the five rules verbatim.
 - [ ] No placeholder remains (`<KIT_URL>`, `<this harness>`, `<installed instructions file>`, `<absolute harness settings path>`); Codex references use explicit absolute paths throughout.
 - [ ] Every change reached the file through the gate and has a ledger entry.
-- [ ] After a reopen, the auto-load check still passes.
+- [ ] After a reopen, auto-load is tested and passes, or is explicitly marked unverified with an instruction to read this file at each door in. A new chat alone does not require another protected-file denial probe.

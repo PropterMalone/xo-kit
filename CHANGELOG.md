@@ -2,10 +2,17 @@
 
 This repo is the source of patch notes for every XO update from here on. **Unreleased** describes local source work, not an installed or published build. On publication, move reviewed entries under a dated heading and put the new full public kit SHA, previous public SHA, published URL, and any old-pin → new-pin mapping in the GitHub Release notes (the SHA cannot be embedded in its own commit without changing it). Describe what changes for existing installs and what still needs app testing. Mark rule-relevant changes **[rules]** and security fixes **[security]**; do not label an untested safeguard a verified fix. Publish the same notes with the clean public export and GitHub Release so both old-release and new-door-pin updaters can read them. The source-only file cannot notify anyone by itself.
 
-## 2026-09-30 — partial-install recovery (public kit SHA 18ad7f37d22647687951a87fd8ae3ffe649f1261; previous public kit a7f2be57ed5a85a0e9dc31ce9d98c0458b5969ad)
+## 2026-10-02 — first-run friction reduction (public kit SHA and Pages SHA in Release notes; previous public kit 18ad7f37d22647687951a87fd8ae3ffe649f1261)
+
+- **[rules]** Reuse a dated, successful disposable parent-write gate across Codex chats while the folder, mode, relevant rules and route are unchanged. A new chat alone does not require another probe or reopen. Distinguish human from automatic denial, and retest only after a relevant boundary change, inconclusive result or suspected bypass with fresh test consent.
+- **[rules]** Keep stage 1 local-first: inventory exposed outbound/account mutation routes, leave unchosen connectors off, and defer exhaustive housekeeping-tool audits and connector-specific runtime tests until a source is selected. Catalog absence establishes absence in that session, not universal denial or account disconnection. A route that cannot be safely gated stays unavailable; local memory/drafting can continue when the protected-file boundary passes.
+- **[rules]** Batch routine observations into a reviewed checkpoint rather than asking to log every check. Record optional autoload and backup checks honestly as unverified/deferred with explicit-read and future-backup follow-up; neither forces another chat or repeated prompt.
+- **Verification limits:** Two read-only, ephemeral Windows Codex CLI interpretation simulations using the revised kit excerpts chose the intended path without another probe, fresh chat, expanded deny list or backup prompt. The first attempt could not read files under its execution policy and did not count. No live ChatGPT desktop permission gate or clean-account setup was run. The owner's clean Codex walkthrough remains a go-live gate. Existing installs only change after human review and approval; no auto-install or connector access change.
+
+## 2026-09-30 — partial-install recovery (public kit SHA 18ad7f37d22647687951a87fd8ae3ffe649f1261; Pages 640c6b183e890bd55f54a0d4715dddb94ca0f535; Release xo-partial-install-2026-09-30; previous public kit a7f2be57ed5a85a0e9dc31ce9d98c0458b5969ad)
 
 - **[rules] [security]** If a pinned kit file cannot be read during first setup, pause file and permission setup instead of guessing an adapter or retrying a denied request across chats. The seed and START now offer chat-only help, a short continuation note and a complete pinned-archive recovery path. A pasted START or matching archive name alone does not verify identity. This is a source safeguard; the reported Windows/Codex permission loop has not been diagnosed or reproduced in the desktop app.
-- **Existing installs:** a new door seed applies to new starts; an already saved seed and vendored kit change only after the human reviews and approves an update. No automatic installation, app gate verification or connector behavior change. See this release's GitHub Release for its full kit and Pages SHAs.
+- **Existing installs:** a new door seed applies to new starts; an already saved seed and vendored kit change only after the human reviews and approves an update. No automatic installation, app gate verification or connector behavior change. Full old/new pins and verification limits are in `docs/release-note-partial-install-2026-09-30.txt` and the public Release.
 
 ## 2026-09-30 — door-in mode consistency (public kit SHA a7f2be57ed5a85a0e9dc31ce9d98c0458b5969ad; Pages 040df6dc9a4d7fc1621ea3979d2b49aaa6007b01; Release xo-door-in-mode-2026-09-30; previous public SHA e0276668b33ce1b3e3aac4e6d41a5b61415493fb)
 
@@ -28,7 +35,7 @@ This release followed the first-win/checkup kit `97746596abb7cce1582484c15aa2caa
 - **[rules]** “Check my connections” opens a one-source, one-use path for mail, messages, and calendars, including accounts already connected. A bounded personal read needs one scoped yes and a verified working-session mutation boundary; work/client material follows its own authority. The detailed gate remains available when needed, rather than being a questionnaire for every tester. No connector gate has been verified by a live tester in both apps; do not claim an unverified send deny works.
 - The welcome page uses the author's own ADHD starting assumption and explicit pre-blessing to build it your way, then asks what works; the doors and public README explain the starting action without calling it a separate harness installation. Prior blanket “leave connectors off” outreach language is retired for new messages; the app-session gate is still required for XO-driven connector reads.
 
-## 2026-09-28 — connector guidance and safety revision (public SHA cfbd761ec4199c7cabfa53dea64e659d54375c18; Pages 9432e79; Release xo-connectors-2026-09-28; previous public SHA e51f358cb8c85f4a47e9aa4e7987775ce84adb44, ancestry verified)
+## 2026-09-28 — connector guidance and safety revision (public kit SHA cfbd761ec4199c7cabfa53dea64e659d54375c18; Pages 9432e79; Release xo-connectors-2026-09-28; previous public SHA e51f358cb8c85f4a47e9aa4e7987775ce84adb44, ancestry verified)
 
 The connector guidance is exploratory text, not a tested integration: no connector read/send gate, historical reach, or clean-account install has been verified. Keep mail and calendar connectors off during first setup. An update notice is not installation approval.
 
@@ -42,9 +49,15 @@ The connector guidance is exploratory text, not a tested integration: no connect
 
 This build remains untried as a full clean-account install. Connector reach and send-tool controls are deferred; do not enable mail or calendar during first setup. An update notice is not installation approval.
 
-- **[rules]** The first sitting preserves a handoff after approved actions, clarifies the folder-picker choice, and recovers an interrupted request without guessing it succeeded. The tester-report fallback works before files exist. The kit uses exact pinned URLs for its own instructions and treats other sources as data.
-- **[rules]** A bounded permission diagnosis distinguishes a denied fetch, an automatically denied outside-root write, and a human-approved write that still fails. It does not override an enforced policy. A fresh task checks instruction loading and protected-parent behavior separately.
+- **[rules]** Codex bootstrap separates setup-time parent access from fresh-task protection. It checks the actual selected folder and uses safe work/parent boundary probes when `/status` does not expose writable roots; it does not assume one-time grants exist. A project-name field is not the existing-folder picker.
+- **[rules]** Claude reopen checks Manual mode again; Windows command guidance distinguishes PowerShell from Bash and tool visibility from connected-source reach.
+- **[rules]** ChatGPT privacy guidance treats a missing "Include environments" control as unverified and asks for an informed choice instead of claiming it was changed.
+- **[rules]** Future installed kits check published door-page pins at door-in, review patch notes and rule diffs, and move pins only after a separate yes. The first public build used an optional GitHub Releases check instead; it cannot be assumed to discover this door-page signal.
+- This revision remains untried as a complete clean install. No live tester had received these changes when these notes were written.
+- Public door copy distinguishes training opt-out from retention and defers personal-source connectors until their send-tool boundaries are tested.
 
 ## First public test build — 7395c656b913de0db0ec633a58b745d1842b1145 (2026-09-27)
 
-This was an exploratory Windows-first release, not a verified general install. Its raw kit and four Pages files were published from a clean-history export, separate from the internal source. No connector, app-install or permission gate was claimed as verified.
+- Initial exploratory kit: START, Claude desktop and Codex app adapters, stage 1, discovery, stage 2, flows, and templates. Not a clean-account certification.
+- Human-reviewed drafts and a tester-report flow; connector send-type tools remain unavailable until their block is proved in the actual session.
+- The installed update check in this build consults GitHub Releases at a human-chosen frequency. Publishing only a newer door-page pin will not reliably notify this build's users.

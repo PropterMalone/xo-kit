@@ -1,6 +1,6 @@
 # Template: permissions ledger
 
-For the agent. Copy the block below to `~/xo/ledger.md` in sitting 01. It's a protected rule file: every edit requires the before-and-after chat yes in `templates/instructions.md`. During initial setup, the harness ask rule may not yet be installed; after sitting 02, test that built-in edits and shell writes both prompt. If either does not, record the gap rather than promising a second lock.
+For the agent. Copy the block below to `~/xo/ledger.md` in sitting 01. It's a protected rule file: every edit requires the before-and-after chat yes in `templates/instructions.md`. During initial setup, the harness boundary may not yet be installed; after sitting 02, verify both protected built-in and shell write routes reach a native pre-execution gate under the active mode. Record whether the reviewer was human or automatic and whether either route executed. If either lacks a gate, record the gap rather than promising a second lock. Do not repeat passing disposable tests merely because a chat reopened.
 
 The ledger is how your human and any future agent check what's been granted against what the harness actually allows. If they disagree, the harness is what's true: flag it.
 
@@ -23,17 +23,19 @@ Base rung: <0 | 1> (source-specific rung 2/3 grants live in entries below; do no
 - Instructions auto-load after real reopen: <pass | fail | unverified; evidence and explicit-read workaround> (checked YYYY-MM-DD)
 - Fresh-task boundary: <work-file write pass/fail/unverified; protected-parent pre-execution prompt/deny pass/fail/unverified; setup-time approval not counted> (checked YYYY-MM-DD)
 - Harness-private memory: <off | ignored | unverified> (YYYY-MM-DD)
-- Machine backup: <on/off, covers ~/xo?, sends data to> (YYYY-MM-DD)
+- Machine backup: <on | off | unknown/deferred; covers ~/xo?; sends data to if known; revisit when chosen> (YYYY-MM-DD)
 - Kit update check: <every door in | human-chosen cadence and their quoted approval>; last attempted <date/result: checked | not checked | inconclusive>, last declined pin <sha or none>
 - Known gaps: <what the harness doesn't enforce>
 
 ## Gate checks
-- YYYY-MM-DD protected-file built-in edit: <pass | fail | unverified; real pre-execution prompt and human deny? executed? ledger unchanged?>
-- YYYY-MM-DD protected-file shell write: <pass | fail | unverified; real pre-execution prompt and human deny? executed? ledger unchanged?>
-- YYYY-MM-DD outside fetch: <pass | fail | unverified; pre-execution prompt and human deny? fetched?>
+- YYYY-MM-DD protected-file built-in edit: <pass | fail | unverified; tested disposable path; native reviewer human/classifier; denied before execution? probe absent? live folder/mode/settings?>
+- YYYY-MM-DD protected-file shell write: <pass | fail | unverified; tested disposable path; native reviewer human/classifier; denied before execution? probe absent? live folder/mode/settings?>
+- YYYY-MM-DD outside fetch: <observed human denial | automatic denial | automatic allowance | unverified; exact URL scope and reviewer; fetched? any private data in URL?>
 
 ## Capability inventory (YYYY-MM-DD)
-- <exact tool name>: <what it does>. Acts outside ~/xo: <no | send | delete | ...>. Setting: <allow | ask | block | off>.
+- Ordinary local work tools: <groups and available routes; complete exact names when scope expands>.
+- Connected-account/outbound mutation tool <exact name>: <what it does>. Acts outside ~/xo: <send | delete | publish | account/settings change | ...>. Setting: <allow | ask | block with evidence | off with evidence | unverified>. Selected account reach: <observed | unverified>.
+- Off or deferred capabilities: <connector or app name; off-state evidence, or reason and next gate>. Catalog absence in this session is not a runtime-denial test.
 
 ## Entries
 
@@ -53,5 +55,5 @@ Base rung: <0 | 1> (source-specific rung 2/3 grants live in entries below; do no
 ## Done when
 
 - [ ] Every entry has the six base fields (What, Settings, Approval, Reverse, Expiry, Status); source, connector, and proxy entries also fill their applicable conditional fields, using `unknown` or `not applicable` honestly.
-- [ ] The inventory lists every tool you can call.
+- [ ] During local-only setup, the inventory groups ordinary work tools and lists exact names/settings for exposed connected-account and outbound mutation routes. Complete the full exact-name inventory when a connection or higher rung is proposed; absence from one session's catalog is not a universal runtime-denial test.
 - [ ] "Harness facts" and "Gate checks" reflect the latest checks.

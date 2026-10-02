@@ -1,6 +1,6 @@
 # Template: handoff
 
-For the agent. Copy the block below to `handoffs/YYYY-MM-DD.md` at the start of a sitting. Update it after every approved action. At the door out, date it and fill every section. Phone-first: the next action on line one, short lines, no tables.
+For the agent. Copy the block below to `handoffs/YYYY-MM-DD.md` at the start of a sitting. Update it before a planned reopen or interruption, after consequential changes, and at door out. Batch routine checks into a single reviewed checkpoint; record approved actions accurately without seeking a separate yes to log each observation. At the door out, date it and fill every section. Phone-first: the next action on line one, short lines, no tables.
 
 ```markdown
 Next: <one plain sentence: the very next action>

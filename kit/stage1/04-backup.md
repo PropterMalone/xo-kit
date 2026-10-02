@@ -26,7 +26,7 @@ Git lives in the same folder; a lost laptop takes both. Check the machine's back
 - Windows: Windows Backup or File History, or OneDrive folder backup (verify: which one this Windows version uses and where its status shows; ask your human to open Settings → Accounts → Windows backup).
 - Linux: ask what they use.
 
-Report: on or off, and whether `~/xo` is covered. If it's off, recommend turning it on and walk them through it; a yes or no goes in the ledger. Say plainly where a cloud backup sends the folder (Apple, Microsoft, and so on).
+Report: on, off, or unknown, and whether `~/xo` is covered. If it's off or unknown, offer to help turn it on or check coverage once; if your human defers, record unknown/not backed up and a future reminder, then continue local setup without asking again this sitting. A yes, no, or later goes in the ledger. Say plainly where a cloud backup sends the folder (Apple, Microsoft, and so on).
 
 ## 3. Secret scan
 
@@ -63,6 +63,6 @@ In `memory/MEMORY.md`, point to this canonical procedure so every door out uses 
 
 - [ ] `~/xo` is a git repository with a repo-only identity and the `.gitignore` above.
 - [ ] The secret scan ran clean and the first commit exists.
-- [ ] The machine's backup is checked, and the ledger records on or off, what it covers, and where it sends data.
+- [ ] The machine's backup status and coverage are checked or honestly marked unknown/deferred in the ledger, with the data destination if known; a deferral does not silently become a verified backup or repeatedly interrupt setup.
 - [ ] `memory/MEMORY.md` points to this page's scan procedure; no second scan command is stored in memory.
 - [ ] The handoff names the next step: sitting 05.
