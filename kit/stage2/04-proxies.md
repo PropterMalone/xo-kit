@@ -2,6 +2,35 @@
 
 For the agent. A proxy helps make an obligation visible to your human's one stream when a direct connection is impossible (a locked-down work tool, an app without an API) or inadvisable (a full connection would see far more than needed). Its success is useful human visibility within the permitted boundary, not maximal model access. Name separately what the human sees, what XO/model provider receives, and what remains in the source; a pointer is not a content read. A proxy that XO actually reads is rung 2 for that stream (`05-ladder.md`) and needs a separate yes; work-native reminders with nothing crossing remain a valid limited route, not a claim that XO can read the source or automatically display its actual items in a personal view.
 
+## Optional: compare ways to surface an obligation
+
+Offer relevant choices in plain words when the human asks for alternatives or returns later to a blocked source. Do not add this menu to the first connection sitting or walk through every option. These are possibilities to investigate, not tested integrations. Exploring grants no access; “no” or “later” ends the offer.
+
+For all routes, establish applicable employer/client/project authority before anything crosses; unknown authority means nothing leaves. Get source-specific human approval and a separate scoped read yes with a verified tool gate before XO reads through a route. Clear pasted selections before sharing too: they reach the model provider. Revocation does not erase past provider processing, copies or XO notes.
+
+- **Source-native reminders — keep the item in its app.**
+  - **View:** the human opens the reminder or pinned view; XO receives no item content, at most an approved check-due cue.
+  - **Permission:** use allowed source features; an outside cue needs clearance too.
+  - **Upkeep/reversal:** choose a check cadence and record human confirmation; XO cannot infer freshness. Little integration setup, but app switches and attention still cost effort. The authorized owner removes the reminder; XO retires its cue.
+- **Fixed signal — “check the source app.”**
+  - **View:** the human gets an alert and opens the original; XO sees only the approved signal if included as a recipient. Occurrence and timing disclose activity.
+  - **Permission:** authorize the exact fixed output, recipients and route; exclude subjects, senders, snippets, links and summaries.
+  - **Upkeep/reversal:** an authorized owner sets up and maintains delivery. Use an allowed heartbeat or source-side check; silence otherwise means unknown. Disable delivery at the source; existing alerts may remain.
+- **Coarse availability — busy blocks, not event details.**
+  - **View:** the human might see occupied times alongside their calendar; XO sees nothing unless a separate blocks-only read is approved. Timing reveals patterns, not the task behind them.
+  - **Permission:** investigate actual recipient visibility; a secret calendar URL or Private event does not prove busy-only sharing. This is not a verified vendor walkthrough.
+  - **Upkeep/reversal:** setup and sync vary. Test allowed fields and freshness with a cleared non-sensitive event; revoke sharing/subscription access and check destination copies separately.
+- **Human-selected items — share just what helps now.**
+  - **View:** the human chooses an excerpt, file or screenshot; XO/provider sees the selection, including incidental details. Unselected content stays in the source.
+  - **Permission:** clear content and destination before sharing; selection alone grants no governed-data permission or standing access.
+  - **Upkeep/reversal:** little setup, repeated human effort. It is an as-of snapshot; omissions and later changes are unknown. Stop future sharing; review copies/notes separately. If the habit stalls, offer another permitted route or pause.
+- **Direct connection — read an approved source scope.**
+  - **View:** the human gets an answer from selected items; XO/provider receives what the route actually exposes and XO reads, not automatically the human's whole view.
+  - **Permission:** use `03-sources.md` for access, costs, separate connect/read approvals and the working-session mutation gate.
+  - **Upkeep/reversal:** check current app/account support and setup effort. Sign-in proves neither safe reads, continuous monitoring nor complete history. Authorized checks establish freshness; disconnect and revoke the grant, then review copies/notes separately.
+
+Recommend the richest permitted, useful route the human wants, weighing unnecessary disclosure, active effort, waiting and recurring interruptions. If they choose a proxy, use the setup and liveness checks below; a direct choice returns to `03-sources.md`.
+
 ## Choose the closest allowable view
 
 For **personal** sources, after the human approves a route, favor automatic delivery over a habit they must remember. One option is a dedicated email account that receives approved copies of selected messages from other sources and gives XO one readable surface. Define exactly which sources and messages may be copied; a forwarded message can carry the full body, attachments, sender, recipients, and history, not just a notification. The destination keeps its own copy and needs its own account access, retention, and send/mutation gate before XO reads it. A selective mail filter can forward full messages, not just notify; only use it if the human approves that content transfer. A calendar feed can expose titles and details even when it is read-only. A selected share-to-folder is less automatic but limits the items that cross. Pasting/screenshotting is a last resort and still needs a content-sharing decision.
@@ -34,7 +63,8 @@ Automatic proxies break silently: a filter gets edited, a feed URL rotates, or a
 
 ## Done when
 
-- [ ] For managed sources, the chosen route is the least authorized disclosure that preserves the identified reminder/commitment; among equally safe choices favor reliable automation. For personal sources, the human approved its content transfer and the most practical automatic route was considered.
+- [ ] If only exploring, the human saw the relevant choices and chose to investigate, decline or defer; no connection, read or setup was implied. Apply the remaining checks only to a chosen setup.
+- [ ] The human chose a useful route within every applicable boundary after comparing human-facing visibility, XO/provider disclosure, freshness/failure, effort and reversal; favor the richest permitted, useful context they want without unnecessary transfer. Within equally authorized choices consider reliable automation; for personal sources the human approved any content transfer.
 - [ ] Every applicable employer/client/project authority and conflict resolution is recorded; any crossing has its exact authorized fields, destination and mechanism, source-specific human yes, separate scoped read yes, and verified gate. Unknown policy caused no crossing, even event-only.
 - [ ] For an authorized outbound route, a non-sensitive test signal arrived and destination visibility and last successful check were recorded; otherwise work-native completion is recorded without claiming XO read access.
 - [ ] The ledger separates visibility, staleness deadline, last successful source check, destination receipt, newest item and last failure; it records reversal and either a tested heartbeat/canary or `unknown/manual check due` with a source-side confirmation plan. No silent route is described as healthy from an empty inbox.

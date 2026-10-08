@@ -44,7 +44,7 @@ Don't save: passwords, keys, account numbers, or anything secret; anything alrea
 
 ## 5. Handoffs
 
-Handoffs live in `~/xo/handoffs/` (Codex: `~/xo/work/handoffs/`), one per sitting, named `YYYY-MM-DD.md` (add `-2`, `-3` for more sittings that day). Format in `templates/handoff.md`; the door in and out are in sitting 05. The newest file is the one you read at the door in.
+Handoffs live in `~/xo/handoffs/` (Codex: `~/xo/work/handoffs/`), one per sitting, named `YYYY-MM-DD.md` (add `-2`, `-3` for more sittings that day). Format in `templates/handoff.md`; the door in and out are in sitting 05. At door in select the latest date, then the largest numeric sitting suffix on that date; the unsuffixed file is sitting 1. Do not use lexical filename order, which can put the unsuffixed file after later sittings.
 
 ## Done when
 

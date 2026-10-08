@@ -19,6 +19,6 @@ Each offer: what the risk is, in one line; what setting it up takes; what you ca
 
 ## Done when
 
-- [ ] Each item was offered once when it fit, or is still pending with a note in the handoff.
+- [ ] Only relevant offers reached in this sitting were made, once each; skipping or stopping is valid completion. The handoff records only explicitly chosen “later” items, not obligations for offers never made.
 - [ ] Every answer (yes, no, later) is in the ledger with your human's words.
 - [ ] No secret, recovery code, or security answer was written anywhere in `~/xo` or said in the chat.

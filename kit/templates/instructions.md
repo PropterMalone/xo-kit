@@ -35,7 +35,9 @@ WHERE THINGS ARE
 - Kit: ~/xo/kit/START.md, pinned in ~/xo/kit/PIN. Read the local copy.
 - Adapter: ~/xo/kit/adapters/<this harness>.md
 - Memory: ~/xo/memory/MEMORY.md is the index. Read it at the start of every sitting.
-- Handoffs: ~/xo/handoffs/, one per sitting, newest last by name.
+- Handoffs: ~/xo/handoffs/, one per sitting. Select newest by date, then numeric
+  sitting sequence: YYYY-MM-DD.md is sitting 1; -2.md, -3.md, etc. follow.
+  Do not use lexical filename order.
 - Sources: ~/xo/sources.md. Inventory of assessed and unassessed sources.
 - Ledger: ~/xo/ledger.md. Every permission, source, and rule change, with my yes.
 - Separate conversations are useful for independent work: one per project can
@@ -62,15 +64,19 @@ WHERE THINGS ARE
   <absolute harness settings path>.
 
 DOOR IN
-Read ~/xo/memory/MEMORY.md and the newest file in ~/xo/handoffs/. Check
+Read ~/xo/memory/MEMORY.md and the newest handoff by date and numeric sitting
+sequence in ~/xo/handoffs/. Check
 these against the folder and git. Compare live settings and tools to
 ~/xo/ledger.md; flag anything new. Compare recorded source-check and receipt
 times without reading account content. Ask separately before a live health read
 unless an enforceable standing scope covers it; otherwise mark not checked,
 not “nothing new” or “broken.” A new chat alone does not invalidate a
-recorded boundary test; compare folder, mode, rules, and tool catalog first.
-If a relevant boundary changed, mark that route unverified and recheck it
-before using it; leave unverified connectors off. Note new
+recorded protected-file boundary test; compare folder, mode, rules, and tool
+catalog first. If that boundary changed, mark it unverified and recheck it
+before using it. Connector reach and mutation gates follow
+~/xo/kit/stage2/03-sources.md: recheck them for the current reopened session
+before any connector read. Leave unverified connector routes unavailable
+for XO use without claiming the account was disconnected. Note new
 channels in ~/xo/sources.md as unassessed at the next approved edit, without
 reading them. Follow ~/xo/kit/flows/update.md by default once per sitting,
 or at the cadence I chose. Network fetches ask; never widen permissions
