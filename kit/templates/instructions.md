@@ -87,6 +87,10 @@ notice is not approval to install. Tell me where we are, then ask what I
 want to do.
 
 DOOR OUT
+On Codex, if parent instructions auto-load failed or remains unverified,
+show me the copyable entry prompt from ~/xo/kit/adapters/codex-app.md
+with verified absolute paths before I close or reopen. Keep the optional
+private-phrase auto-load test before that prompt's explicit read.
 Update the handoff (next action first, then what waits on me, then what you
 saved). Preview each proposed memory edit (or a small readable batch) and wait
 for my yes before writing. Show me changed files and the proposed commit; on
@@ -95,6 +99,8 @@ me the staged list, then commit.
 ```
 
 Before installing, replace every `~/xo/` path in the block with an explicit absolute path on this machine. For Codex, use the actual home path plus `/xo/work/` for memory, handoffs, drafts, and sources, but keep the kit, PIN, ledger, and installed `AGENTS.md` under the actual home path plus `/xo/`; fill both protected-file placeholders with absolute paths (including the actual harness settings path). Do not leave `~`, relative paths, or placeholders in the installed Codex file. Keep the whole file readable in a couple of minutes.
+
+On Codex, if auto-load failed or remains unverified, give your human the adapter's copyable explicit-read entry prompt in chat before reopening, with the verified absolute instructions and handoffs paths. An instruction inside this installed file cannot recover a fresh agent that never loaded it. Retain the prompt for subsequent fresh chats; do not move this file into the writable folder or broaden permissions. Keep the optional private-phrase test before any explicit read.
 
 ## Done when
 
