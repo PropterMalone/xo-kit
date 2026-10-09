@@ -99,6 +99,10 @@ Every rung change edits `ledger.md` and possibly `config.toml`, both protected, 
 - Configure single files read-only inside a writable root; only fixed paths such as `.git`, `.codex`, and `.agents` receive built-in protection (https://learn.chatgpt.com/docs/agent-approvals-security). Hence the layout above.
 - Reach ChatGPT's connectors, possibly. See the blocker above.
 
+## Native completion confetti
+
+Observed 2026-10-09: an owner-supplied screenshot of Codex's **Toys → Confetti cannon** setting says “Let Codex fire confetti in the app when you ask!” That establishes the feature's existence only. Its exact agent invocation and current-session enabled-state detection remain unverified; this is not a desktop execution check or proof of permission for agent-initiated use. Follow `flows/one-task.md` for the native-only, confirmed-completion and quiet-fallback rules. Use no invented command, settings change, UI/shell workaround or substitute animation. If the actual capability requires an explicit user request, do not invoke it as a surprise.
+
 ## Done when
 
 - [ ] A fresh task shows the correct `~/xo/work` project folder; work-file write succeeds and a disposable parent-file probe was denied before execution under the same recorded folder/mode/settings (or a silently created probe is removed with a separate yes and the protection failure recorded). An earlier fresh-task pass remains valid when those facts are unchanged. Check `~/xo/AGENTS.md` auto-load without a read if the human chooses the private-phrase test; otherwise label auto-load unverified and read instructions explicitly each door in. Do not confuse an unverified optional auto-load check with a failed protected-file boundary.
