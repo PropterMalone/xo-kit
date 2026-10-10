@@ -40,8 +40,12 @@ a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 .name-meanings p { margin:0; }
 }
 #xo ~ h2:first-of-type + ul { border-block:1px solid var(--line); padding:1rem 0 1rem 1.5rem; }
-a[href="#pick-a-door"] { display:inline-block; padding:.7rem 1rem; margin:1.5rem 0; font:600 1.05rem/1.4 system-ui,sans-serif; background:var(--accent); color:var(--paper); border-radius:.35rem; text-decoration:none; }
-a[href="#pick-a-door"]:hover,a[href="#pick-a-door"]:focus-visible { text-decoration:underline; }
+.entry-choices { margin:1.5rem 0 2rem; }
+.entry-choices ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; padding:0; margin:0; list-style:none; }
+.entry-choices li { min-width:0; font:1rem/1.5 system-ui,sans-serif; }
+.entry-choices a { display:flex; align-items:center; justify-content:center; min-height:3.25rem; padding:.7rem .8rem; font-weight:650; line-height:1.35; text-align:center; background:var(--accent); color:var(--paper); border-radius:.4rem; text-decoration:none; }
+.entry-choices a:hover,.entry-choices a:focus-visible { text-decoration:underline; }
+.entry-choices span { display:block; margin-top:.55rem; color:var(--muted); font-size:.9rem; }
 #pick-a-door { scroll-margin-top:1rem; }
 #pick-a-door ~ ol { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.85rem; list-style:none; padding:0; font:1rem/1.5 system-ui,sans-serif; }
 #pick-a-door ~ ol li { position:relative; border:2px solid var(--line); background:var(--panel); border-radius:.5rem; padding:1rem; }
@@ -50,7 +54,7 @@ a[href="#pick-a-door"]:hover,a[href="#pick-a-door"]:focus-visible { text-decorat
 #pick-a-door ~ ol a::after { content:''; position:absolute; inset:0; }
 #pick-a-door ~ ol li:has(a[href="door-local.html"]) { grid-column:1/-1; border:0; border-left:3px solid var(--line); border-radius:0; background:none; color:var(--muted); padding:.25rem 0 .25rem 1rem; font-size:.94rem; }
 #pick-a-door ~ ol li:has(a[href="door-local.html"]) a { font-size:1rem; }
-@media (max-width:34rem) { body { padding-top:1rem; } #pick-a-door ~ ol { grid-template-columns:1fr; } }
+@media (max-width:34rem) { body { padding-top:1rem; } .entry-choices ul,#pick-a-door ~ ol { grid-template-columns:1fr; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
   <meta name="description" content="an agentic starter kit">
@@ -101,8 +105,16 @@ decisions.</strong></li>
 <li><strong>Memory should live in universal formats and be owned by
 you.</strong></li>
 </ul>
-<p><a href="#pick-a-door">Pick your starting app</a>, or <a href="https://github.com/PropterMalone/xo-kit/blob/4b2d38fc808f4d337bbc5fe613984d5459457a3c/kit/flows/browse-and-borrow.md">browse
-for ideas</a> if you already have a setup.</p>
+<div class="entry-choices">
+
+<ul>
+<li><a href="#pick-a-door">Pick your starting app</a> <span>New to
+agentic work? Start here.</span></li>
+<li><a href="https://github.com/PropterMalone/xo-kit/blob/4b2d38fc808f4d337bbc5fe613984d5459457a3c/kit/flows/browse-and-borrow.md">Browse
+for ideas</a> <span>Already have a setup? Borrow what helps.</span></li>
+</ul>
+</div>
+
 <h2 id="what-xo-is">What xo is</h2>
 <p>xo starts with a message you paste into Claude Code or Codex. You can
 try a task you choose before setting up a folder for your instructions
