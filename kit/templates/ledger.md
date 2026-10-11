@@ -32,6 +32,14 @@ Base rung: <0 | 1> (source-specific rung 2/3 grants live in entries below; do no
 - YYYY-MM-DD protected-file shell write: <pass | fail | unverified; tested disposable path; native reviewer human/classifier; denied before execution? probe absent? live folder/mode/settings?>
 - YYYY-MM-DD outside fetch: <observed human denial | automatic denial | automatic allowance | unverified; exact URL scope and reviewer; fetched? any private data in URL?>
 
+## Check attempts
+- Check/route and target area: <built-in protected write | shell protected write | outside fetch | instruction loading | chosen connector gate>.
+- Boundary state: <actual folder, mode, relevant protective rules and execution route; known evidence or unverified>.
+- Last attempt: <date, outcome, native reviewer, actual side effect or none; link to evidence above>.
+- Stop: <passed and unchanged | failed | unverified | unavailable | declined; affected operation remains blocked if its safety depends on this result>.
+- Retry only after: <specific relevant change or approved correction addressing the failure, then fresh test consent; not merely a new chat or an inconclusive result>.
+- Record scope: <saved here with approval | current conversation only; no promised fresh-session persistence>.
+
 ## Capability inventory (YYYY-MM-DD)
 - Ordinary local work tools: <groups and available routes; complete exact names when scope expands>.
 - Connected-account/outbound mutation tool <exact name>: <what it does>. Acts outside ~/xo: <send | delete | publish | account/settings change | ...>. Setting: <allow | ask | block with evidence | off with evidence | unverified>. Selected account reach: <observed | unverified>.
@@ -45,7 +53,7 @@ Base rung: <0 | 1> (source-specific rung 2/3 grants live in entries below; do no
 - Approval: "<human's words, verbatim>" (YYYY-MM-DD HH:MM <tz>)
 - Reverse: <exact steps, or the commit to revert>
 - Expiry: <date | none>
-- Status: <active | ended YYYY-MM-DD, see entry "<title>">. Never delete an entry; a reversal is its own entry, and the original is marked ended.
+- Status: <active | ends/supersedes prior entry "<title>" YYYY-MM-DD>. Never edit or delete an old entry; a reversal is a new entry that names the original and ends its effect. Determine current status using later superseding entries.
 - Source only: human-facing view <actual item | fixed signal | pointer/check-due to native view | none>; XO/model-provider visibility <exact fields or none>; retained in source <what remains there, not copied>; class <personal | work | client | overlapping | unresolved>; applicable authorities <employer, each client/project and owner, or unresolved>; policy basis/authorized approver <who permitted which route, recipient and exact fields, or unresolved — no egress until resolved>; human scope approval <source, fields, purpose, time/history range and quoted yes>; app/session <where connected and where tested>; observed reads <metadata | content | unverified>; history scope <approved range | none>; can see <what>; can go stale by <how long>; liveness <how checked and what result means>
 - Direct source only: last successful read/check <time or never>; newest item observed <item time/identifier or unknown, separate from check time>; expected cadence/max age <duration or variable with basis>; latest liveness result <healthy | stale | failed | no new items verified | inconclusive, with check time/error>; expiry <date or none>
 - Connector boundary: inventory checked <date/session>; mutation tools <exact names and settings>; pre-execution deny <observed outcome or unverified, no real send/delete>; after reopen <recheck date or pending>

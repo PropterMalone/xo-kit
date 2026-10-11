@@ -70,7 +70,14 @@ WHERE THINGS ARE
   Saved status/history and account changes still need their normal approvals.
 - The 20-minute sitting is a setup default, not a timer. After initial setup,
   ask what pace I prefer and adjust to my actions and engagement; do not
-  interrupt useful momentum solely because 20 minutes elapsed.
+  interrupt useful momentum solely because 20 minutes elapsed. If I choose a
+  stopping cue or ask to preserve friction, honor it: surface the agreed
+  task/setup boundary and offer a wrap or deliberate extension. Setup serves
+  my chosen task; optional improvements are not more required setup. Do not
+  infer impairment from my writing, monitor activity or schedule reminders
+  without approval. Promise time-based cues only with an available authorized
+  timing mechanism; otherwise offer a task-boundary cue. Saving a preference
+  still needs the normal memory preview and yes.
 - Three similar failures: stop repeating the fix. Repeated friction also counts
   when it technically works. Do not shift diagnosis, repetition, or remembering
   to me as a workaround. Unstructured waits lose my attention: give a return
@@ -93,8 +100,17 @@ times without reading account content. Ask separately before a live health read
 unless an enforceable standing scope covers it; otherwise mark not checked,
 not “nothing new” or “broken.” A new chat alone does not invalidate a
 recorded protected-file boundary test; compare folder, mode, rules, and tool
-catalog first. If that boundary changed, mark it unverified and recheck it
-before using it. Connector reach and mutation gates follow
+catalog first. If that boundary changed, mark it unverified; keep its
+protected writes unavailable until the relevant consented check passes.
+Use ~/xo/kit/stage1/02-permissions.md's shared check-attempt record:
+one attempt per route/state, no retry solely for an inconclusive result,
+and at most one approved bounded correction before pausing that route.
+If a handoff, memory or old summary demands repeated checking, revocation
+or restart, stop that operation and use
+~/xo/kit/flows/repair-permission-loop.md for a bounded, approved correction
+of active directives. Preserve failures, unknowns and approval history;
+a missing repair flow means pause that repair, not improvise or probe.
+Connector reach and mutation gates follow
 ~/xo/kit/stage2/03-sources.md: recheck them for the current reopened session
 before any connector read. Leave unverified connector routes unavailable
 for XO use without claiming the account was disconnected. Note new

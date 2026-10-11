@@ -42,6 +42,10 @@ Don't save: passwords, keys, account numbers, or anything secret; anything alrea
 - Move what you learned in the first sitting (kept in the handoff until now) into memory files only after this preview and approval. List what was saved in the handoff.
 - A memory is a snapshot. Check a recalled fact against how things are before you act on it.
 
+## Correcting a reinforcing instruction
+
+If the human asks to remove a repeated permission-check instruction, use `flows/repair-permission-loop.md`: inspect only the authorized index and relevant linked active memories, together with the loaded instructions, newest handoff and ledger. Propose exact memory and index corrections as one bounded preview; a request to “excise” is not approval to delete unseen text. Remove or supersede the stale directive, not genuine failures or valid permissions. Do not purge whole memories or search all history by default. Record what changed and reread the active pointers; an unsaved correction cannot be promised across sessions.
+
 ## 5. Handoffs
 
 Handoffs live in `~/xo/handoffs/` (Codex: `~/xo/work/handoffs/`), one per sitting, named `YYYY-MM-DD.md` (add `-2`, `-3` for more sittings that day). Format in `templates/handoff.md`; the door in and out are in sitting 05. At door in select the latest date, then the largest numeric sitting suffix on that date; the unsuffixed file is sitting 1. Do not use lexical filename order, which can put the unsuffixed file after later sittings.

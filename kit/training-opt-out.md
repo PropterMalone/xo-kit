@@ -17,11 +17,12 @@ Tell your human plainly what turning it off does *not* cover.
 
 ## OpenAI (ChatGPT, Codex)
 
-- Last verified: 2026-09-27 (official page read via a search cache, not directly)
-- Setting: "Improve the model for everyone." Settings → Data controls. **On by default. Web only; the desktop app doesn't have it.** Send your human to https://chatgpt.com in a browser for this one step.
-- Covers Codex on the same account (verify against current account/app controls). A tester found no separately named "Include environments" control in their app; do not repeatedly direct someone to a control they cannot see or mark it off without checking. Record that control as unverified, explain the uncertainty, and ask whether to continue without it.
-- Doesn't cover: conversations your human rates with thumbs up or down (those can still be used for training); 30-day retention for abuse monitoring.
-- Official: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt
+- Last verified: 2026-10-10, official Data Controls page read; desktop UI not app-tested.
+- Personal account setting: **Improve the model for everyone**. The documented signed-in browser path is account menu → Settings → Data controls → turn it off → Done, at https://chatgpt.com. The setting applies across devices. Do not assert the desktop app lacks this control or give an unverified macOS path: if the app's controls differ, offer this browser path on the same account/workspace. Do not assume its current state.
+- On personal plans, the official page says this opt-out also covers new Codex tasks; the Privacy Portal's **Do not train on my content** is an alternative, not a second required opt-out. **Include environments** is separate, documented at https://chatgpt.com/codex/cloud/settings/general for additional Codex environment context. Do not assume it exists in every desktop task or that the ChatGPT toggle changes it. Check only where applicable and authorized; if absent or inaccessible, record that scope as unverified and ask whether to continue without confirmation. Do not keep searching or reopening for it.
+- **Business / Enterprise / Edu / Healthcare workspace:** OpenAI says workspace content is not used for training by default; available controls depend on account and workspace policy. A tester reports a Business widget locked Off. If a control is locked or unavailable, do not try to unlock it, switch workspaces or bypass an administrator to finish setup. Record the observed workspace/state or unknown, explain the limits and ask whether to continue. Workspace data still requires its applicable policy and authorized route; training-off is not permission to ingest it.
+- Retention is separate: turning training off does not delete saved chats. The official page says temporary chats may be retained up to 30 days for safety while temporary, not that all chats are removed after 30 days. Managed retention/access rules can differ. Feedback such as thumbs up/down may make its associated conversation eligible for training. Never promise erasure or zero retention.
+- Official: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt and https://openai.com/enterprise-privacy/
 
 ## Z.ai (GLM coding plan)
 
