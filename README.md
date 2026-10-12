@@ -1,6 +1,6 @@
 # xo — exploratory test
 
-XO helps you set up an AI assistant that can remember where you left off, work from files you own, and help you decide what to do next. You don't need to install a separate “harness.” Start at the [XO test page](https://proptermalone.github.io/xo-kit/index.html), pick Claude or ChatGPT, and paste the instructions shown there. The raw files in this repo aren't the starting prompt.
+XO helps you get useful work done with an AI assistant. Start with a task in chat; saving where you left off, connecting sources and setting up persistent help are optional choices. Start at the [XO test page](https://proptermalone.github.io/xo-kit/index.html), pick Claude or ChatGPT, and paste the instructions shown there. The raw files in this repo aren't the starting prompt.
 
 This is an exploratory test, **untried as a full clean-account install**. App permissions and connector controls have not been verified across both desktop apps. If you already connected mail, messages, or a calendar, XO can help you examine what this session can actually read and do; a connection alone doesn't prove it can block sending. Keep work or client material within its applicable rules. Stop at a permission request you didn't expect.
 

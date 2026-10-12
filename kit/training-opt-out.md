@@ -42,4 +42,4 @@ Tell your human plainly what turning it off does *not* cover.
 
 - [ ] Your human has been told the seed already reached the provider and turning training off cannot undo that processing.
 - [ ] You checked the current official page for the provider/account in use, gave the relevant setting path and limits, and asked the human to confirm the actual state; a missing page or control stays unverified, not marked off.
-- [ ] The human's choice (off, declined, or unverified) and whether to continue despite any limits are recorded in the running handoff, without claiming training is off unless they confirmed it. Carry that choice forward in sitting 01 without an automatic repeat prompt.
+- [ ] State the outcome in chat: the confirmed setting or declined/unverified state, and the human's choice whether to continue despite any limits. Record it only if an approved handoff exists, under its separate save approval, without claiming training is off unless they confirmed it. No handoff or save is required to complete this privacy step. Carry that choice forward in sitting 01 if chosen, without an automatic repeat prompt.

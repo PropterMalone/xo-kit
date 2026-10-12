@@ -4,6 +4,8 @@ For the agent. Optional, on request: “queue,” “what's most urgent?” or a
 
 ## 1. Use the known task space
 
+For “what should I do?” / “what should I do next?” or “what needs attention first?”, make the useful correctable recommendation here when context calls for choosing among tasks. If selected work is unfinished, a generic next-step question means the next step in that work by default, not a cross-project pick. Keep it primary after a tangent; switching requires the human's explicit choice. Do not require them to say “queue,” classify the request or answer a routing menu.
+
 Use real open tasks already supplied in this conversation and existing task records this session is authorized to read for prioritization. Include overdue, dated, waiting/blocked and undated tasks within that scope; deduplicate references to one obligation. Don't turn unaccepted suggestions into assigned tasks. Respect known exclusions and the human's current scope.
 
 This request does not authorize a new communications sweep, account search or broader source read. Source-specific approval, work/client authority and actual-session gates still apply. Use a reconciled task view from a current authorized sweep if available; otherwise judge from currently known tasks and say when missing coverage matters—for example, an unread channel plausibly contains dated or promised commitments relevant to the pick. This cue does not authorize reading it or require a coverage questionnaire. A connected tool is not read authorization. Never claim unread channels are clear.

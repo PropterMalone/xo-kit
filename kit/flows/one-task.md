@@ -1,6 +1,6 @@
 # Serve me one doable task
 
-For the agent. Optional, on request: “serve me one doable task,” “task roulette,” or a clear equivalent. Draw one task from an automatically derived list of known tasks that look finishable within about 20 minutes, with no complicated dependencies. No separate pool approval or curation is required. This is not a priority planner, scheduled reminder, new task manager or permission grant. Never spin automatically at door in, or replace the conversation's unfinished task without the human choosing to switch.
+For the agent. Optional, on request: “something small I can finish,” “serve me one doable task,” “task roulette,” or a clear equivalent. Serve one task from an automatically derived list of known tasks that look finishable within about 20 minutes, with no complicated dependencies. No separate pool approval or curation is required. This is not a priority planner, scheduled reminder, new task manager or permission grant. Never spin automatically at door in, or replace the conversation's unfinished task without the human choosing to switch.
 
 ## 1. Automatically collect eligible known tasks
 
@@ -28,9 +28,11 @@ For continuity, offer one local note or a pointer from the handoff if useful, bu
 
 ## 2. Draw and serve one card
 
+For an ordinary short-task request, apply all of section 1, then make a useful choice and label it “my pick,” not a random draw. Only use the random-draw procedure when the request supports random/roulette intent, such as “pick at random” or “surprise me with a task.” Otherwise make a useful choice; “another” asks for another eligible pick in the same mode, not permission to invent randomness. No question about selection mode is required before helping. A generic “what next?” is not by itself a request for a short task: use START's context-sensitive next-step/urgency route instead.
+
 If a known deadline is today or overdue, flag it in one short line before the card. Do not search beyond the authorized scope for deadlines or secretly weight the draw toward urgency. The human can choose the deadline instead of spinning; roulette does not override that choice. Say when deadlines were not checked if relevant, without implying the entire external backlog is covered.
 
-Draw among eligible tasks. With an available, permitted local random-choice tool, use one equal-chance draw over stable task IDs; never send task text to an outside randomizer. Do not install a dependency, widen shell access or create an approval detour just for randomness. Without a permitted random tool, make a varied choice and label it “my pick,” not a verified uniform random draw. With one eligible item, serve it plainly.
+For random/roulette intent, draw among eligible tasks. With an available, permitted local random-choice tool, use one equal-chance draw over stable task IDs; never send task text to an outside randomizer. Do not install a dependency, widen shell access or create an approval detour just for randomness. Without a permitted random tool, make a varied choice and label it “my pick,” not a verified uniform random draw. With one eligible item, serve it plainly.
 
 Show one card, not the candidate list or filtering analysis. Name the finish line, rough time and first move. For example, only if the appointment draft is known to be ready:
 

@@ -1,22 +1,22 @@
 # Stage 1, sitting 04: backup
 
-For the agent. Goal: before the folder holds anything worth losing, every change can be undone and the folder survives a dead laptop. About 20 minutes.
+For the agent. Goal: establish reviewed history for committed changes and check whether a separate backup covers the folder. Uncommitted work and an unknown or deferred backup remain at risk; do not claim either is protected. About 20 minutes.
 
 Local-only is a complete path. A private GitHub copy is a later, separate offer (stage 2).
 
 ## 1. Local git
 
-Git gives your human undo for every change, including your mistakes.
+Git gives your human reviewed history for committed changes, including your mistakes. Uncommitted edits have no guaranteed Git undo point; inspect and preview their actual state before proposing a reversal. A failed commit creates no new history point: report the failure and unsaved history limit, preserve the working files, and do not claim backup or retry without the applicable approval.
 
 1. Check whether git is installed. If not, say what you'd install and how (Windows: Git for Windows, e.g. `winget install --id Git.Git -e` (https://learn.microsoft.com/en-us/windows/package-manager/winget/install); Mac: Apple's command line tools, `xcode-select --install`; Linux: the system package manager), and get a yes.
-2. Propose making `~/xo` a git repository. On Codex it's `~/xo`, not `~/xo/work`; the commit steps will ask, which is expected.
+2. Reuse the approved root established before first Codex return after checking it is still exactly `~/xo`, with no nested/worktree or unrelated ancestor conflict (`adapters/codex-app.md`). Do not run init again. If no root exists, inspect ownership/layout and obtain separate approval before making `~/xo` a repository; an unfamiliar existing repository stops that change. On Codex it's `~/xo`, not `~/xo/work`; root creation did not grant commit, backup or identity approval. The commit steps will ask, which is expected.
 3. Set a name and email for this repository only, not globally. Suggest `XO` and `xo@localhost`; nothing personal needs to go in.
 4. Add a `.gitignore`: `.DS_Store`, `Thumbs.db`, `exports/`, `*.zip`, `.env`, `.env.*` (except a deliberately non-secret `.env.example`), `*.pem`, `*.key`, and credential dumps. Raw chat exports and downloads never go in history. Before every commit, review untracked files too; ignored files are not a license to leave secrets in `~/xo`.
 5. Make the first commit after the secret scan (below) passes.
 
 From now on: commit at the end of every sitting, as part of the door out (sitting 05). One yes covers the scan and the commit you've shown.
 
-Undo, when your human wants it: find the commit, show the before and after, and propose reverting it. A revert that touches a protected rule file goes through the self-edit gate.
+Undo, when your human wants it: follow `flows/restore.md`'s history-preserving Undo procedure. Find the commit and show the exact proposed reversal. Preserve live ledger entry history and genuine operational failures/denials/attempt stops; append approved supersession or factual correction instead of deleting them with a whole-commit revert. Reverse only the other reviewed effects, with the self-edit gate for protected changes and the existing operational-save scope.
 
 ## 2. The machine's own backup
 
@@ -26,7 +26,7 @@ Git lives in the same folder; a lost laptop takes both. Check the machine's back
 - Windows: Windows Backup or File History, or OneDrive folder backup (verify: which one this Windows version uses and where its status shows; ask your human to open Settings → Accounts → Windows backup).
 - Linux: ask what they use.
 
-Report: on, off, or unknown, and whether `~/xo` is covered. If it's off or unknown, offer to help turn it on or check coverage once; if your human defers, record unknown/not backed up and a future reminder, then continue local setup without asking again this sitting. A yes, no, or later goes in the ledger. Say plainly where a cloud backup sends the folder (Apple, Microsoft, and so on).
+Report: on, off, or unknown, and whether `~/xo` is covered. If it's off or unknown, offer to help turn it on or check coverage once; if your human defers, record unknown/not backed up and a future reminder, then continue local setup without asking again this sitting. Preview any yes, no, or later ledger entry under the protected save gate; respect an unsaved answer without more saving prompts. Actual backup status, coverage and check time go in the operational record under `templates/operations.md`'s selected save policy, or conversation; backup configuration/disclosure policy stays protected. Say plainly where a cloud backup sends the folder (Apple, Microsoft, and so on).
 
 ## 3. Secret scan
 
@@ -57,12 +57,12 @@ else printf 'No pattern matched; review staged files before committing\n'; fi
 - The last pattern can catch ordinary prose ("password: in the manager"). False alarms are cheap; show them and move on.
 - This is a v0 net for common key shapes, not a guarantee. The rule that stops secrets is not writing them down.
 
-In `memory/MEMORY.md`, point to this canonical procedure so every door out uses the current command. Do not duplicate the pattern list in a memory file.
+If memory saving is chosen, preview a pointer in the approved simple or indexed `memory/MEMORY.md` to this canonical procedure, under `03-memory.md`'s separate memory-save approval. Do not require a memory file or re-offer a declined save to complete backup; the installed doors still refer to this procedure. Do not duplicate the pattern list in a memory file or treat a stored pointer as protected instruction authority.
 
 ## Done when
 
 - [ ] `~/xo` is a git repository with a repo-only identity and the `.gitignore` above.
 - [ ] The secret scan ran clean and the first commit exists.
-- [ ] The machine's backup status and coverage are checked or honestly marked unknown/deferred in the ledger, with the data destination if known; a deferral does not silently become a verified backup or repeatedly interrupt setup.
-- [ ] `memory/MEMORY.md` points to this page's scan procedure; no second scan command is stored in memory.
+- [ ] The machine's backup status and coverage are checked or honestly marked unknown/deferred in the operational record under its selected save policy, or conversation, with the data destination if known; a deferral does not silently become a verified backup or repeatedly interrupt setup.
+- [ ] If the memory pointer was chosen, its exact approved text/path points to this page's scan procedure in the current simple or indexed form; otherwise no memory save was forced. No second scan command is stored in memory.
 - [ ] The handoff names the next step: sitting 05.

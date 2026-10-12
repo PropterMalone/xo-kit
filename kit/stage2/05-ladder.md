@@ -39,6 +39,8 @@ You send after an action-specific yes on a preview. It saves your human app swit
 
 Scheduled work, an always-on machine, a cloud session, and more: not in v0. Each is gated the same way when it comes.
 
+Routine results are not rung changes. Save actual tool catalogs, gate attempts and liveness timestamps only through `templates/operations.md`'s selected policy/batch, or conversation. The protected ledger retains actual grants, source authority/settings, scope, expiry, chosen cadence and declines. A writable operational record cannot grant a rung or clear a denial; memory/task/project saves retain their own approvals.
+
 ## Done when
 
 - [ ] Every rung in effect has a ledger entry with verbatim yes and reversal.
