@@ -46,7 +46,7 @@ Issues on the kit's repo are public.
 
 1. Draft the issue in a file, not in GitHub.
 2. Scrub it: names, emails, usernames, folder paths containing their name, employer, account IDs, message or document content, anything from a connected source.
-3. Show your human the exact text that will be filed. File only on a yes to that text.
+3. Show your human the entire draft for review. Make their requested changes and show the full final text again. Your human chooses whether to copy and file it; do not send, upload, or publish it yourself.
 4. No GitHub account? Use the channel the front page names.
 
 ## Done when

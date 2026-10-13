@@ -2,9 +2,12 @@
 
 This repo is the source of patch notes for every XO update from here on. **Unreleased** describes local source work, not an installed or published build. On publication, move reviewed entries under a dated heading and put the new full public kit SHA, previous public SHA, published URL, and any old-pin → new-pin mapping in the GitHub Release notes (the SHA cannot be embedded in its own commit without changing it). Describe what changes for existing installs and what still needs app testing. Mark rule-relevant changes **[rules]** and security fixes **[security]**; do not label an untested safeguard a verified fix. Publish the same notes with the clean public export and GitHub Release so both old-release and new-door-pin updaters can read them. The source-only file cannot notify anyone by itself.
 
-## Unreleased — task-first help and optional saved return
+## 2026-10-12 — task-first help and optional saved return (Release xo-task-first-2026-10-12; previous public kit 3731495cc40c87572237875f6726c8c4d9c8a714)
 
-This candidate remains local and unpublished. The following changes are intended for a separately approved exploratory release; they are not automatically installed.
+Full public kit/Pages pins and update mapping are recorded in the matching GitHub Release. These changes are not automatically installed; publication does not establish app readiness.
+
+- **[rules]** Public report-back issues remain fully reviewed drafts; the human chooses whether to file them. No agent sending/uploading/publishing exception.
+- Both default door openings lead with a useful task and optional saving/setup, without an unmeasured 15-minute promise or implied setup curriculum.
 
 - **[rules]** Useful chat-only help is a complete result. Saving a continuation and choosing full installation are separate options. Offer a warm, optional improvement at a useful boundary without setup debt, repeated declined prompts or silent learning.
 - **[rules]** Ask for 20 minutes clear when chosen setup starts, not on every task or return. There is no default countdown, elapsed-time wrap warning or automatic cutoff. Respect explicit stops, deadlines and chosen task boundaries; requested timers require actual capability and approval.
