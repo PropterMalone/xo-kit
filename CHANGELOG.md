@@ -2,6 +2,15 @@
 
 This repo is the source of patch notes for every XO update from here on. **Unreleased** describes local source work, not an installed or published build. On publication, move reviewed entries under a dated heading and put the new full public kit SHA, previous public SHA, published URL, and any old-pin → new-pin mapping in the GitHub Release notes (the SHA cannot be embedded in its own commit without changing it). Describe what changes for existing installs and what still needs app testing. Mark rule-relevant changes **[rules]** and security fixes **[security]**; do not label an untested safeguard a verified fix. Publish the same notes with the clean public export and GitHub Release so both old-release and new-door-pin updaters can read them. The source-only file cannot notify anyone by itself.
 
+## 2026-10-21 — XO-only guidance (proposed local candidate; not published)
+
+- **[rules]** Preview the first Claude settings file and obtain a chat yes; a proposed rule cannot prompt for approval before it exists. A newly exposed tool grants no new authority; check its actual effects against current permissions before first use.
+- **[rules]** At closing, memory, local commit and any separately chosen private backup upload each have their own yes, no or later. A commit is optional; preview the exact saves and changes, scan approved staged files, and report only verified actions. Declining one action does not block safe independent approved work.
+- **[rules]** For a blocked or unknown handoff/continuation save, distinguish read from effective write access, stop known denials, and give a copyable continuation in chat instead of claiming a save or bypassing the app. Task switches in an unchanged session do not require refetching the pinned kit or restarting setup; missing identity, changed boundaries and actual source access retain their checks.
+- **[rules]** Put context, recommendation, scope, exposure, decline/defer effect, uncertainty and exact preview inside consequential decision prompts. Explain the first real choice without a preliminary lesson; familiarity does not waive approval. Report verified capabilities and remaining limits after setup.
+- **Existing installs:** the new kit does not replace installed instructions or settings automatically. Compare the exact rule diff against the installed pin, then review and approve each adopted change through its existing gate.
+- **Verification limits:** local source and synthetic tests are not proof of native app permissions, clean-account installation, cold return, actual provider behavior or production reliability. Local kit and Pages pins are preparation targets, not published or installed versions.
+
 ## 2026-10-12 — task-first help and optional saved return (Release xo-task-first-2026-10-12; previous public kit 3731495cc40c87572237875f6726c8c4d9c8a714)
 
 Full public kit/Pages pins and update mapping are recorded in the matching GitHub Release. These changes are not automatically installed; publication does not establish app readiness.

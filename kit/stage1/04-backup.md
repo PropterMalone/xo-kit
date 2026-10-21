@@ -14,7 +14,7 @@ Git gives your human reviewed history for committed changes, including your mist
 4. Add a `.gitignore`: `.DS_Store`, `Thumbs.db`, `exports/`, `*.zip`, `.env`, `.env.*` (except a deliberately non-secret `.env.example`), `*.pem`, `*.key`, and credential dumps. Raw chat exports and downloads never go in history. Before every commit, review untracked files too; ignored files are not a license to leave secrets in `~/xo`.
 5. Make the first commit after the secret scan (below) passes.
 
-From now on: commit at the end of every sitting, as part of the door out (sitting 05). One yes covers the scan and the commit you've shown.
+From now on: offer a commit at the door out (sitting 05), separately selectable as yes, no or later; closing does not require a commit. On commit no or later, do not stage or commit; continue independent approved memory and handoff saves when safe under their own save gates. Leave any declined or deferred private upload undone. Report only verified saves and the actual uncommitted/not-uploaded limits: uncommitted edits have no guaranteed Git undo point and are not backed up by a private Git upload. One yes covers only the scan and exact commit you've shown, not a private upload.
 
 Undo, when your human wants it: follow `flows/restore.md`'s history-preserving Undo procedure. Find the commit and show the exact proposed reversal. Preserve live ledger entry history and genuine operational failures/denials/attempt stops; append approved supersession or factual correction instead of deleting them with a whole-commit revert. Reverse only the other reviewed effects, with the self-edit gate for protected changes and the existing operational-save scope.
 

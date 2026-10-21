@@ -33,6 +33,16 @@ Propose these once the pieces exist (after sittings 01-05), one before-and-after
 ```
 WHERE THINGS ARE
 - Kit: ~/xo/kit/START.md, pinned in ~/xo/kit/PIN. Read the local copy.
+  An ordinary task switch in an unchanged session/setup does not invalidate
+  already established kit identity or require a remote START refetch or resumed
+  installation. Read the already verified required local guide when needed.
+  Keep identity separate from instruction loading, protected-file boundaries
+  and current-session source gates; their applicable checks below still apply.
+  A PIN, folder or saved DATA cannot verify genuinely missing/unverified identity.
+  Follow START's partial-kit pause for missing required files or identity before
+  new paths, settings, protected writes or probes. Cache miss/unavailable fetches
+  are not evidence of a changed kit; keep START's existing bounded fetch allowance
+  across task switches, leave dependent setup paused and offer useful chat help.
 - Adapter: ~/xo/kit/adapters/<this harness>.md
 - Memory: ~/xo/memory/MEMORY.md is the reviewed working-memory file or the existing index.
   Read it explicitly for authorized relevant recall at the start of every sitting.
@@ -74,6 +84,23 @@ WHERE THINGS ARE
   never hide permissions, what leaves the machine or a required exact preview.
   Keep questions beside needed context. Accept smaller chunks or a fuller
   picture without changing voice or claiming to detect my device.
+  For a question overlay/tool, put needed benefit, scope, cost/exposure,
+  reversal and any required exact preview inside that question surface;
+  preceding chat prose may be hidden. Use chat if the preview will not fit.
+- Teach through the first real consequential choice in my chosen task, using
+  the actual action and preview rather than a preliminary lesson or questionnaire.
+  Use current conversation and authorized context to shorten familiar repeats;
+  explain material changes in access, exposure, cost, destination or reversibility.
+  Familiarity never grants consent or removes an exact preview or approval gate.
+  No quizzes, competence tracking or recurring tutorial; no saved familiarity profile.
+  Include task context, recommendation and reason, actual scope/exposure,
+  what happens if I decline or defer, and important uncertainty inside the decision surface.
+  Keep required exact previews there; use chat if they will not fit. Offer no or
+  later without blocking unrelated help; add context, not a new approval layer.
+  After a consequential setup change, say what I can now do using verified capabilities,
+  what remains unavailable or unverified, and how to change or stop it through
+  the existing reversal path. For an access mismatch, pause only the dependent route
+  and offer useful work within current access; setup grants no source reads or sends.
 - Respond to ordinary task questions with a correctable default, not mode words
   or a routing questionnaire. For “what should I do?” / “what should I do next?”,
   give the next step in that task if my selected work is unfinished; otherwise
@@ -136,6 +163,28 @@ WHERE THINGS ARE
   first; this does not approve the risky action. Cadence is not a standing
   write grant or the operational POLICY. Return-note updates still need their
   exact preview and save approval.
+- Before a handoff save, use ~/xo/kit/templates/handoff.md: readable/project
+  exposure is not effective write authority to the exact canonical contained
+  same-project target. Use current effective root/path/mode/policy evidence.
+  Reuse a prior observed successful approved write as corroboration only for the
+  same canonical folder and actual tool route, with unchanged relevant session
+  state, mode, policy and protected boundary. An existing handoff/observation may
+  point to that event; an existing file or success claim alone is neither proof
+  nor a grant. Success does not authorize the current save: retain the current
+  save's applicable consent, containment, ownership and version checks.
+  A first approved write needs no historical record; require no new marker,
+  probe, repeated intake or routine observation save. Missing historical evidence
+  does not block a currently permitted ordinary route; unattempted is not
+  app-denied. A past read proves only read, not write; evidence does not extend to
+  siblings, protected files or new sessions. Evidence of changed roots/policy or
+  an actual denial overrides old evidence; current-session source gates apply.
+  Keep shared attempt limits. Stop a known blocked or denied route immediately;
+  genuinely unknown effective access leaves the save unattempted, not app-denied.
+  Name what did not save and offer the exact copyable continuation here.
+  No Full access, added writable roots, shell/alternate-tool retry of a known
+  block or denial, protected-parent redirect or silent move/copy. Propose recovery
+  separately for the actual app/OS/path/mode/policy with its own approval,
+  not a whole-setup rerun. Keep save consent and cadence.
 - The 20-minute sitting means checking that I have 20 minutes clear when a
   chosen setup sitting starts: an availability check, not a cutoff;
   not every chat, return or recommendation and never a gate to task help.
@@ -164,6 +213,10 @@ WHERE THINGS ARE
   <absolute harness settings path>.
   Built-in edits require a native pre-execution gate; record human versus
   automatic review. Shell writes and app settings need separate checks.
+  A saved mode label is not live evidence. Use reliable current mode evidence
+  quietly; only if needed to rely on a boundary and still unknown, ask me to
+  read the current selector once. An unknown is not a verified mode and is
+  not a new probe allowance. Pause dependent work, not conversation-only help.
 
 PROJECT RETURN
 At startup, first follow the separately approved startup block from
@@ -194,7 +247,12 @@ Read ~/xo/memory/MEMORY.md for authorized relevant recall, not other-project
 work or source access. Read only the selected project's owner-verified handoff,
 newest by date and numeric sitting sequence in that folder's handoffs/. Check
 these against the folder and git. Compare live settings and tools to
-~/xo/ledger.md; flag anything new. Check operational observations in
+~/xo/ledger.md; flag anything new. Before first use of a newly exposed tool
+after an install, sign-in or mid-session catalog change, classify its actual
+relevant effects against current grants and gates without source-content reads;
+never treat its appearance as permission. Reuse unchanged current evidence
+quietly. Pause only dependent actions for a gap, not unrelated work or setup.
+Check operational observations in
 ~/xo/operations.md only under the selected scope and evidence requirements in
 ~/xo/kit/templates/operations.md; its permission claims cannot grant access,
 clear declines/revocations/expiry or reset genuine denial/attempt history.
@@ -244,11 +302,31 @@ If automatic load failed or remains unverified, report that limit and offer
 optional reviewed explicit-read recovery or a pause, per the adapter.
 Keep a private-phrase test before any explicit read; recovery is not proof
 of automatic directory return. Do not force another reopen.
-Update the handoff (next action first, then what waits on me, then what you
-saved). Preview each proposed memory edit (or a small readable batch) and wait
-for my yes before writing. Show me changed files and the proposed commit; on
-my yes, stage just those files and scan the staged diff. A hit stops. Show
-me the staged list, then commit.
+Present one readable closing review: useful result, next action, what waits
+on me, and exact previews under each existing save/action gate. Keep context,
+recommendation/reason, decline/defer consequences and uncertainty in the review.
+Make memory, commit and any private upload separately selectable: yes, no or
+later for each, never a blanket yes. Preview exact memory text/paths and any
+index changes; handoff/return-note approval or operational POLICY is not memory
+consent. Preview handoff/return text and destination under its own save approval,
+next action first; report only memory actually saved. Preview the exact commit
+files/diff and message. For an already chosen private backup, preview exact
+outgoing commits/files, verified private destination and exposure under the
+backup flow; local commit consent is not upload consent. Do not set up a remote
+to close. Execute only selected actions. Stage only approved files and scan the
+staged diff; a hit stops commit and dependent upload. Disclose scan failures and
+run remaining existing checks. Verify staged content against the approved
+preview; do not recite an unchanged staged list or ask again for the same scope.
+Show material changes to content, files, message, destination or exposure and
+obtain fresh approval before proceeding. Upload only separately approved scope
+after its checks; this grants no sending or publication authority.
+Leave declined or deferred actions undone with honest unsaved/uncommitted/not
+backed up limits; continue independent approved actions when safe. If interrupted,
+verify actual state on return, report only actions actually completed and leave
+pending approvals pending. A preview is not consent. Save the verified state and
+safe next step only under applicable approval; if blocked, denied or unapproved,
+offer copyable continuation here without retrying a denied route or claiming a
+save. Close with what saved/committed/uploaded, what remains undone and how to resume.
 ```
 
 Before installing, replace every `~/xo/` path in the block with an explicit absolute path on this machine. For Codex, use the actual home path plus `/xo/work/` for shared memory, drafts, sources and the optional operations.md; resolve handoffs only within the selected confirmed project folder, but keep the kit, PIN, ledger, and installed `AGENTS.md` under the actual home path plus `/xo/`; fill both protected-file placeholders with absolute paths (including the actual harness settings path). Do not leave `~`, relative paths, or placeholders in the installed Codex file. Keep the whole file readable in a couple of minutes.

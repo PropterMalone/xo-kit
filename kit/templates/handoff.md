@@ -34,6 +34,14 @@ Before creation, verify the destination is unused. Before an update, recheck own
 
 For ownerless legacy handoffs, use the bounded verification/adoption procedure in `flows/project-return.md`; do not edit or migrate history automatically. Ownership grants no permissions or additional note-writing authority.
 
+## If the handoff cannot be saved
+
+Distinguish permission to read or expose a folder from effective write authority to this exact canonical, contained handoff target in the confirmed same project. Adding the folder to the app or project, selecting it, or granting read access does not grant write authority. Use current effective root/path/mode/policy evidence under `stage1/02-permissions.md`'s shared check-attempt limits. Reuse a prior observed successful approved write as corroboration only for the same canonical folder and actual tool route, with unchanged relevant session state, mode, policy and protected boundary. An existing handoff/observation may point to that event; an existing file or success claim alone is neither proof nor a grant. Success does not authorize the current save: retain the current save's applicable consent, containment, ownership and version checks. A first approved write needs no historical record; require no new marker, probe, repeated intake or routine observation save. Missing historical evidence does not block a currently permitted ordinary route; unattempted is not app-denied. A past read proves only read, not write; evidence does not extend to siblings, protected files or new sessions. Evidence of changed roots/policy or an actual denial overrides old evidence; current-session source gates still apply.
+
+Stop a known blocked or denied save route immediately. If effective write access remains genuinely unknown, leave the save unattempted, not app-denied. State exactly which handoff or update did not save; do not mark it saved or promise automatic return. Offer its exact copyable continuation in chat with the chosen work, last verified state, next action and relevant unsaved limit. Do not seek Full access, add a writable root, retry a known block or denial through a shell or alternate tool, redirect the handoff into a protected parent, or silently move/copy it elsewhere.
+
+Keep environmental recovery separate from this save: propose only a bounded change justified by the actual app, OS, canonical target path, effective mode and policy, with its own approval and the existing shared attempt limits. Do not rerun the entire setup, renew attempts on a task switch, or run arbitrary probes to make the save pass. Keep useful task help available within existing permissions; no recovery or save is required for chat-only success.
+
 ## Done when
 
 - [ ] Line one is a single plain next action.

@@ -37,6 +37,8 @@ If the app reports that policy requires sandboxing but the command would not be 
 
 The shared project file is `~/xo/.claude/settings.json`; review what may safely travel before committing it (`stage2/02-github.md`). This example is not a portable sandbox configuration or proof of a safe mode. Starting point for stage 1 (rungs 0-1), to adjust with your human in sitting 02 after the destination-host check:
 
+For the first settings file, show the exact proposed contents and path and obtain the chat yes before writing. Do not promise an approval box from rules that are not installed yet; only existing native controls can gate creation. An absent prompt alone does not establish protection; if the native gate is unknown, pause dependent configuration work and offer chat-only help under sitting 02's shared limits.
+
 ```json
 {
   "permissions": {

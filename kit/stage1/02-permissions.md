@@ -40,6 +40,8 @@ This grants rungs 0 and 1 only: memory and drafting.
 
 No always-allow for file edits covers them. Claude Code's explicit `ask` rules gate built-in edits even in Auto, but shell commands can bypass those rules: retain an explicit protected-command ask/deny route and test both. Codex must confirm its actual writable roots with `/status` or the adapter's safe checks before treating the parent folder as protected. A chat-approved rule change still passes through the native boundary: distinguish a human prompt, automatic review, and a deny rather than calling them equivalent. XO still asks in chat for the consequential decision; a protected write silently running outside that approved scope fails the gate.
 
+For the first settings file, rules not yet installed cannot gate their own creation. Preview the exact contents and path and obtain the chat yes; use existing native controls, not a promised prompt from the proposed rules. No prompt is not evidence of a protected boundary: unknown stays unverified and stops dependent configuration work, while chat-only help remains available. Keep the shared check-attempt limits below; bootstrap is not a new probe allowance.
+
 ## 3. Record it
 
 Write one ledger entry for the defaults per `templates/ledger.md`: what, the exact settings, their yes verbatim with a timestamp, how to reverse it (the previous settings, or "delete the file"), expiry (none).

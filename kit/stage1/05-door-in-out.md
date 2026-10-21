@@ -26,13 +26,12 @@ Keep the door in under two minutes of their reading. Carry out the required chec
 
 ## The door out (end of every sitting)
 
-1. Finish or park the current step at a clean point.
-2. Update the handoff: date it; next action on line one; what's waiting on your human; what you saved to memory this sitting.
-3. Preview exact changed memory text and paths (including any index/link updates) and wait for the memory-save yes before writing; follow `03-memory.md` for simple or indexed memory. A handoff/return-note approval or operational POLICY is not that yes. Offer a concrete useful next structure at a natural boundary, not an automatic upgrade or repeated declined prompt.
-4. Respect the chosen path: no recurring unsaved-instructions reminder after chat-only or not now. If the human wants a continuation, preview only the note and its destination under the applicable save approval; do not make full installation a condition of stopping.
-5. Propose the commit: show the list of changed files and a one-line message. On yes, stage exactly those files and run the secret scan (sitting 04) on the staged diff. A hit stops here.
-6. If the scan is clean, show the staged file list once more and commit only what your human approved.
-7. Tell your human it's safe to close.
+1. Finish or park the current step at a clean point. Respect chat-only, no and not now without recurring unsaved-instructions reminders; full installation is not a condition of stopping.
+2. Present one readable closing review: useful result, next action, what waits on the human, and proposed saves/actions with task context, recommendation/reason, decline/defer consequences and important uncertainty. Keep exact previews in that decision surface; use chat or smaller readable chunks if needed, not a blanket yes.
+3. Make memory, commit and any private upload separately selectable, each with yes, no or later. Preview exact memory text and paths (including index/link changes) under `03-memory.md`; a handoff/return-note approval or operational POLICY is not memory consent. Preview any handoff/return note and destination under its own applicable save approval, next action first, naming only memory actually saved. Offer useful structure only at a natural boundary, not a repeated declined upgrade. Preview the exact commit files/diff and message; for an already chosen private backup, preview the exact outgoing commits/files, verified private destination and exposure under sitting 04/stage 2. A local commit yes is not upload approval. Do not introduce a remote or backup setup merely to close.
+4. Execute only selected, approved actions under their existing gates. On commit yes, stage exactly the approved files and run sitting 04's secret scan on the staged diff. A hit stops the commit and dependent upload; disclose scan failures, never hide them. Verify staged content still matches the approved preview and run the remaining existing checks. Do not recite an unchanged staged list a second time or require another yes for it. Show material changes to content, files, message, destination or exposure and obtain fresh approval for the changed scope before proceeding. Upload only the separately approved outgoing scope after its checks; no sending or publication approval follows.
+5. If an action is declined or deferred, leave it undone and explain the actual consequence, such as local work remaining uncommitted or not backed up remotely; continue independent approved actions when safe. If closure is interrupted, verify actual state on return, report only actions actually completed and leave unapproved/pending actions pending; a preview is not consent. Preserve the last verified state and safe next step only under applicable save approval; if saving is blocked, denied or unapproved, offer copyable continuation here without retrying a denied route or claiming it saved.
+6. Close with what actually saved, committed or uploaded, what remains unavailable or undone, and how to resume. After consequential setup, say what the human can now do with verified capabilities and how to change or stop it. Say it is safe to close only with the actual unsaved/uncommitted/not-uploaded limits; do not claim backup or successful closure actions you did not verify.
 
 ## Write it down
 
@@ -41,7 +40,7 @@ Propose adding both doors, in short form, to your instructions file, through the
 ## Done when
 
 - [ ] You ran the door in once with your human watching, including the drift and liveness checks.
-- [ ] You ran the door out once, ending in a clean commit.
+- [ ] You ran the door out once with separately chosen saves, commit and private upload if applicable, or an honest declined/deferred/interrupted outcome; no blanket approval or mandatory commit.
 - [ ] The newest handoff opens with the next action and has no tables.
 - [ ] A due/requested lightweight kit comparison ran, or timing/network evidence stayed unknown/not checked without repeated gates; no every-return fetch or maintenance prerequisite. Candidate notices respected declines; review/install/adoption stayed separately approved.
 - [ ] Both doors are in the instructions file, approved through the self-edit gate.
