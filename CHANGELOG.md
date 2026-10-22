@@ -2,6 +2,10 @@
 
 This repo is the source of patch notes for every XO update from here on. **Unreleased** describes local source work, not an installed or published build. On publication, move reviewed entries under a dated heading and put the new full public kit SHA, previous public SHA, published URL, and any old-pin → new-pin mapping in the GitHub Release notes (the SHA cannot be embedded in its own commit without changing it). Describe what changes for existing installs and what still needs app testing. Mark rule-relevant changes **[rules]** and security fixes **[security]**; do not label an untested safeguard a verified fix. Publish the same notes with the clean public export and GitHub Release so both old-release and new-door-pin updaters can read them. The source-only file cannot notify anyone by itself.
 
+## Unreleased
+
+- **[rules]** Update reviews are grouped into one short summary with the full diff available on request; the agent still reviews the complete diff internally and discloses material security, permission, trust and data-egress changes. One bounded approval can cover the verified kit/PIN replacement, exact ledger entry and local commit where the installed gate permits it. Existing installed gates remain authoritative until separately approved exact adoption; installed instructions, settings, cadence and native permission prompts retain their own gates. Static source checks do not establish native-app behavior or measured prompt reduction.
+
 ## 2026-10-21 — XO-only guidance (proposed local candidate; not published)
 
 - **[rules]** Preview the first Claude settings file and obtain a chat yes; a proposed rule cannot prompt for approval before it exists. A newly exposed tool grants no new authority; check its actual effects against current permissions before first use.
