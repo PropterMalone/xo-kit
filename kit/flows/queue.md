@@ -46,6 +46,6 @@ Queue has no automatic confetti policy; roulette's optional native celebration b
 
 - [ ] You picked what you think is most urgent from known open tasks within authorized scope, with no new search or invented obligation.
 - [ ] One short reason distinguished your judgment from its supporting facts; no deadline proof, objective score or ranking intake was imposed.
-- [ ] Any user correction was accepted in their own terms and applied without argument, silent source edits or unapproved durable preferences.
+- [ ] Any Hero correction was accepted in their own terms and applied without argument, silent source edits or unapproved durable preferences.
 - [ ] Blocked urgency and the next available action were distinguished; the card had no 20-minute limit or automatic task switch.
 - [ ] Chosen actions and persistent changes followed existing permission/approval rules; completion was reported truthfully.

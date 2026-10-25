@@ -29,6 +29,18 @@ Only use this order if the human explicitly chooses the guided fuller tour. Othe
 
 Not offered in v0: sending on approval, scheduled work, an always-on machine. If your human asks, see `05-ladder.md`.
 
+## Spare subscription capacity, when chosen
+
+For low human effort on a chosen approved backlog, use `flows/spare-capacity.md` to consider useful end-of-week leftovers and keep foreground reserves on one subscription. The helper is optional and not required for XO. One bounded ongoing scope can cover unchanged batches; read `flows/subscription-runtime.md` for optional Linux capture/finite-run APIs, then verify installation and actual runtime separately before claiming unattended progress. Source/read/research/save authority stays scoped; manual work also keeps finite limits.
+
+## Optional address book, when relevant
+
+Outside the numbered tour, offer `flows/address-book.md` only for relevant chosen work or a request: find someone the human already knows by expertise or location. Kettle is a separate optional engine, not a prerequisite or an automatic tour step. Keep an existing permitted contact source if it serves the task under `03-sources.md`; no replacement is required. No, later, skip or stopping is valid under the offer rules above; a yes to explore grants no setup, connection, read or save.
+
+Manual contact research is a separate, explicitly chosen operation in `flows/address-book.md`, for one known person or a reviewed relevant cohort. It can grow public context without a biography interview; connection/lookup never starts it. Use that flow for guided export acquisition and separately approved new-contact capture, not automatic background enrollment.
+
+The optional Kettle flow requires Node.js >=24.22.1 <25 and the exact selected engine revision and setup guide. Core workflows are verified natively on Linux, Windows and macOS; advanced utilities are not certified across platforms. Verify public availability before setup. An offer yes grants no install, account binding, connection, upload or research.
+
 ## Optional task choices
 
 When the human wants help choosing or seeing their work, offer a useful default rather than a configuration exercise:
