@@ -106,7 +106,7 @@ you.</strong></li>
 <ul>
 <li><a href="#pick-a-door">Pick your starting app</a> <span>New to
 agentic work? Start here.</span></li>
-<li><a href="https://github.com/PropterMalone/xo-kit/blob/ead628a7c06c7e490ea56bc0648430927d4e8be4/kit/flows/browse-and-borrow.md">Browse
+<li><a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/browse-and-borrow.md">Browse
 for ideas</a> <span>Already have a setup? Borrow what helps.</span></li>
 </ul>
 </div>
@@ -116,10 +116,14 @@ for ideas</a> <span>Already have a setup? Borrow what helps.</span></li>
 Codex</strong>, not ordinary chat. Those are the parts of the apps that
 can work with files on your computer. You don&#39;t need to be a developer
 or have a coding task.</p>
-<p>Start with something useful: draft an appointment request, turn a
-scattered to-do list into one next action, or pick up an unfinished task
-without rebuilding it from memory. Stopping after a useful result is
-fine.</p>
+<p><strong>You don&#39;t need all the setup before using xo. Try doing
+something first</strong>: draft an appointment request, turn a scattered
+to-do list into one next action, or find a manageable step when you
+don&#39;t know what needs doing. Add a connection or capability only when
+trying the work shows how it would make your life easier. Choosing one
+piece does not commit you to the rest. Full setup is optional, not
+everyone&#39;s destination. Saying no or later leaves you working with what
+you already have.</p>
 <p>Some brief terminology: You&#39;re Hero. XO is your agent. xo is this
 larger package.</p>
 <p>From there you can:</p>
@@ -129,19 +133,32 @@ larger package.</p>
 <li>choose the full guided setup, with saved instructions and
 memory.</li>
 </ul>
+<p>You can also ask XO to find out what connections might help, without
+connecting anything. It can compare relevant public information about
+what your app and plan support, access, costs, limits and unknowns. That
+does not sign you in, install anything, change settings or inspect your
+accounts. Exploring options can be enough; it is not a recurring survey
+or required step. If you say you have spare time, XO may suggest an
+occasional build-out task: one useful improvement with a modest effort,
+or just finding out what&#39;s possible. “No” or “not now” is enough. It
+won&#39;t keep prompting, infer your energy from your writing or replace
+unfinished work without your choice.</p>
 <p>Saving your place doesn&#39;t commit you to the full setup. Connecting
 email or a calendar is optional; this does not start monitoring them
 automatically.</p>
 <p>After useful work, XO can offer to keep going and make your XO work
-better for you. You decide whether you have the time and energy. It can
-also notice something that keeps getting in the way and suggest one
-useful improvement, explaining the benefit, effort, cost and limits
-before you choose. Saying no is fine; it won&#39;t keep asking or change its
+better for you. You decide whether you have the time and energy. If it
+sees you repeating work during a task you&#39;ve chosen, it can suggest a
+reusable template, a saved procedure or a connection that could save
+effort. It should start with the simplest useful option and explain the
+benefit, effort, access, exposure, cost and what still needs your
+review. A suggestion does not start automation or put the current task
+on hold. Saying no is fine; it won&#39;t keep asking or change its
 instructions without showing you the change and waiting for your
 yes.</p>
 <p>xo is for people who have used chatbots but are new to assistants
 working with files on their computer.</p>
-<p><strong>Already have a setup?</strong> <a href="https://github.com/PropterMalone/xo-kit/blob/ead628a7c06c7e490ea56bc0648430927d4e8be4/kit/flows/browse-and-borrow.md">Browse
+<p><strong>Already have a setup?</strong> <a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/browse-and-borrow.md">Browse
 and borrow</a>. Read for ideas, keep what helps, and adapt it to what
 you already use. You don&#39;t need to install xo or replace your setup.</p>
 <p><strong>Optional:</strong> <a href="kettle.html">Kettle: You know a
@@ -152,6 +169,10 @@ use xo. Before connecting, know that its reader can search the whole
 index, not just the person you ask about. Reads through a cloud model
 expose the approved content to its provider; local files alone don&#39;t
 establish verified local model processing.</p>
+<p><strong>Local candidate:</strong> <a href="prose.html">Prose, by
+David Crespo</a>. Review a Markdown draft in your browser and send
+passage questions or changes to XO through a checked connection. Our
+variant is not released; writing in chat still works.</p>
 <h2 id="what-xo-isnt">What xo isn&#39;t</h2>
 <p>This is not a code framework.</p>
 <p>This is not an app.</p>
@@ -178,8 +199,10 @@ nothing. An optional private GitHub backup puts a copy on GitHub&#39;s
 servers; you choose whether to use it after reviewing what would leave
 your computer.</p>
 <h2 id="ok-whats-the-catch">OK, what&#39;s the catch?</h2>
-<p>You&#39;ll need access to Claude Code or Codex in the desktop app; check
-your existing plan before spending anything to test this.</p>
+<p>You&#39;ll need access to Claude Code or Codex; the guided doors use the
+desktop apps. If you&#39;re already using Codex CLI, see the terminal route
+below. Check your existing plan before spending anything to test
+this.</p>
 <p>Start with a task here. Saving your place takes some setup;
 connecting other apps is optional and can wait. A note saves the result.
 A separately chosen return setup aims to let you pick the familiar
@@ -202,7 +225,23 @@ relevance but they are, also, very annoying.</p>
 to try it is welcome; tell me where you get stuck.</p>
 <h2 id="how-you-start">How you start</h2>
 <p>Pick Claude or ChatGPT, open Code or Codex in its desktop app, and
-paste the starting message.</p>
+paste the starting message. Already using Codex CLI in a terminal? Use
+the <a href="#codex-cli">terminal route</a> instead of translating the
+desktop steps.</p>
+<h2 id="codex-cli">Codex CLI</h2>
+<p>Already using Codex in a terminal? Try useful work in your existing
+session; no desktop download or full setup is required. Before chosen
+file setup, ask XO to read the kit&#39;s shared Codex guidance and terminal
+section. Desktop folder pickers, composer controls and Settings paths
+are not terminal instructions. Exact terminal launch commands and
+shortcuts are not established here; this is not a tested CLI
+installation or a Chromebook-support claim.</p>
+<p>If moving between terminal and browser fails, keep working in the
+existing conversation or ask for one compact continuation with your
+chosen work, next action and relevant limits. You should not have to
+repeat copying or screenshots. A failed automatic-load check stays
+unverified; an explicit read is recovery, not proof that returning by
+folder works.</p>
 <h2 id="pick-a-door">Pick a door</h2>
 <p>You can switch models, apps, or both later and keep your saved
 instructions and memory files. A new app still needs its own setup and

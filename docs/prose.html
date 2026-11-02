@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Prose, by David Crespo</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+:root { color-scheme: light dark; --paper:#fcfaf5; --ink:#222827; --muted:#505d59; --line:#b7c4bc; --accent:#174c54; --panel:#f0f5f1; }
+@media (prefers-color-scheme: dark) { :root { --paper:#182320; --ink:#f1f2e9; --muted:#c4d0c9; --line:#547069; --accent:#a3d7de; --panel:#243832; } }
+html { background:var(--paper); color:var(--ink); scroll-behavior:smooth; }
+body { max-width:39rem; margin:0 auto; padding:2rem clamp(1.1rem,5vw,3rem) 5rem; font: 1.08rem/1.65 Charter, 'Iowan Old Style', Georgia, serif; }
+h1,h2 { font-family:system-ui,sans-serif; line-height:1.2; letter-spacing:-.035em; }
+h1#xo { font-size:clamp(3.3rem,12vw,6rem); margin:.3rem 0 0; color:var(--accent); text-align:center; }
+h2 { margin-top:2.4rem; font-size:1.65rem; }
+p,li { overflow-wrap:break-word; }
+a { color:var(--accent); text-underline-offset:.18em; text-decoration-thickness:.09em; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+.name-meanings { margin:.2rem 0 1.4rem; text-align:center; }
+.name-meanings ul { padding:0; margin:0; list-style:none; color:var(--muted); font:.94rem/1.55 system-ui,sans-serif; }
+#xo ~ h2:first-of-type + ul { border-block:1px solid var(--line); padding:1rem 0 1rem 1.5rem; }
+.entry-choices { margin:1.5rem 0 2rem; }
+.entry-choices ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; padding:0; margin:0; list-style:none; }
+.entry-choices li { min-width:0; font:1rem/1.5 system-ui,sans-serif; }
+.entry-choices a { display:flex; align-items:center; justify-content:center; min-height:3.25rem; padding:.7rem .8rem; font-weight:650; line-height:1.35; text-align:center; background:var(--accent); color:var(--paper); border-radius:.4rem; text-decoration:none; }
+.entry-choices a:hover,.entry-choices a:focus-visible { text-decoration:underline; }
+.entry-choices span { display:block; margin-top:.55rem; color:var(--muted); font-size:.9rem; }
+#pick-a-door { scroll-margin-top:1rem; }
+#pick-a-door ~ ol { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.85rem; list-style:none; padding:0; font:1rem/1.5 system-ui,sans-serif; }
+#pick-a-door ~ ol li { position:relative; border:2px solid var(--line); background:var(--panel); border-radius:.5rem; padding:1rem; }
+#pick-a-door ~ ol li:has(a:hover),#pick-a-door ~ ol li:has(a:focus-visible) { border-color:var(--accent); }
+#pick-a-door ~ ol a { font-weight:750; font-size:1.22rem; }
+#pick-a-door ~ ol a::after { content:''; position:absolute; inset:0; }
+#pick-a-door ~ ol li:has(a[href="door-local.html"]) { grid-column:1/-1; border:0; border-left:3px solid var(--line); border-radius:0; background:none; color:var(--muted); padding:.25rem 0 .25rem 1rem; font-size:.94rem; }
+#pick-a-door ~ ol li:has(a[href="door-local.html"]) a { font-size:1rem; }
+@media (max-width:34rem) { body { padding-top:1rem; } .entry-choices ul,#pick-a-door ~ ol { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+</style>
+<link rel="icon" type="image/png" sizes="64x64" href="xo-icon.png">
+<link rel="icon" type="image/svg+xml" href="xo-icon.svg">
+</head>
+<body>
+<h1 id="prose-by-david-crespo">Prose, by David Crespo</h1>
+<p>Read a draft in your browser. Select a passage, ask a question or
+request a change. With a working connection, XO answers or revises the
+Markdown file, and you see the result on the page.</p>
+<p>Prose is optional. Writing in chat still works.</p>
+<h2 id="with-xo">With xo</h2>
+<p>You choose the draft and what you want help with. XO carries the
+setup and keeps track of the work. A question should get an answer, not
+an unwanted rewrite. A requested change should stay within what you
+asked for.</p>
+<p>The Markdown file stays yours. Liking the wording does not confirm
+its facts, approve broader reuse or send it anywhere.</p>
+<p>With a cloud assistant, the text XO reads goes to its model provider.
+A local browser does not change that. You choose what to share and
+save.</p>
+<h2 id="availability">Availability</h2>
+<p>Prose is a core XO module. Installing and using it are optional.</p>
+<p><strong>Limited prerelease:</strong> <a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-02-prose-rc.1">release
+0.1.0-rc.1</a>, <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip">source
+ZIP</a> and <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip.sha256">SHA256
+checksum</a>. Verify public availability and the pinned checksum before
+setup. Mac real-agent handling and interrupted-agent recovery are
+unverified. The separate Prose attachment is not GitHub&#39;s automatic XO
+source download.</p>
+<p>Install Deno 2.9.6 separately. The plain editor needs no Node.js, npm
+command, Python or Helix. The browser bundle is included, but server
+dependencies download on first use. This is not an offline distribution.
+XO can carry the permitted setup and verify a fictional draft before
+using yours; selecting this guide installs nothing.</p>
+<p>A cached native Windows x64 route with Claude 2.1.316 completed a
+same-agent question, scoped edit, authenticated replies and browser
+reload. It uses the explicit
+<code>--allow-windows-claude-all-access</code> opt-in. <strong>That
+disables Deno&#39;s sandbox and grants broad process, FFI, system, network
+and filesystem authority.</strong> Restricted defaults remain unchanged;
+an error never authorizes escalation.</p>
+<p>Native macOS ARM64 runtime/browser checks used synthetic agent
+operations; the Mac real-agent route is unverified. A cached Linux Codex
+route was checked separately, not as native Windows/Mac proof. Fresh
+installation, interrupted recovery, generic resend/deduplication, Intel
+Macs, Windows ARM64 and other browsers remain unverified. Check the
+connection in your actual app. A page opening is not proof that comments
+reach the agent. If that connection is unavailable, XO can keep helping
+in the conversation.</p>
+<p>Source ZIP: <strong>4,108,090 bytes</strong>. SHA256:
+<code>91807ce6f20ee7909b0aa8fb9d1dfeb5ff79e9bd8f21e8a89c8448b2795d8f26</code>.</p>
+<p><a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/prose.md">Read
+the agent guide</a>.</p>
+<h2 id="credit">Credit</h2>
+<p>Prose, by David Crespo. Our variant comes from his <a href="https://github.com/david-crespo/dotfiles/tree/31262f3d8506ede2d10004cd5c4a21d076541848">original
+standalone Prose source</a>. He replaced it on October 2 with the
+Markdown app in <a href="https://github.com/david-crespo/ah/tree/208c7a1b40c1ba464531196c96542c5ae99ba07e">ah,
+his current project</a>.</p>
+<p>The original source is MIT licensed: <a href="https://raw.githubusercontent.com/david-crespo/dotfiles/31262f3d8506ede2d10004cd5c4a21d076541848/LICENSE">Copyright
+(c) 2024 David Crespo</a>. Code reused from ah carries its <a href="https://raw.githubusercontent.com/david-crespo/ah/208c7a1b40c1ba464531196c96542c5ae99ba07e/LICENSE">MIT
+license, Copyright (c) 2026 David Crespo</a>. Keep those notices with
+redistributed code. The xo integration and local modifications are
+separate from Crespo&#39;s work. This is not an endorsement of xo by
+him.</p>
+<p><a href="index.html">Back to xo</a></p>
+</body>
+</html>
