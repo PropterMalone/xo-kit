@@ -21,9 +21,9 @@ Routine factual review outcomes, tool catalogs and status timestamps use `templa
 Only use this order if the human explicitly chooses the guided fuller tour. Otherwise offer one relevant option for their chosen work or request, not a feature menu or a pass through every module. Completing a task or stage does not start this tour or its hygiene list. Skip anything that doesn't apply; stop the pass whenever your human wants. Unasked offers and unperformed checks create no later obligations; keep the chosen task primary and return to it after a detour unless the human chooses otherwise.
 
 1. **Drafting and approval gates** (rung 1, `05-ladder.md`). Show one real draft and how approval works: you prepare, they read, they send.
-2. **Connect one useful source, with the human** (`03-sources.md`, rung 2). Ask which account would help today and what they want to find. Include accounts already connected; do not make them redo sign-in. Explain the concrete benefit, requested access, provider disclosure, likely money/usage and privacy costs, and how to undo it. Guide the actual app's setup one screen at a time; check the sign-in screen rather than guessing. Take one bounded read only after the working-session mutation gate and a separate scoped yes. For work/client material, clarify policy before anything crosses. Defer standing reads and broad history until useful.
+2. **Connect one useful source, with the human** (`03-sources.md`, rung 2). Ask which account would help today and what they want to find. Include accounts already connected; do not make them redo sign-in. Explain the concrete benefit, requested access, provider disclosure, likely money/usage and privacy costs, and how to undo it. Guide the actual app's setup one screen at a time; check the sign-in screen rather than guessing. Use one authorized bounded exact read under `03-sources.md`; an original informed request can supply authority. Distinguish optional isolation from required controls without demanding every mutation tool disabled, another yes or a ledger save. For work/client material, clarify policy before anything crosses. Defer standing reads and broad history until useful.
 3. **Private GitHub remote** (`02-github.md`). Optional; local git plus the machine's backup is a complete setup. Do not make this a prerequisite for connecting a personal source.
-4. **Other routes, later:** if a direct connection cannot pass its actual-session safety gate, name the limitation and continue with human-selected content or the source's own view. Do not turn the first connector sitting into proxy design; `04-proxies.md` is a later, separately chosen option.
+4. **Other routes, later:** if the exact direct read is unsupported, denied or lacks required authority/controls, name that actual limit and consider an existing supported narrower reader before shifting work to human-selected content or the source's own view. Do not turn the first connector sitting into proxy design; `04-proxies.md` is a later, separately chosen option.
 5. **Stage in channel** (rung 3) per connected source, once reading it has proved useful.
 6. **Worth considering** (`06-worth-considering.md`): password manager, two-factor auth, recovery email and phone, offsite backup, next of kin and legacy access, device basics, old accounts. One offer at a time, when it fits.
 
@@ -53,14 +53,9 @@ These are on request, not new compulsory stops in this tour or door in. No, late
 
 ## Friction triggers for "later"
 
-Re-offer an explicitly answered "later" once when you see its friction, naming what you saw:
+Follow START's observed-repetition guidance: name effort actually seen in authorized chosen work and prefer the simplest useful option, not an automatic source-read or rung-3 upgrade. Repeated formatting of a weekly update might merit a template or saved procedure; repeated selected copy/paste might merit optional public-doc connector research, without connecting. Neither example is a count trigger or permission grant.
 
-- Your human pastes mail, calendar, or notes in by hand three times: offer to read that source.
-- They copy your drafts into the same app repeatedly: offer rung 3 for that source.
-- They lose work, or switch machines: offer the GitHub remote.
-- They reuse or forget a password in front of you: offer a password manager.
-
-Example: "You've pasted mail in three times this week. Want me to read that inbox directly?" If the answer is later again, respect it and offer saving only through the separate ledger gate. Wait for new friction; don't turn a refusal to save into another offer.
+Respect no or later. Re-offer only if the human reopens it or genuinely changed relevant circumstances justify it under existing rules, not merely more of the same repetition. This also applies to backup or password-manager offers after observed lost work, machine switching or password trouble. Keep the chosen task primary. Any selected access or change still follows its ladder, disclosure, exact approval and native-boundary gates; saving an answer has its separate ledger gate. A refusal to save is not another offer.
 
 ## Done when
 

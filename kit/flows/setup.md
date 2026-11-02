@@ -2,6 +2,24 @@
 
 For the agent. Read this full guide only when the human chooses full installation or its bounded recovery. Choosing to explore, browsing the kit, completing a task or saving a continuation is not installation approval. `START.md` remains the standing task entry; save the approved seed, not this setup manual, as standing instructions. All seed, START, protected-edit, source and app gates remain in force.
 
+## Choose one useful finish point
+
+Start with useful work, not this checklist. Try the chosen task and offer a connector or capability only when concrete friction or opportunity in authorized work shows its benefit. Full setup is optional, not everyone's destination. Choosing one piece does not commit the human to the rest; no/later continues the existing route without reminders or background monitoring. All disclosure and permission gates still apply.
+
+- **Ready now:** a useful chat answer, plan or draft after the privacy choice, using authorized shared context. Stop setup there and do the work.
+- **Selected capability:** name its finish line before changes. A note-only save is done when exact approved text is saved and checked, not when instructions or memory are installed. Folder return is ready only after its loading/right-work/protection checks pass; a failed check leaves that feature unverified. A chosen source read is done when the authorized exact read yields its useful result, with reach and limits reported under `stage2/03-sources.md`. This is one functioning capability, not a completed installation or a general security certification.
+- **Optional remaining setup:** leave it unchosen or paused. Do not append the rest of installation to a completed capability. If blocked, stop only the dependent work, state the exact known/unknown limit once and continue available task work. Do not carry optional setup as recurring debt.
+
+If the human chooses full installation, keep its existing staged procedure and backup default, including `stage1/04-backup.md`; local-only backup means no remote, not no Git. A paused installation is not complete, but it need not block unrelated useful work.
+
+## Optional capability fact-finding
+
+On request or when chosen authorized work reveals a relevant opportunity, offer a bounded look at public official documentation within approved public-network scope: potential connectors, actual app/plan support, capabilities/access scope, cost, limits and uncertainty, with current source pointers. Leave unverified details unknown and keep private task details out of queries. This is not approval to connect or use anything: no authentication, installation, settings changes, account probing or account content. Options can be the finished outcome; not a recurring survey, background scan or mandatory stage. No/later continues available work; connecting or using a source needs its own informed approval, disclosure and actual-session checks.
+
+## Occasional build-out task
+
+At a natural boundary with explicitly available spare time (the human says so or chooses exploration), offer one concrete relevant improvement with its benefit, modest effort and easy no/not now. This can be exploration, not only immediate friction; fact-finding alone can be the finished task without connection approval. Preserve unfinished chosen work; ask before switching. Use no recurring prompts, guilt, priority override, setup debt, inferred clock or monitoring, and no inferred capacity from writing/engagement. A decline ends the offer. This optional exception to friction-triggered suggestions is not default progression toward full setup; actual changes keep their existing gates.
+
 ## Before any target paths or changes
 
 Establish the seed-pinned kit identity and read `training-opt-out.md`, the **full adapter for the actual app**, and `templates/handoff.md` from that same version before proposing target paths, layouts, settings, protected writes or permission probes. Complete the privacy discussion and confirmed setting or informed continuation choice before personal intake or file creation. No setup choice grants source access, sending or a policy bypass. Read `flows/project-return.md` before any chosen return preparation. Use `flows/restore.md` first when an existing or broken setup calls for it, with separate inspection/restore consent.
@@ -31,7 +49,8 @@ Before a pause or fresh chat, offer a short, human-reviewable continuation note 
 Your harness decides the adapter. You can read it while preparing the privacy step, but do not create anything in `~/xo` until the training-setting discussion is complete. Read the adapter in full before proposing files: it sets the folder layout (Codex splits it) and the instructions file's name. If files already exist, inspect and propose any needed move separately; never move them automatically, and pause if the adapter is unavailable.
 
 - Claude Code (including inside the Claude desktop app): `adapters/claude-desktop.md`
-- Codex (including inside the ChatGPT desktop app): `adapters/codex-app.md`
+- **Codex desktop** (inside the ChatGPT desktop app): `adapters/codex-app.md`, shared guidance plus desktop-only controls.
+- **Codex CLI** (terminal): the same full `adapters/codex-app.md`, especially “Codex CLI: terminal route.” Shared safety/discovery criteria apply; desktop controls are not CLI instructions. This is not a validated CLI installation route; do not invent launch commands or shortcuts.
 - Anything else: there's no adapter yet. Tell your human. Pause file setup under the partial-kit rule; offer chat-only help rather than guessing a layout or settings.
 
 ## Changing apps with existing instructions

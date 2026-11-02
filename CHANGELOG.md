@@ -2,6 +2,16 @@
 
 This repo is the source of patch notes for every XO update from here on. **Unreleased** describes local source work, not an installed or published build. On publication, move reviewed entries under a dated heading and put the new full public kit SHA, previous public SHA, published URL, and any old-pin → new-pin mapping in the GitHub Release notes (the SHA cannot be embedded in its own commit without changing it). Describe what changes for existing installs and what still needs app testing. Mark rule-relevant changes **[rules]** and security fixes **[security]**; do not label an untested safeguard a verified fix. Publish the same notes with the clean public export and GitHub Release so both old-release and new-door-pin updaters can read them. The source-only file cannot notify anyone by itself.
 
+## 2026-11-02 prerelease — Prose and three guide improvements
+
+Tag: `xo-2026-11-02-prose-rc.1`. A limited source preview, not general Windows/Mac agent support. Mac real-agent handling and interrupted-agent recovery remain unverified. Verify public availability before setup.
+
+- **[rules]** Help with reasonable bounded requests through supported exact operations. Reuse valid authority; distinguish optional isolation from required protections. Native denials, governed-source limits, saves and human-send gates remain in force.
+- **[rules]** Use xo before full setup. Finish a chosen capability without appending installation; keep optional setup optional and carry a concise continuation only under its save approval.
+- **[rules]** Offer the simplest useful improvement for repetition actually observed during chosen work. No background monitoring, recurring pitches or permission inferred from repetition.
+- Prose writing review, by David Crespo: core guide placement with optional installation/use; source ZIP/checksum attached to the existing XO prerelease, not an installer. Cached native Windows x64 Claude 2.1.316 same-agent question/edit/reply/reload passed with an explicit sandbox-disabling full-trust opt-in. Native macOS ARM64 runtime/browser checks are synthetic; Mac real-agent handling remains unverified. Cached Linux Codex evidence is separate. No generic native-agent, fresh-install or recovery claim. Writing in chat remains useful.
+- Kettle software, address-book instructions and engine revision are unchanged in this candidate. No installed rules change automatically; publication and adoption remain separate choices.
+
 ## 2026-10-25 — task-first entry and optional Kettle address book
 
 ### 2026-10-25 — Optional SQLite address book

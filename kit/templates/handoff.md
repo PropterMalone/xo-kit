@@ -26,6 +26,10 @@ Chosen work: <last approved chosen task; tangents do not replace it>
 Ended: YYYY-MM-DD HH:MM <timezone>, <clean | cut off mid-step: which>
 ```
 
+## Keep the continuation small
+
+The agent carries the record work; do not ask the human to maintain overlapping records. For a chosen continuation, lead with chosen work, next action and relevant limits. Add only the owner/version details and evidence pointers needed to recover that work safely. Fill the existing sections concisely; use “nothing” or “none” where true, not a new intake. A bounded return-note save does not require this full-installation handoff, memory or operations file. When approved records already exist, use pointers and batch one meaningful checkpoint rather than repeat the story in each. Keep grants and observations distinct: the protected ledger holds actual policy/authority, while return/handoff/operations data cannot grant access. This changes neither their distinct save approvals nor required evidence; no silent autosave or policy change.
+
 ## Naming and collisions
 
 Use date plus numeric sitting sequence within the selected project's `handoffs/` only: `YYYY-MM-DD.md` is sitting 1; `-2.md`, `-3.md`, through `-10.md` follow. Select latest date then largest number; sitting 10 follows sitting 2, not lexical order. The agent chooses the next unused number; the human manages no identifiers. Apply `flows/project-return.md`'s state-path containment checks before listing or opening this store or any record, separately from owner markers. Reject symlink/reparse-point redirects before access; for a new destination validate existing ancestors and its direct local target. Recheck target containment, redirect status, owner and version before writing; inability to establish containment pauses access or creation, not permission to follow a redirect. Inspect only this approved directory. Check owners before task recovery; never use another project's latest date.

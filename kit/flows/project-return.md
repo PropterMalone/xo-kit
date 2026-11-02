@@ -52,7 +52,8 @@ Ask whether to continue the task, choose other work or resume setup.
 New tasks or tangents do not silently replace this return point. Preview and
 ask before updating it; do not write another project's or thread's state here.
 A completed installation still follows its door-in checks. Connector reach
-and mutation gates must be checked in the actual session before any read.
+and the exact operation must be checked under stage2/03-sources.md before use;
+optional isolation is not a blanket prerequisite for an authorized personal read.
 ```
 
 For a full installation, reuse this small return entry; continue the ordered guide only when chosen. Do not re-save already approved identical files or reinitialize a root. An older install needs exact reviewed changes, not an automatic migration.

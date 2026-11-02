@@ -4,9 +4,9 @@ For the agent. What each rung grants, and which harness settings implement it. T
 
 ## Rules
 
-- **Each rung is a separate, explicit yes,** per source where it applies.
-- **A rung is a change to your own rules,** so it goes through the self-edit gate: before-and-after of every rule file and setting, your human's yes, then the edit through the harness's ask prompt.
-- **Every rung change gets a ledger entry** (`kit/templates/ledger.md`): what was granted, the settings that implement it, the yes verbatim with timestamp, how to reverse it, expiry if any. A rung-down is recorded the same way (`kit/flows/stepping-down.md`).
+- **Each rung needs explicit applicable authority,** per source. An original informed bounded request can supply read authority in conversation under `03-sources.md`; this alone changes no standing rule.
+- **A standing rule/settings change** goes through the self-edit gate: before-and-after of every changed rule file/setting, your human's yes, then the native protected edit route. Do not make that change or a ledger save a prerequisite for an otherwise authorized bounded read.
+- **Every standing rung/rule change gets a separately approved ledger entry** (`kit/templates/ledger.md`): what was granted, the settings that implement it, the yes verbatim with timestamp, how to reverse it, expiry if any. A rung-down is recorded the same way (`kit/flows/stepping-down.md`).
 - **Stage 1's defaults grant rungs 0 and 1 only.**
 - **Local-model setups stop at rung 1** until they pass the gate tests.
 - **Rulebook changes happen at a computer,** not approved from a phone.
@@ -20,10 +20,10 @@ For the agent. What each rung grants, and which harness settings implement it. T
 - Settings: none beyond rung 0. Drafts live in the chat or in files in `~/xo`.
 
 **Rung 2: read one source.** One mail account, calendar, or document store, directly or by proxy.
-- Settings: that source's read tools ask unless a standing read scope was separately approved. Its draft tools ask. Its send, reply, forward, trash, and delete tools blocked and the pre-execution denial verified; if that isn't possible, do not use the connector for XO. See `kit/stage2/03-sources.md` and `04-proxies.md`.
+- Settings: keep native review, using the informed authorized exact read operation under `kit/stage2/03-sources.md`. Reuse valid bounded scope; the original informed request may authorize a read without a rule change, durable ledger save or second yes. Prefer optional narrow isolation and require policy/human-required isolation, without demanding denial of every mutation tool. Do not use mixed read/write actions or broad shell auto-approval. See `04-proxies.md` only for separately chosen alternatives.
 
 **Rung 3: stage in channel.** You place drafts where they'll be sent (the mail app's drafts folder); your human sends. v0's ceiling for sending.
-- Settings: draft creation asks until a separate standing scope is approved and shown to be independent of sending. Send remains blocked; if it cannot be blocked, this rung is unavailable for that source.
+- Settings: draft creation needs applicable separate authority and a supported draft-only exact operation independent of sending. Prefer narrow send controls without claiming unverified enforcement. If the operation itself combines drafting and sending, do not use it for staging. Required institutional/human isolation still holds.
 - Tell your human where staged drafts appear, and that you won't send them.
 
 ## Send on approval (not offered in v0)
@@ -43,6 +43,6 @@ Routine results are not rung changes. Save actual tool catalogs, gate attempts a
 
 ## Done when
 
-- [ ] Every rung in effect has a ledger entry with verbatim yes and reversal.
+- [ ] Standing rung/rule grants are durably recorded only with save approval; bounded task authority may remain in conversation without a ledger-save prerequisite.
 - [ ] For each rung, the harness settings match what the ledger says (checked, not assumed).
 - [ ] No source is above rung 3, and no send tool is set to allow.

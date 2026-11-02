@@ -26,7 +26,7 @@ For all routes, establish applicable employer/client/project authority before an
   - **Upkeep/reversal:** little setup, repeated human effort. It is an as-of snapshot; omissions and later changes are unknown. Stop future sharing; review copies/notes separately. If the habit stalls, offer another permitted route or pause.
 - **Direct connection — read an approved source scope.**
   - **View:** the human gets an answer from selected items; XO/provider receives what the route actually exposes and XO reads, not automatically the human's whole view.
-  - **Permission:** use `03-sources.md` for access, costs, separate connect/read approvals and the working-session mutation gate.
+  - **Permission:** use `03-sources.md` for authority, exact operation, costs, optional isolation and actual limits. Connection alone grants no reads; valid original informed bounded authority needs no repeated yes or universal mutation audit.
   - **Upkeep/reversal:** check current app/account support and setup effort. Sign-in proves neither safe reads, continuous monitoring nor complete history. Authorized checks establish freshness; disconnect and revoke the grant, then review copies/notes separately.
 
 Recommend the richest permitted, useful route the human wants, weighing unnecessary disclosure, active effort, waiting and recurring interruptions. If they choose a proxy, use the setup and liveness checks below; a direct choice returns to `03-sources.md`.
