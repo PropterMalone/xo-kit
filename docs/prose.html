@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Prose, by David Crespo</title>
+  <title>Prose</title>
   <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -52,70 +52,82 @@ a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 @media (max-width:34rem) { body { padding-top:1rem; } .entry-choices ul,#pick-a-door ~ ol { grid-template-columns:1fr; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
-<link rel="icon" type="image/png" sizes="64x64" href="xo-icon.png">
-<link rel="icon" type="image/svg+xml" href="xo-icon.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="https://proptermalone.github.io/xo-kit/xo-icon.png">
+<link rel="icon" type="image/svg+xml" href="https://proptermalone.github.io/xo-kit/xo-icon.svg">
 </head>
 <body>
-<h1 id="prose-by-david-crespo">Prose, by David Crespo</h1>
-<p>Read a draft in your browser. Select a passage, ask a question or
-request a change. With a working connection, XO answers or revises the
-Markdown file, and you see the result on the page.</p>
-<p>Prose is optional. Writing in chat still works.</p>
-<h2 id="with-xo">With xo</h2>
-<p>You choose the draft and what you want help with. XO carries the
-setup and keeps track of the work. A question should get an answer, not
-an unwanted rewrite. A requested change should stay within what you
-asked for.</p>
-<p>The Markdown file stays yours. Liking the wording does not confirm
-its facts, approve broader reuse or send it anywhere.</p>
-<p>With a cloud assistant, the text XO reads goes to its model provider.
-A local browser does not change that. You choose what to share and
-save.</p>
-<h2 id="availability">Availability</h2>
-<p>Prose is a core XO module. Installing and using it are optional.</p>
-<p><strong>Limited prerelease:</strong> <a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-02-prose-rc.1">release
-0.1.0-rc.1</a>, <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip">source
-ZIP</a> and <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip.sha256">SHA256
-checksum</a>. Verify public availability and the pinned checksum before
-setup. Mac real-agent handling and interrupted-agent recovery are
-unverified. The separate Prose attachment is not GitHub&#39;s automatic XO
-source download.</p>
-<p>Install Deno 2.9.6 separately. The plain editor needs no Node.js, npm
-command, Python or Helix. The browser bundle is included, but server
-dependencies download on first use. This is not an offline distribution.
-XO can carry the permitted setup and verify a fictional draft before
-using yours; selecting this guide installs nothing.</p>
-<p>A cached native Windows x64 route with Claude 2.1.316 completed a
-same-agent question, scoped edit, authenticated replies and browser
-reload. It uses the explicit
-<code>--allow-windows-claude-all-access</code> opt-in. <strong>That
-disables Deno&#39;s sandbox and grants broad process, FFI, system, network
-and filesystem authority.</strong> Restricted defaults remain unchanged;
-an error never authorizes escalation.</p>
-<p>Native macOS ARM64 runtime/browser checks used synthetic agent
-operations; the Mac real-agent route is unverified. A cached Linux Codex
-route was checked separately, not as native Windows/Mac proof. Fresh
-installation, interrupted recovery, generic resend/deduplication, Intel
-Macs, Windows ARM64 and other browsers remain unverified. Check the
-connection in your actual app. A page opening is not proof that comments
-reach the agent. If that connection is unavailable, XO can keep helping
-in the conversation.</p>
-<p>Source ZIP: <strong>4,108,090 bytes</strong>. SHA256:
-<code>91807ce6f20ee7909b0aa8fb9d1dfeb5ff79e9bd8f21e8a89c8448b2795d8f26</code>.</p>
-<p><a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/prose.md">Read
-the agent guide</a>.</p>
-<h2 id="credit">Credit</h2>
-<p><a href="https://bsky.app/profile/davidcrespo.bsky.social">David Crespo on Bluesky</a>.</p>
-<p>Prose, by David Crespo. Our variant comes from his <a href="https://github.com/david-crespo/dotfiles/tree/31262f3d8506ede2d10004cd5c4a21d076541848">original
-standalone Prose source</a>. He replaced it on October 2 with the
-Markdown app in <a href="https://github.com/david-crespo/ah/tree/208c7a1b40c1ba464531196c96542c5ae99ba07e">ah,
-his current project</a>.</p>
-<p>The original source is MIT licensed: <a href="https://raw.githubusercontent.com/david-crespo/dotfiles/31262f3d8506ede2d10004cd5c4a21d076541848/LICENSE">Copyright
-(c) 2024 David Crespo</a>. Code reused from ah carries its <a href="https://raw.githubusercontent.com/david-crespo/ah/208c7a1b40c1ba464531196c96542c5ae99ba07e/LICENSE">MIT
-license, Copyright (c) 2026 David Crespo</a>. Keep those notices with
-redistributed code. The xo integration and local modifications are
-separate from Crespo&#39;s work. This is not an endorsement of xo by
-him.</p>
+<h1 id="prose">Prose</h1>
+<h2 id="read-the-draft-mark-the-bit-that-needs-work">Read the draft.
+Mark the bit that needs work.</h2>
+<p>A browser window for writing with an agent. Select a passage and
+leave a comment: “What does this mean?” “Too long.” “Keep the point,
+lose the throat-clearing.”</p>
+<p>With an agent connected, the answer appears beside the draft. Ask for
+an edit and the Markdown file changes too.</p>
+<p><strong>Built from David Crespo’s Prose.</strong> Find him <a href="https://bsky.app/profile/davidcrespo.bsky.social">on Bluesky</a>,
+or see what he’s building now in <a href="https://github.com/david-crespo/ah">ah</a>.</p>
+<div class="entry-choices">
+
+<ul>
+<li><a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-02-prose-rc.1">Get
+Prose</a> <span>Source download · preview release</span></li>
+<li><a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/prose.md">Set
+it up with XO</a> <span>Give the guide to your agent.</span></li>
+</ul>
+</div>
+
+<h2 id="less-copy-paste">Less copy-paste</h2>
+<p>You’re reading a letter. The second paragraph sounds like somebody
+trying to win an argument on LinkedIn. Highlight it, ask for something
+less grand, and read the change where it belongs—not in another chat
+bubble.</p>
+<p>You can type directly in the page, too. Comments and replies stay
+with the draft. If another editor changes the file while you’re writing,
+Prose asks you to resolve the conflict rather than quietly replacing
+your work.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>Prose is part of xo, but you don’t need the rest of xo to use it.</p>
+<p>You’ll need <strong>Deno 2.9.6</strong> and, for agent replies, a
+compatible Claude Code or Codex session. The <a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/prose.md">agent
+guide</a> covers the download and launch commands. First use needs an
+internet connection for dependencies; the browser editor is already
+bundled. No Node.js or Helix needed for the plain editor.</p>
+<p><strong>Windows + Claude:</strong> the tested route needs
+<code>--allow-windows-claude-all-access</code>. It disables Deno’s
+permission sandbox, giving the process broad access to files, programs
+and the network. Use it only if you’re comfortable trusting Prose with
+that access. The default launcher does not enable it.</p>
+<p><strong>Mac:</strong> the editor and browser checks passed. The
+connection to a real agent hasn’t been verified. Try a throwaway draft
+before relying on comments reaching your agent.</p>
+<p>Text read by a cloud agent goes to its provider. Keep the local
+session URL private and stop the server when you’re done.</p>
+<details>
+<summary>Download checks and testing notes</summary>
+
+<p>Version <strong>0.1.0-rc.1</strong>: <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip">source
+ZIP</a> · <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip.sha256">checksum
+file</a></p>
+<p>SHA256:
+<code>91807ce6f20ee7909b0aa8fb9d1dfeb5ff79e9bd8f21e8a89c8448b2795d8f26</code></p>
+<p>The Windows x64 Claude workflow was checked with Claude Code 2.1.316,
+Deno 2.9.6 and Edge. Mac ARM64 runtime/browser checks used simulated
+agent replies. A cached Linux Codex workflow was checked separately.</p>
+<p>Fresh installation, interrupted-agent recovery, general
+resend/deduplication, Intel Macs, Windows ARM64 and other browsers
+remain unverified. This is a source download, not an installer or
+offline bundle. GitHub’s automatic repository downloads contain the xo
+guide, not the attached Prose runtime.</p>
+</details>
+
+<h2 id="thanks-david">Thanks, David</h2>
+<p>This version comes from David Crespo’s <a href="https://github.com/david-crespo/dotfiles/tree/31262f3d8506ede2d10004cd5c4a21d076541848">original
+standalone Prose</a>, with selected code and ideas from <a href="https://github.com/david-crespo/ah/tree/208c7a1b40c1ba464531196c96542c5ae99ba07e">ah</a>.
+Our changes are maintained separately; they don’t imply his
+endorsement.</p>
+<p>Both MIT notices are included with the download: <a href="https://raw.githubusercontent.com/david-crespo/dotfiles/31262f3d8506ede2d10004cd5c4a21d076541848/LICENSE">Copyright
+2024 David Crespo</a> and <a href="https://raw.githubusercontent.com/david-crespo/ah/208c7a1b40c1ba464531196c96542c5ae99ba07e/LICENSE">Copyright
+2026 David Crespo</a>, along with the third-party notices.</p>
 <p><a href="index.html">Back to xo</a></p>
 </body>
 </html>
