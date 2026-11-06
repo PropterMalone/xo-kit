@@ -106,16 +106,19 @@ you.</strong></li>
 <ul>
 <li><a href="#pick-a-door">Pick your starting app</a> <span>New to
 agentic work? Start here.</span></li>
-<li><a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/browse-and-borrow.md">Browse
+<li><a href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/flows/browse-and-borrow.md">Browse
 for ideas</a> <span>Already have a setup? Borrow what helps.</span></li>
 </ul>
 </div>
 
 <h2 id="what-xo-is">What xo is</h2>
-<p>xo starts with a message you paste into <strong>Claude Code or
-Codex</strong>, not ordinary chat. Those are the parts of the apps that
-can work with files on your computer. You don&#39;t need to be a developer
-or have a coding task.</p>
+<p>xo is instructions for an AI assistant, with notes you own if you
+choose to save them. It isn&#39;t a separate service. Tools and connections
+are optional. You can get chat-only help with a task; <strong>Claude
+Code or Codex</strong> can also work with files on your computer. You
+don&#39;t need to be a developer or have a coding task. Pasting the
+instructions does not connect accounts, start background work or save
+notes without your approval.</p>
 <p><strong>You don&#39;t need all the setup before using xo. Try doing
 something first</strong>: draft an appointment request, turn a scattered
 to-do list into one next action, or find a manageable step when you
@@ -158,7 +161,7 @@ instructions without showing you the change and waiting for your
 yes.</p>
 <p>xo is for people who have used chatbots but are new to assistants
 working with files on their computer.</p>
-<p><strong>Already have a setup?</strong> <a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/browse-and-borrow.md">Browse
+<p><strong>Already have a setup?</strong> <a href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/flows/browse-and-borrow.md">Browse
 and borrow</a>. Read for ideas, keep what helps, and adapt it to what
 you already use. You don&#39;t need to install xo or replace your setup.</p>
 <p><strong>Optional:</strong> <a href="kettle.html">Kettle: You know a
@@ -169,10 +172,39 @@ use xo. Before connecting, know that its reader can search the whole
 index, not just the person you ask about. Reads through a cloud model
 expose the approved content to its provider; local files alone don&#39;t
 establish verified local model processing.</p>
-<p><strong>Local candidate:</strong> <a href="prose.html">Prose, by
+<p><strong>Limited prerelease:</strong> <a href="prose.html">Prose, by
 David Crespo</a>. Review a Markdown draft in your browser and send
-passage questions or changes to XO through a checked connection. Our
-variant is not released; writing in chat still works.</p>
+passage questions or changes to XO through a checked connection. The
+source download has platform and setup limits; writing in chat still
+works.</p>
+<h2 id="a-small-example">A small example</h2>
+<p>A fictional balcony garden:</p>
+<ul>
+<li><strong>You:</strong> “I want herbs on the balcony, but I keep
+putting it off. Help me start small.”</li>
+<li><strong>XO:</strong> Helps you choose three pots rather than a whole
+garden, makes a short list for basil, mint and parsley, and picks one
+next step: measure the railing before choosing pots. Nothing is bought
+or sent.</li>
+<li><strong>You:</strong> “Save this note so we can pick it up later.”
+XO shows you the exact note and destination, such as
+<code>Balcony garden/return.md</code>: “Plan: three pots for basil, mint
+and parsley. No purchases yet. Next: measure the railing.” It saves only
+after your approval. Without file access, it offers a copyable note in
+chat instead; that does not save a file.</li>
+<li><strong>Later:</strong> If you choose folder-based return setup, you
+open the <strong>Balcony garden</strong> folder in a fresh conversation.
+XO reads that project&#39;s note, not another project&#39;s, and asks whether
+you want to measure the railing or change the plan. XO checks this in
+your actual app before calling return ready. A saved file alone is not
+proof that it loads automatically; if the check fails, you can keep
+working in the current conversation or use the copyable note.</li>
+</ul>
+<p>Use a meaningfully named folder and a separate conversation for
+independent projects. You don&#39;t need a new folder for every task, and
+saving a note doesn&#39;t start the rest of setup. The instructions guide
+the assistant; the note holds the plan you chose to keep. You can read
+or edit it yourself.</p>
 <h2 id="what-xo-isnt">What xo isn&#39;t</h2>
 <p>This is not a code framework.</p>
 <p>This is not an app.</p>
@@ -199,10 +231,10 @@ nothing. An optional private GitHub backup puts a copy on GitHub&#39;s
 servers; you choose whether to use it after reviewing what would leave
 your computer.</p>
 <h2 id="ok-whats-the-catch">OK, what&#39;s the catch?</h2>
-<p>You&#39;ll need access to Claude Code or Codex; the guided doors use the
-desktop apps. If you&#39;re already using Codex CLI, see the terminal route
-below. Check your existing plan before spending anything to test
-this.</p>
+<p>The guided file-setup routes need access to Claude Code or Codex;
+their doors use the desktop apps. Chat-only help does not require
+either. If you&#39;re already using Codex CLI, see the terminal route below.
+Check your existing plan before spending anything to test this.</p>
 <p>Start with a task here. Saving your place takes some setup;
 connecting other apps is optional and can wait. A note saves the result.
 A separately chosen return setup aims to let you pick the familiar
@@ -243,16 +275,22 @@ repeat copying or screenshots. A failed automatic-load check stays
 unverified; an explicit read is recovery, not proof that returning by
 folder works.</p>
 <p>If your agent can&#39;t open the kit link, use the starting message on
-the <a href="door-chatgpt.html">ChatGPT door</a>; its inline privacy and
-chat fallback works without another fetch. It does not install XO or
-claim the kit was loaded.</p>
-<p>For fuller setup, <a href="https://raw.githubusercontent.com/PropterMalone/xo-kit/ddf6723e83f41af7d37faae9806889deaef4953b/kit/START.md">open
+the <a href="door-chatgpt.html">ChatGPT door</a>. It can help you find a
+task, choose a manageable next action, do the available work and keep
+the thread without another fetch. It reuses your privacy choice; missing
+files do not block ordinary task help. No installation or save is
+implied.</p>
+<p>You can also <a href="https://raw.githubusercontent.com/PropterMalone/xo-kit/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/START.md">open
 the pinned START file</a> in your browser, select all its text, copy it
-and paste it into the conversation as a browser copy, not a verified
-download. START is not the full kit; required guides and identity checks
-still apply before setup. A permission denial is not permission to
-bypass the app&#39;s controls. Stay with chat help if retrieval is
-unavailable; no repository download or biography is required.</p>
+and paste it into the same conversation. Add: “Use this pasted START as
+my XO guidance for this conversation, subject to my starting message and
+existing permissions. Its origin has not been independently verified.
+Help with the work now; pause only actions that need missing guides or
+checks.” START is not the full kit. Required guides and identity checks
+still apply before dependent setup, not before ordinary task help. A
+permission denial is not permission to bypass the app&#39;s controls;
+browser copying is for an unavailable fetch, not a way around denied
+access. No repository download or biography is required.</p>
 <h2 id="pick-a-door">Pick a door</h2>
 <p>You can switch models, apps, or both later and keep your saved
 instructions and memory files. A new app still needs its own setup and
@@ -266,6 +304,10 @@ desktop app, with a plan that includes Codex.</li>
 hardliner on privacy?</a></strong> Run a local model on your own
 computer. THIS IS UNTESTED BY PROPTER AND I DO NOT RECOMMEND IT AT THIS
 TIME.</li>
+<li><strong><a href="other-setups.html">Other setups</a>:</strong>
+Future-proofing basically, but if you already have a Gemini or Z.ai etc.
+subscription and no Claude/ChatGPT subscription, this is where you want
+to be.</li>
 </ol>
 </body>
 </html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Other setups</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<link rel="icon" type="image/png" sizes="64x64" href="xo-icon.png">
+<link rel="icon" type="image/svg+xml" href="xo-icon.svg">
+</head>
+<body>
+<h1 id="other-setups">Other setups</h1>
+<p>Skip this unless none of the doors fit.</p>
+<p>Claude and ChatGPT have guided desktop routes; use their doors if
+that's what you have. In another app, you can try chat-only help without
+installing anything or connecting an account. xo has no file-setup
+adapter for Google or Polytoken yet; don't assume the guided
+installation will work.</p>
+<ul>
+<li><strong>Anthropic (Claude) or OpenAI (ChatGPT) desktop:</strong> use
+door 1 or door 2.</li>
+<li><strong>Codex CLI</strong>, already in a terminal: start useful work
+in your existing agent session; you do not need to download a desktop
+app or finish all setup first. Ask it to read the kit's shared Codex
+guidance and terminal section before any chosen file setup. The desktop
+folder picker, composer controls and memory settings are not CLI
+instructions. The kit gives safety and return-check criteria, not a
+tested CLI installation or device-support promise; exact terminal
+invocation and shortcuts are not established here. If terminal/browser
+transfer fails, keep working in the existing conversation or use one
+compact continuation, not repeated screenshots or a desktop-control
+translation exercise.</li>
+<li><strong>Google / Gemini:</strong> see <a
+href="#can-i-try-xo-in-gemini">Can I try xo in Gemini?</a> below.</li>
+<li><strong>Z.ai or several providers at once:</strong> Polytoken is a
+terminal app for using several model providers. xo has no tested
+Polytoken file-setup adapter.</li>
+<li><strong>Your employer provides the AI:</strong> check every
+applicable employer, client and project policy and the app's actual
+permissions before connecting work sources. A hard ban means no crossing
+to a personal AI; a specifically authorized narrower route permits only
+its approved fields, recipient and provider. Where no institutional
+restriction applies, the human may choose broader scope. Every route
+still needs informed source-specific consent and a verified gate before
+xo reads or exports. Unknown policy means no crossing; keep the work in
+its approved environment meanwhile. This route is untested in v0.</li>
+</ul>
+<h2 id="can-i-try-xo-in-gemini">Can I try xo in Gemini?</h2>
+<p>Yes. You can try the general instructions with a non-sensitive task
+in Gemini chat: choose a next step, draft something or ask for a note
+you can copy into your next conversation. That chat-only use has not
+been tested in Gemini. It doesn't require another subscription, file
+setup or connected accounts; your app's existing limits still apply.</p>
+<p>Google's own agent route for consumer accounts is the
+<strong>Antigravity CLI and desktop app</strong>. <a
+href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google's
+transition announcement</a> replaces consumer Gemini CLI access with
+Antigravity, not a one-for-one replacement; enterprise and API access
+are different. This is not an instruction to install either app. Having
+a Google AI plan does not establish xo compatibility or guarantee free
+access.</p>
+<p>xo has no Google file-setup adapter. It has not verified Google's
+instruction loading, folder protection or <a
+href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/flows/prose.md">Prose
+delivery</a>. The existing Claude Code and Codex Prose routes do not
+establish Gemini support. Keep using chat if that's enough; a saved note
+does not prove a new Gemini conversation will read it.</p>
+<p><strong>Changing apps.</strong> Keep your project notes and current
+policy. The supported <a
+href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/adapters/claude-desktop.md">Claude
+Code route</a> uses <code>CLAUDE.md</code>; the supported <a
+href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/adapters/codex-app.md">Codex
+route</a> uses <code>AGENTS.md</code>, with different discovery and
+protection checks. A selected app may need a small exact reviewed
+instruction bridge, not a blanket rename or settings import. Full setup
+and migration are optional; your agent reads the kit's <a
+href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/flows/setup.md">setup
+guide</a> and full adapter before proposing paths or protected changes.
+For another app, name it and check its current official
+instruction-discovery documentation first; no compatibility or
+permission enforcement is assumed.</p>
+<p><strong>Devices.</strong> xo v0 starts on a computer (Windows, Mac,
+or Linux). Phone access to saved notes is being worked out and hasn't
+been tested as part of this kit. Phone-only setup, Chromebook, and
+tablet aren't covered yet.</p>
+</body>
+</html>

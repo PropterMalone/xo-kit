@@ -75,9 +75,9 @@ or see what he’s building now in <a href="https://github.com/david-crespo/ah">
 <div class="entry-choices">
 
 <ul>
-<li><a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-02-prose-rc.1">Get
+<li><a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-05-prose-rc.2">Get
 Prose</a> <span>Source download · preview release</span></li>
-<li><a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/prose.md">Set
+<li><a href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/flows/prose.md">Set
 it up with XO</a> <span>Give the guide to your agent.</span></li>
 </ul>
 </div>
@@ -103,25 +103,26 @@ to tone it down.</p>
 <h2 id="getting-started">Getting started</h2>
 <p>Prose is part of xo, but you don’t need the rest of xo to use it.</p>
 <p>You’ll need <strong>Deno 2.9.6</strong> and, for agent replies, a
-compatible Claude Code or Codex session. The <a href="https://github.com/PropterMalone/xo-kit/blob/ddf6723e83f41af7d37faae9806889deaef4953b/kit/flows/prose.md">agent
+compatible Claude Code or Codex session. The <a href="https://github.com/PropterMalone/xo-kit/blob/c2d192d327a5a74ad9bb7a59373174f3e73cef94/kit/flows/prose.md">agent
 guide</a> covers the download and launch commands.</p>
 <p><strong>Windows + Claude:</strong> the tested route needs
 <code>--allow-windows-claude-all-access</code>. It disables Deno’s
 permission sandbox, giving the process broad access to files, programs
 and the network. Use it only if you’re comfortable trusting Prose with
 that access. The default launcher does not enable it.</p>
-<p><strong>Mac:</strong> the editor and browser checks passed.</p>
+<p><strong>Mac:</strong> prior RC1 editor and browser checks passed; the changed RC2 runtime has not been run natively on macOS.</p>
 <p>Text read by a cloud agent goes to its provider. Keep the local
 session URL private and stop the server when you’re done.</p>
 <details>
 <summary>Download checks and testing notes</summary>
 
-<p>Version <strong>0.1.0-rc.1</strong>: <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip">source
-ZIP</a> · <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-02-prose-rc.1/prose-0.1.0-rc.1-source.zip.sha256">checksum
+<p>Version <strong>0.1.0-rc.2</strong>: <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-05-prose-rc.2/prose-0.1.0-rc.2-source.zip">source
+ZIP</a> · <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-05-prose-rc.2/prose-0.1.0-rc.2-source.zip.sha256">checksum
 file</a></p>
+<p>RC2 source ZIP: <strong>4,112,214 bytes</strong>. The changed runtime has not been run natively on Windows or macOS. Prior RC1 platform observations are historical, not RC2 recertification; local Linux runtime checks and 10 synthetic browser scenario groups are not real-model/agent end-to-end acceptance.</p>
 <p>SHA256:
-<code>91807ce6f20ee7909b0aa8fb9d1dfeb5ff79e9bd8f21e8a89c8448b2795d8f26</code></p>
-<p>The Windows x64 Claude workflow was checked with Claude Code 2.1.316,
+<code>4dc9aa8bcf3974be454744eae3766dffaeb15315df41fe8da6a2309d218d1f26</code></p>
+<p>For the prior RC1 runtime, the Windows x64 Claude workflow was checked with Claude Code 2.1.316,
 Deno 2.9.6 and Edge. Mac ARM64 runtime/browser checks used simulated
 agent replies; Mac real-agent handling remains unverified. A cached
 Linux Codex workflow was checked separately.</p>
