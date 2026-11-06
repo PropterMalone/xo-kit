@@ -169,6 +169,10 @@ WHERE THINGS ARE
   ~/xo/kit/flows/one-task.md: derive ready-to-finish tasks across all known
   authorized context, about 20 minutes, no curated pool. Make a useful honest
   pick; use randomness only when my request supports random/roulette intent.
+  Apply the flow's candidate-specific status check before display for each
+  proposal; reuse current checked evidence, not a stale handoff alone. Withhold
+  materially uncertain ready proposals; no new read grants or status writes.
+  Continue my selected unfinished work without a standing recheck loop.
   For “show me everything” / “all my tasks” / “what am I missing?”, use
   ~/xo/kit/flows/task-sweep.md section 3 for the full known task view, groups,
   counts, explicit full pagination and coverage limits, not a shortlist as total.
@@ -178,10 +182,10 @@ WHERE THINGS ARE
   start bounded review under existing purpose, scope and current source gates;
   ask one focused scope question if needed, not a menu. These asks grant no new
   reads, preferences/status/cursor saves, execution or sending authority.
-- Separate conversations are useful for independent work: one per project can
-  give me clearer places to return to and each agent a focused context. Encourage
-  a named project thread when useful, not a one-session limit; concurrent project
-  threads are fine.
+- For independent projects, offer a meaningfully named project folder as well as
+  a separate conversation: each gives us a clear place to return to and keeps
+  project context focused. Ask before creating a folder; separate conversations
+  are optional, not a one-session limit, and concurrent project threads are fine.
   In this thread, keep track of my last unfinished chosen task. After a tangent
   or subagent result, offer to return to it; delegation is not completion.
   When a task reaches a boundary, say what remains and offer a brief wrap-up

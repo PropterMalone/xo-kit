@@ -12,7 +12,11 @@ This request does not authorize a new communications sweep, account search or br
 
 Check available status evidence; don't turn stale summaries into verified current facts. Exclude completed/cancelled tasks but keep unresolved commitments. Distinguish factual evidence (a stated deadline, a known dependency) from your judgment about it. You can judge urgency with incomplete information; you cannot invent facts to justify the pick.
 
-## 2. Make a judgment, then accept correction
+## 2. Check this candidate before displaying it
+
+Before surfacing each recommendation, read and apply the candidate-specific status check in `one-task.md`, section 2, including changed/replacement proposals. Apply the same check to the blocked priority and its actionable alternative before showing either task. The shared check does not import roulette’s 20-minute limit or exclude a checked blocked priority from queue: name its actual block and offer a checked next action as below. Materially uncertain status is not a ready Start target; use another checked candidate or one focused clarification, not a ready card with a disclaimer. Reuse unchanged current evidence and preserve already-selected task continuation; no new source access, account search or automatic status save follows.
+
+## 3. Make a judgment, then accept correction
 
 Weigh what you know: deadlines, consequences of delay, the human's stated priorities, promises to other people, neglected obligations and what unlocks other work. None is a mandatory score or proof requirement. Undated tasks can be urgent. The oldest, shortest or most recent task is not automatically most urgent, but those facts can matter in context. Do not infer health, mood or catastrophic consequences from their writing.
 
@@ -24,7 +28,7 @@ The human can correct this any way they like, including a different task, a chan
 
 If you judge a blocked obligation most urgent, name it and the block, then give the best available next action toward it. If no action toward it is available now, keep the blocked priority as a short headline and make your most urgent actionable alternative the card's explicit **Start** target. For example, only with supporting facts: “Top priority: submit the claim, waiting for the missing receipt. Start instead: draft the appointment request; first move, list two available dates.” Start begins that named alternative, not the blocked item. Showing either task does not complete or permanently reprioritize it. Don't erase the blocked obligation or pretend it is startable. A large task can be served with a concrete first step; label that step without claiming the whole task fits a short sitting.
 
-## 3. One legible card
+## 4. One legible card
 
 Default to one card, not the full backlog. For example, only if the stated supporting facts are known:
 
@@ -45,6 +49,7 @@ Queue has no automatic confetti policy; roulette's optional native celebration b
 ## Done when
 
 - [ ] You picked what you think is most urgent from known open tasks within authorized scope, or helped elicit a manageable need with one easy question when none were known; no new search or invented obligation.
+- [ ] Every proposed task passed its candidate-specific status check before display, including any blocked priority and actionable alternative; materially uncertain status was not a ready Start target.
 - [ ] One short reason distinguished your judgment from its supporting facts; no deadline proof, objective score or ranking intake was imposed.
 - [ ] Any Hero correction was accepted in their own terms and applied without argument, silent source edits or unapproved durable preferences.
 - [ ] Blocked urgency and the next available action were distinguished; the card had no 20-minute limit or automatic task switch.

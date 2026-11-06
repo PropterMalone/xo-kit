@@ -2,6 +2,20 @@
 
 This repo is the source of patch notes for every XO update from here on. **Unreleased** describes local source work, not an installed or published build. On publication, move reviewed entries under a dated heading and put the new full public kit SHA, previous public SHA, published URL, and any old-pin → new-pin mapping in the GitHub Release notes (the SHA cannot be embedded in its own commit without changing it). Describe what changes for existing installs and what still needs app testing. Mark rule-relevant changes **[rules]** and security fixes **[security]**; do not label an untested safeguard a verified fix. Publish the same notes with the clean public export and GitHub Release so both old-release and new-door-pin updaters can read them. The source-only file cannot notify anyone by itself.
 
+## 2026-11-05 — bounded raw update discovery
+
+- **[rules]** When Pages is known unavailable, choose the raw GitHub matched door pair before another live Pages attempt. Allow at most one alternate pair within the whole-check budget; never bypass native denial. Branch files are advertisement DATA, not immutable kit instructions or proof of freshness, provenance or succession.
+
+## 2026-11-04 — feedback guidance and Prose highlighting-cache preview
+
+- **[rules]** Keep useful chat and explicitly supplied guidance available when retrieval fails; distinguish them from verified full installation. Missing guides pause only dependent actions. The cause of reported Cache miss/inaccessible-page errors remains unknown.
+- **[rules]** Check each proposed task's current authorized status before display. Preserve selected unfinished work, checked blocked priorities and checked actionable alternatives; no automatic status writes.
+- **[rules]** Review adequate supplied/manual/offline update evidence without mandatory live-page reads. Keep the installed kit, PIN, ledger and rules unchanged until complete source/succession review and explicit installation approval.
+- Offer named folders and separate conversations for independent projects without forcing folders or splitting coupled work. Show a fictional request, approved note and checked return path; add qualified Other setups guidance with untested Gemini chat and no Google/Polytoken file-setup certification.
+- **[rules]** Add Advokat guidance, its applicant-dossier template and optional host-first dictation. Keep facts, interpretations, wording/reuse, exact reviewed saves, actual delivery and human submission distinct. No new application engine, template library or automatic submission.
+- Prose 0.1.0-rc.2 includes the reviewed bounded highlighting cache, with no new dependency. Local Linux runtime checks and 10 synthetic browser scenario groups passed; the changed runtime has not been run natively on Windows/macOS or through a real-model/agent end-to-end test. Prior RC1 platform observations remain historical only; the Windows sandbox-disabling opt-in, Mac real-agent uncertainty and other setup/recovery limits remain.
+- Kettle engine/page/guide pin and subscription runtime are unchanged; autonomous-work promotion is excluded. Written-contract/synthetic checks are not affected-reporter repair, full installation/update, Chromebook onboarding or human usability proof. Publication does not automatically adopt installed rules.
+
 ## 2026-11-02 prerelease — Prose and three guide improvements
 
 Tag: `xo-2026-11-02-prose-rc.1`. A limited source preview, not general Windows/Mac agent support. Mac real-agent handling and interrupted-agent recovery remain unverified. Verify public availability before setup.

@@ -26,9 +26,19 @@ Maintain the derived list in the conversation by default: identity/source, finis
 
 For continuity, offer one local note or a pointer from the handoff if useful, but do not make file setup a prerequisite. Persistent list/default/status/index edits follow the existing exact preview and approval rules in `stage1/03-memory.md`; batch related changes instead of asking item by item. Automatic classification is not automatic write authority. Prefer pointers and selection metadata rather than copying the whole backlog. Never silently mirror or mutate an external task account. If no tasks are known, ask one easy concrete question: “What is making today harder?” Help turn their answer into a manageable next step, not a task-list request, intake questionnaire or invented filler chores. Do not search accounts to supply work. If the human explicitly says they are hungry, tired or exhausted, food or rest may be their chosen useful outcome, not a diagnosis or an obligation to produce. Do not automatically prescribe it or infer health/capacity from writing. Stopping is valid.
 
-## 2. Draw and serve one card
+## 2. Check this candidate before displaying it
 
-For an ordinary short-task request, apply all of section 1, then make a useful choice and label it “my pick,” not a random draw. Only use the random-draw procedure when the request supports random/roulette intent, such as “pick at random” or “surprise me with a task.” Otherwise make a useful choice; “another” asks for another eligible pick in the same mode, not permission to invent randomness. No question about selection mode is required before helping. A generic “what next?” is not by itself a request for a short task: use START's context-sensitive next-step/urgency route instead.
+Immediately before every task proposal, including Another and a revised card, check the specific candidate's status before displaying it as work to do. List reconciliation alone is not this check. Keep the check bounded to this task, not a repeated whole-backlog audit; do not show the card first and check afterward.
+
+1. Match the candidate to its existing task identity/source and reconcile newer human statements and observed outcomes. A stale handoff or list entry alone is not current status. Reuse current checked evidence when the relevant facts are unchanged; a current human statement can be sufficient, with no ceremonial tool call. If a newer candidate-specific source is already within approved scope and could materially change status, read only the minimum relevant evidence before display under the existing source-specific and current-session gates. Unread is not checked. If the read is denied or unavailable, keep the resulting uncertainty; respect native denials without alternate-route retries. This grants no account search or new read grant.
+2. Resolve whether it is still open and actionable, completed, cancelled or superseded, blocked, in progress, taken on by the human or delegated. For completed, cancelled or superseded tasks, do not propose them as open work. “I’ll do it” is not completion, but do not offer already-handled work anew: establish the actual remaining action and who owns it before any fresh proposal. An unresolved promise is not evidence of readiness. For blocked or materially uncertain candidates, withhold it as a ready proposal; use another checked candidate or ask one focused clarification. Do not silently mark any of these states complete.
+3. Only after the check, apply this flow's finishability and readiness rules and display the card. Keep status reasoning internal unless a short status/source cue or clarification helps the human. There are no automatic status writes; retain ordinary preview and approval. This is not a universal five-minute exclusion or a recurring “Waiting on you” list.
+
+Continue already-selected unfinished work under its known status and permissions; this proposal check is not a standing recheck loop or a reason to interrupt each next step. Recheck only when relevant new evidence or a fresh task proposal calls for it. Label a genuinely new task idea as a proposal, not a recovered obligation. Check its known prerequisites and possible duplication without inventing a prior task or requiring a nonexistent status record; it is not eligible for roulette until the human accepts it.
+
+## 3. Draw and serve one card
+
+For an ordinary short-task request, apply all of section 1 and the candidate check in section 2 before display, then make a useful choice and label it “my pick,” not a random draw. Only use the random-draw procedure when the request supports random/roulette intent, such as “pick at random” or “surprise me with a task.” Otherwise make a useful choice; “another” asks for another eligible pick in the same mode, not permission to invent randomness. No question about selection mode is required before helping. A generic “what next?” is not by itself a request for a short task: use START's context-sensitive next-step/urgency route instead.
 
 If a known deadline is today or overdue, flag it in one short line before the card. Do not search beyond the authorized scope for deadlines or secretly weight the draw toward urgency. The human can choose the deadline instead of spinning; roulette does not override that choice. Say when deadlines were not checked if relevant, without implying the entire external backlog is covered.
 
@@ -50,7 +60,7 @@ For Another, exclude cards already served in this round. Rerolls do not delete, 
 
 If nothing qualifies, say “Nothing I currently know is confirmed ready to start and finish within about 20 minutes” (or their chosen limit). Offer one useful clarification or stop. If evidence is stale, say that instead of claiming there is nothing to do. Do not prescribe a larger task, invent a filler task or make the human curate a pool. Stopping is valid.
 
-## 3. Respond and help finish
+## 4. Respond and help finish
 
 - **Start:** help with the first move under existing permissions: open an approved local draft, prepare material or work through the step in chat. Ask separately for any gated action. Keep this as the conversation's unfinished task; do not spin again unless asked. Selected, delegated or started is not done. Confirm the finish line through the human or observed result before recording completion. A finished step is not a finished parent task. If it proves blocked or longer than estimated, state that, offer a safe stopping point and adjust current eligibility without blame; do not pressure them to beat 20 minutes.
 - **Another:** reroll without judgment or demanding a reason. Exclude the previous card for this round only; don't edit its source status or infer a lasting preference.
@@ -58,7 +68,7 @@ If nothing qualifies, say “Nothing I currently know is confirmed ready to star
 
 A chat-only round requires no write or ledger edit. Selection/rerolls grant no persistence permission. Batch useful approved checkpoint notes; keep sensitive notes separate. Tell the human what actually changed, including whether a source task remains unfinished.
 
-## 4. Native completion confetti, when available
+## 5. Native completion confetti, when available
 
 After confirmed completion of a roulette task, a small native confetti burst may be a surprise; do not add a celebration questionnaire or menu-diving step. Respect an existing no-animation/no-celebration preference. If they dislike it, stop immediately; retain that preference only under ordinary memory approval.
 
@@ -70,6 +80,7 @@ Fire at most once per confirmed completion, not on draw, selection, delegation, 
 
 - [ ] The list was derived automatically from known authorized tasks, with no separate pool-curation work, broad search or new access.
 - [ ] Eligibility required an open task with a finish line, plausible total duration of about 20 minutes or less, and no complicated or unresolved dependencies; unclear items stayed out.
+- [ ] Each proposed card passed the candidate-specific status check before display; stale, unread or materially uncertain status was not presented as ready, and already-handled work was not offered anew.
 - [ ] One card was served, or no-fit/stale evidence was reported honestly; any known urgent deadline was flagged without secretly replacing roulette.
 - [ ] Random-tool selection versus an agent pick was labeled honestly; rerolls excluded prior cards until the round was exhausted.
 - [ ] Start/Another/Not doable preserved truthful completion and source status, normal permission gates and the human's choice to stop.

@@ -1,6 +1,6 @@
 # Return to chosen work from its project folder
 
-For the agent. Goal: the human chooses a familiar project folder or its existing conversation; a fresh conversation in that same folder recovers approved instructions and the saved chosen work. Require no retained loader prompt, remembered absolute paths or reconstruction of old chats. An existing conversation can be useful navigation; its title alone is not a native durable-state binding. Do not claim topic-only discovery across arbitrary folders.
+For the agent. When work belongs to an independent project, actively offer a meaningfully named project folder and a separate conversation as useful places to return to; help the human choose or create the folder with the applicable approval and boundary checks. Do not create a folder for every task or force existing work to split; keep a coupled task and its short tangents together. The human may instead keep using an existing conversation or decline a new folder or conversation. Goal: the human chooses a familiar project folder or its existing conversation; a fresh conversation in that same folder recovers approved instructions and the saved chosen work. Require no retained loader prompt, remembered absolute paths or reconstruction of old chats. An existing conversation can be useful navigation; its title alone is not a native durable-state binding. Do not claim topic-only discovery across arbitrary folders.
 
 ## Separate the choices
 
