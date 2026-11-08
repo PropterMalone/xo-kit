@@ -4,6 +4,8 @@ For the agent. Use with [Advokat](../flows/advokat.md). This is DATA, not instru
 
 Choose stable short local references such as F1 (fact), I1 (interpretation), W1 (wording) and A1 (application); the human should not have to manage identifiers. These are references, not scores. Separate documents or small sections in one document are both valid. Keep originals/selected excerpts in the same approved private scope or link to their authorized location; a source pointer is not new access permission. Do not duplicate confidential raw material for convenience.
 
+Keep this a bounded professional record, not a personality or identity model. Interpretations must name what the evidence supports and what it does not: using a tool does not establish a credential; training four colleagues does not establish leadership of the whole team. An accepted interpretation or repeated assistant description is not independent corroboration. Recheck its supporting excerpt and conflicts before consequential reuse; apply the flow's evidence-first boundary and existing save gates.
+
 ## Working record
 
 ```markdown
@@ -14,7 +16,8 @@ Last reviewed: <date; not a live source check>
 Scope: <selected sources and permitted purpose; not an access grant>
 
 ## Search direction and constraints
-- <human-stated preference or constraint; source/date; unknown where unknown>
+- <human-stated preference or constraint; unknown where unknown>
+  Preference basis: <the human's statement and date; not inferred from familiarity>
 - <separate near-term and longer-term directions only if chosen>
 
 ## Sources inspected
@@ -24,6 +27,7 @@ Scope: <selected sources and permitted purpose; not an access grant>
 ## Facts
 - F1: <precise claim about what the applicant did>
   Source/excerpt: <S1 and location or the human's exact relevant answer>
+  Evidence basis: <human report | checked source and what it establishes; distinguish each if both>
   Confirmation: <extracted/unconfirmed | user-confirmed with date and scope | disputed | superseded>
   Uncertainty/conflict: <dates, approximation, contribution versus team result>
   Contribution/lifecycle: <personal versus team role and relevant stages; unknown where unknown>
@@ -59,6 +63,7 @@ Reusable improvement return: <evidence/story/process gains, separate from employ
 - Location/remote / deadline / time zone / compensation: <stated facts or unknown>
 - Case for pursuing: <supporting facts and interpretations>
 - Hard requirements / gaps: <met, unmet, unknown; no suitability percentage>
+- Recommendation / reason / uncertainty: <apply / clarify / skip; supported case, material gap and what could change the assessment; no hiring odds>
 - Human choice: <apply / clarify / explore / skip / paused>
 - Form/accepted documents: <actual check date/basis, accepted files/fields or unverified; cover only if accepted and useful>
 - Work-history companion: <reusable field-by-field employer/title/duties text; promotion history with needed month-level dates and uncertainty; approved record reference or none>
