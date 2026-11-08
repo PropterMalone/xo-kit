@@ -30,6 +30,10 @@ Propose these once the pieces exist (after sittings 01-05), one before-and-after
 - **The ADHD paragraph.** Keep it unless your human says it doesn't fit them; then propose what they'd rather.
 - **The additions below.**
 
+## Optional Advokat module routing
+
+For a separately chosen reusable job-search module, use `flows/install-advokat.md` before edits. This is a bounded addition to the actual central protected standing prompt, not a replacement seed, child instructions or one-off application prompt. Preview its exact local-guide/private-project routing block and necessary PROJECT RETURN addition; replace placeholders with verified adapter paths and obtain the applicable approval. Preserve existing policy and state; unchanged approved routing is a no-op. Do not add the module for everyone or leave an unbound placeholder here as installed routing. Ordinary later job-search requests load the verified local guide and selected project under that block; missing/blocked/unverified dependencies stop dependent recovery, not useful chat help. Career records remain private DATA outside the protected kit and general shared memory. No autonomous saving, new source or submission authority follows.
+
 ## Additions
 
 ```

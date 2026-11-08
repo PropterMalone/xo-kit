@@ -1,6 +1,6 @@
 # Full setup, only when chosen
 
-For the agent. Read this full guide only when the human chooses full installation or its bounded recovery. Choosing to explore, browsing the kit, completing a task or saving a continuation is not installation approval. `START.md` remains the standing task entry; save the approved seed, not this setup manual, as standing instructions. All seed, START, protected-edit, source and app gates remain in force.
+For the agent. Read this full guide for explicitly chosen full installation or its bounded recovery, and for a separately approved module-only vendoring route when an already-qualified existing XO needs the complete pinned kit for that selected module. That bounded route does not choose full installation or authorize its remaining steps. Choosing to explore, browsing the kit, completing a task or saving a continuation is not installation approval. `START.md` remains the standing task entry; save the approved seed, not this setup manual, as standing instructions. All seed, START, protected-edit, source and app gates remain in force.
 
 ## Choose one useful finish point
 
@@ -91,7 +91,7 @@ The numbered seed-step references describe the original first-sitting order, not
 
 ## Vendoring the kit
 
-Do this during explicitly chosen full installation, with a separate yes; not for chat-only success or a bounded continuation save.
+Do this during explicitly chosen full installation, with a separate yes. Exception: for a separately chosen module in an already-qualified existing XO, offer only this complete-kit vendoring procedure with its own explicit approval; this module-only route does not imply or start full installation. It is not for chat-only success or a bounded continuation save.
 
 1. From the seed's URL, read the repo owner and the commit SHA. The URL has the form `https://raw.githubusercontent.com/<owner>/xo-kit/<sha>/kit/START.md`.
 2. Propose: "I'll copy the setup kit at version `<first 7 of sha>` into `~/xo/kit/` so I read it from your machine, not the internet, from now on." No GitHub account or git installation is needed; use the archive below. If you choose git instead and it is missing, explain the installation and ask separately.
