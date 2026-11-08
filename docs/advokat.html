@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Advokat</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+:root { color-scheme: light dark; --paper:#fcfaf5; --ink:#222827; --muted:#505d59; --line:#b7c4bc; --accent:#174c54; --panel:#f0f5f1; }
+@media (prefers-color-scheme: dark) { :root { --paper:#182320; --ink:#f1f2e9; --muted:#c4d0c9; --line:#547069; --accent:#a3d7de; --panel:#243832; } }
+html { background:var(--paper); color:var(--ink); scroll-behavior:smooth; }
+body { max-width:39rem; margin:0 auto; padding:2rem clamp(1.1rem,5vw,3rem) 5rem; font: 1.08rem/1.65 Charter, 'Iowan Old Style', Georgia, serif; }
+h1,h2 { font-family:system-ui,sans-serif; line-height:1.2; letter-spacing:-.035em; }
+h1#xo { font-size:clamp(3.3rem,12vw,6rem); margin:.3rem 0 0; color:var(--accent); text-align:center; }
+h2 { margin-top:2.4rem; font-size:1.65rem; }
+p,li { overflow-wrap:break-word; }
+a { color:var(--accent); text-underline-offset:.18em; text-decoration-thickness:.09em; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+.name-meanings { margin:.2rem 0 1.4rem; text-align:center; }
+.name-meanings ul { padding:0; margin:0; list-style:none; color:var(--muted); font:.94rem/1.55 system-ui,sans-serif; }
+#xo ~ h2:first-of-type + ul { border-block:1px solid var(--line); padding:1rem 0 1rem 1.5rem; }
+.entry-choices { margin:1.5rem 0 2rem; }
+.entry-choices ul { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; padding:0; margin:0; list-style:none; }
+.entry-choices li { min-width:0; font:1rem/1.5 system-ui,sans-serif; }
+.entry-choices a { display:flex; align-items:center; justify-content:center; min-height:3.25rem; padding:.7rem .8rem; font-weight:650; line-height:1.35; text-align:center; background:var(--accent); color:var(--paper); border-radius:.4rem; text-decoration:none; }
+.entry-choices a:hover,.entry-choices a:focus-visible { text-decoration:underline; }
+.entry-choices span { display:block; margin-top:.55rem; color:var(--muted); font-size:.9rem; }
+#pick-a-door { scroll-margin-top:1rem; }
+#pick-a-door ~ ol { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.85rem; list-style:none; padding:0; font:1rem/1.5 system-ui,sans-serif; }
+#pick-a-door ~ ol li { position:relative; border:2px solid var(--line); background:var(--panel); border-radius:.5rem; padding:1rem; }
+#pick-a-door ~ ol li:has(a:hover),#pick-a-door ~ ol li:has(a:focus-visible) { border-color:var(--accent); }
+#pick-a-door ~ ol a { font-weight:750; font-size:1.22rem; }
+#pick-a-door ~ ol a::after { content:''; position:absolute; inset:0; }
+#pick-a-door ~ ol li:has(a[href="door-local.html"]) { grid-column:1/-1; border:0; border-left:3px solid var(--line); border-radius:0; background:none; color:var(--muted); padding:.25rem 0 .25rem 1rem; font-size:.94rem; }
+#pick-a-door ~ ol li:has(a[href="door-local.html"]) a { font-size:1rem; }
+@media (max-width:34rem) { body { padding-top:1rem; } .entry-choices ul,#pick-a-door ~ ol { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+</style>
+<link rel="icon" type="image/png" sizes="64x64" href="xo-icon.png">
+<link rel="icon" type="image/svg+xml" href="xo-icon.svg">
+</head>
+<body>
+<h1 id="advokat">Advokat</h1>
+<p><strong>Experimental.</strong> Love it if you wanted to test-drive it
+tho.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>Start with anything: an existing résumé, a job posting, a short
+account of something you did.</p>
+<p>XO builds a dossier on you—basically, your story—from whatever
+materials you give it. Then, it helps you find job listings it thinks
+might work and helps you apply for jobs by tailoring your application
+materials to the listing.</p>
+<p>As it builds those materials, it&#39;ll ask you questions to build out
+your dossier beyond the corners of any one application&#39;s materials. This
+work persists and plays for you in other future job applications, so
+even if you never hear back from a prospective employer you&#39;ve still
+made progress on your job search.</p>
+<h2 id="install-advokat-in-xo">Install Advokat in XO</h2>
+<p>Copy this message into your XO conversation:</p>
+<div class="copy-message-controls"><button type="button" id="copy-message" hidden aria-controls="startup-message" aria-describedby="copy-message-status">Copy message</button><span id="copy-message-status" role="status" aria-live="polite" aria-atomic="true"></span></div>
+<pre id="startup-message" class="text"><code>Install Advokat as a reusable module for XO. Follow the Advokat installation guide at https://raw.githubusercontent.com/PropterMalone/xo-kit/09ddf4df811c4d823415753a43dcfc3194943eb3/kit/flows/install-advokat.md. Reuse my existing XO setup and show me any files and instruction changes before writing them. Give Advokat a private job-search folder and make it available when I return in a fresh conversation. Keep my existing work and permissions. Check that it loads the module and the right saved work without this message before calling it installed.</code></pre>
+<p>Once it&#39;s installed, ask XO to work on your job search. You won&#39;t
+need to paste this message again.</p>
+<p>If XO cannot fetch the <a href="https://raw.githubusercontent.com/PropterMalone/xo-kit/09ddf4df811c4d823415753a43dcfc3194943eb3/kit/flows/install-advokat.md">installation
+guide</a>, open it yourself and paste the full text with its source URL
+into the conversation. XO will use it to identify the files it needs for
+installation.</p>
+<p>New to XO? <a href="index.html">Start here</a>.</p>
+<p>Anything you show your model provider reaches your model provider; if
+you&#39;re working through Claude, that means whatever you show XO goes to
+Anthropic, and so on. Practice whatever privacy you want
+accordingly.</p>
+<h2 id="finish-an-application">Finish an application</h2>
+<ul>
+<li>Read the draft with XO. Correct the facts and change anything you
+dislike. If you&#39;re using <a href="prose.html">Prose</a>, you can do this
+in Prose.</li>
+<li>Submit through the employer&#39;s application process.</li>
+<li>Tell XO you&#39;ve applied and give it any confirmation or follow-up
+date.</li>
+</ul>
+<h2 id="give-feedback">Give feedback</h2>
+<p>Tell XO what helped, what hurt, and any bright new ideas you might
+have. Then ask it to “make a tester report” using the <a href="https://raw.githubusercontent.com/PropterMalone/xo-kit/09ddf4df811c4d823415753a43dcfc3194943eb3/kit/flows/tester-report.md">report
+guide</a>. It will turn your feedback and the conversation into a draft
+you can edit.</p>
+<p>Read it over, take out anything you don&#39;t want to share, and email it
+to <a href="mailto:proptermalone@gmail.com"><span>proptermalone@gmail.com</span></a>.</p>
+<p><a href="index.html">Back to XO</a></p>
+<script>
+(() => {
+  const button = document.getElementById('copy-message');
+  const code = document.querySelector('#startup-message code');
+  const status = document.getElementById('copy-message-status');
+  if (!button || !code || !status) return;
+
+  const failure = 'Could not copy. Select the message and copy it manually.';
+  if (!window.isSecureContext || !navigator.clipboard ||
+      typeof navigator.clipboard.writeText !== 'function') {
+    status.textContent = failure;
+    return;
+  }
+
+  let pending = false;
+  button.addEventListener('click', () => {
+    if (pending) return;
+    pending = true;
+    // Keep this focused native button in the tab order while ignoring duplicates.
+    button.setAttribute('aria-disabled', 'true');
+    status.textContent = 'Copying…';
+    let finished = false;
+    let timer;
+    const finish = (message) => {
+      if (finished) return;
+      finished = true;
+      window.clearTimeout(timer);
+      pending = false;
+      button.setAttribute('aria-disabled', 'false');
+      status.textContent = message;
+    };
+    // A browser prompt can remain unanswered; a late result must not report success.
+    timer = window.setTimeout(() => finish('Copy not confirmed. Select the message and copy it manually.'), 10000);
+    try {
+      Promise.resolve(navigator.clipboard.writeText(code.textContent)).then(
+        () => finish('Copied.'),
+        () => finish(failure)
+      );
+    } catch {
+      finish(failure);
+    }
+  });
+  button.hidden = false;
+})();
+</script>
+</body>
+</html>
