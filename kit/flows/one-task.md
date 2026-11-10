@@ -68,6 +68,10 @@ If nothing qualifies, say “Nothing I currently know is confirmed ready to star
 
 A chat-only round requires no write or ledger edit. Selection/rerolls grant no persistence permission. Batch useful approved checkpoint notes; keep sensitive notes separate. Tell the human what actually changed, including whether a source task remains unfinished.
 
+## File handoff
+
+For a requested file, identify the current app surface and its supported file-save or export route; do not assume a local disk, Drive connection or path from another product. Create the file only through the available route and existing approval gates, then read it back and check the requested name, format and required content; check the rendered result when preview is available. Creating a file is not proof that it was saved or delivered: provide a download control or human-reachable path only when verified, and say when a file exists only in the current runtime. If the route is unknown, offer one harmless sample file only when it does not force extra approval; do not install packages or connect cloud services just to force file delivery. Stop on a permission denial; do not retry through another path or tool. Offer the complete copyable content in chat or use an editor the human chooses, and keep the file format unverified unless it was checked; never publish an applicant file to a public repository to provide a download.
+
 ## 5. Native completion confetti, when available
 
 After confirmed completion of a roulette task, a small native confetti burst may be a surprise; do not add a celebration questionnaire or menu-diving step. Respect an existing no-animation/no-celebration preference. If they dislike it, stop immediately; retain that preference only under ordinary memory approval.
