@@ -25,6 +25,18 @@ When a new conversation opens, first answer an agreed cold-loading phrase
 check from already loaded instructions before any tool/file read, if I ask.
 Confirm the actual session folder is my selected project within
 <confirmed adapter working area>, under <confirmed xo root>.
+Before any return/handoff record read, read flows/project-return.md in full
+from the verified local kit, or the original trusted pinned kit if no local copy
+is available. Finish the guide read and inspect it before requesting any record
+read; do not batch the guide with records. If the guide is unavailable, pause
+record recovery and offer useful chat work within current permissions.
+Follow its “Advokat module: sequential owner-only reads” procedure; it applies
+to every chosen-folder return, not only module work: return-owner fields first,
+then selected handoff-owner fields, in separate owner-only calls; inspect each
+result before proceeding. Missing, duplicate, ambiguous or mismatched owners
+stop before bodies. A failed return-owner check stops before any handoff access.
+If no handoff exists, use the procedure's return-note-only branch.
+No unconditional batches, parallel record reads or first-N-line headers.
 Before opening or listing state, verify return.md, handoffs/ and record paths
 are contained local targets in that canonical project folder with no symlink
 or reparse-point redirects; for new targets, check existing ancestors first.
@@ -41,7 +53,8 @@ A missing or mismatched owner, missing note or multiple active tasks stops
 recovery pending clarification; do not substitute the newest global handoff.
 Use the note to identify the last approved chosen work, not freeze its progress.
 Reconcile task progress and setup limits with verified actual state and an
-applicable same-work handoff before briefing me, from this project's handoffs/ only. Check ownership before using it;
+applicable same-work handoff when one exists, before briefing me, from this
+project's handoffs/ only. Check ownership before using it;
 a newer date alone proves neither ownership nor correctness.
 Do not present an obsolete next action as current. If evidence disagrees or
 remains unclear, report the disagreement and ask; do not silently switch to
@@ -76,16 +89,16 @@ Leave originals untouched. A verified single-project legacy return note or hando
 
 ## Advokat module: sequential owner-only reads
 
-For the installed Advokat module route, use this procedure before task recovery. Keep the containment, ownership, collision, legacy-review and approval rules above; this makes the module's read order explicit, not a replacement for those gates.
+Use this procedure for every chosen-folder return, including bounded return-enabled saves without a module. For the installed Advokat module route, use the same procedure before task recovery. Keep the containment, ownership, collision, legacy-review and approval rules above; this makes the read order explicit, not a replacement for those gates. The heading also remains the installed module's procedure pointer.
 
-1. Confirm the actual canonical session folder matches the approved private job-search binding and apply “State-path containment before access” above using path metadata only, not record contents. A wrong folder, redirect or unverified boundary stops state access. Do not list handoff records or open task bodies during this check.
+1. Confirm the actual canonical session folder matches the approved selected project binding and apply “State-path containment before access” above using path metadata only, not record contents. A wrong folder, redirect or unverified boundary stops state access. Do not list handoff records or open task bodies during this check.
 2. In one tool call, extract only the selected `return.md`'s `Project name:` and `Project folder:` owner fields, with no task body or other lines. Use a field-filtered read with no context lines, for example `grep -E '^(Project name|Project folder):' --` followed by the single confirmed, quoted return-file path. This call must not include a handoff read, a full return-note read or dossier/application reads. Finish the call and receive its result.
-3. Inspect that returned metadata before another tool call. Require exactly one nonempty value for each field; resolve the folder marker against the confirmed XO root and verify it names the selected canonical project, without traversal or redirects. Check the project name identifies the approved chosen work. Missing, duplicate, ambiguous or mismatched ownership stops module recovery with zero handoff access, including owner-field reads or record listing. Ask one bounded ownership clarification; do not repair, adopt or substitute records automatically. A missing legacy marker needs the existing legacy ownership review, not a body-read shortcut.
-4. Only after the return owner matches, select the applicable local handoff under the existing date/sitting rule, checking its canonical containment and redirect status before opening it. In a separate metadata-only tool call, extract only that handoff's `Project name:` and `Project folder:` fields using the same field filter and single confirmed path. Return no handoff body or other task records. Finish the call and receive its result.
+3. Inspect that returned metadata before another tool call. Require exactly one nonempty value for each field; resolve the folder marker against the confirmed XO root and verify it names the selected canonical project, without traversal or redirects. Check the project name identifies the approved chosen work. Missing, duplicate, ambiguous or mismatched ownership stops task recovery with zero handoff access, including owner-field reads or record listing. Ask one bounded ownership clarification; do not repair, adopt or substitute records automatically. A missing legacy marker needs the existing legacy ownership review, not a body-read shortcut.
+4. Only after the return owner matches, select the applicable local handoff under the existing date/sitting rule, checking its canonical containment and redirect status before opening it. In a separate metadata-only tool call, extract only that handoff's `Project name:` and `Project folder:` fields using the same field filter and single confirmed path. Return no handoff body or other task records. Finish the call and receive its result. If no handoff exists in an approved return-note-only save, skip steps 5 and the handoff part of 6: read only the return body in a later call after its owner decision, under the existing containment and collision checks. Do not create a handoff, wait for one or invent task state. A present but owner-invalid or conflicting record is not an absent handoff; retain its stop/review gate.
 5. Inspect the handoff metadata before another tool call. Apply the same unique-field, canonical-folder and approved-work checks. Missing, duplicate, ambiguous or mismatched ownership stops recovery before any handoff body, return body or dossier/application read; retain the existing bounded review route. A newer filename is not ownership evidence.
 6. Only after both owner checks match, read the full selected return note and selected handoff body in a later call. Check they concern the same chosen work before opening separately authorized, selected dossier/application records or using their task contents. Reconcile progress under the existing rules; stop on disagreement or collision rather than choosing another project.
 
-No unconditional command batch or parallel record reads may cross these decisions. Owner-only means filtered fields, not `cat`, a full-file tool read, or a `sed`/`head` first-N-line “header”: a short record can contain its entire task body in those lines. Inspect each result and decide before requesting the next stage; a final refusal cannot undo an earlier read. If the available tool cannot provide owner-only output, pause module recovery rather than expose the body as a fallback. No new access or save authority follows from matching metadata; keep all existing source, permission, write-preview and fresh-approval gates.
+No unconditional command batch or parallel record reads may cross these decisions. Owner-only means filtered fields, not `cat`, a full-file tool read, or a `sed`/`head` first-N-line “header”: a short record can contain its entire task body in those lines. Inspect each result and decide before requesting the next stage; a final refusal cannot undo an earlier read. If the available tool cannot provide owner-only output, pause task recovery; for module work, pause module recovery as well. Never expose the body as a fallback. No new access or save authority follows from matching metadata; keep all existing source, permission, write-preview and fresh-approval gates.
 
 ## One cold first-return
 
