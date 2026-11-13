@@ -75,9 +75,9 @@ or see what he’s building now in <a href="https://github.com/david-crespo/ah">
 <div class="entry-choices">
 
 <ul>
-<li><a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-05-prose-rc.2">Get
+<li><a href="https://github.com/PropterMalone/xo-kit/releases/tag/xo-2026-11-13-prose-rc.3">Get
 Prose</a> <span>Source download · preview release</span></li>
-<li><a href="https://github.com/PropterMalone/xo-kit/blob/c498b0cdbbe50967be522dba7c12a0bd2b483e09/kit/flows/prose.md">Set
+<li><a href="https://github.com/PropterMalone/xo-kit/blob/51ec89a84ae117ac2374f88c0c53e1726a54218b/kit/flows/prose.md">Set
 it up with XO</a> <span>Give the guide to your agent.</span></li>
 </ul>
 </div>
@@ -100,28 +100,41 @@ to tone it down.</p>
 <p>Let your robot take a crack at it.</p>
 </div>
 
+<h2 id="direct-delete--rc3">Direct Delete — RC3</h2>
+<p>Direct Delete is available in the RC3 source preview, not earlier
+packages. Select a passage and choose <strong>Delete</strong> to remove
+it directly from your Markdown file, with no model or connected agent.
+Undo with <strong>Ctrl+Z</strong> in the plain editor.</p>
+<p>Prose refuses the deletion if the selection is ambiguous or stale, or
+the plain editor has unsaved changes. Your current file is
+authoritative: if you change or undo the deletion, do not ask the agent
+to reapply it.</p>
 <h2 id="getting-started">Getting started</h2>
 <p>Prose is part of xo, but you don’t need the rest of xo to use it.</p>
 <p>You’ll need <strong>Deno 2.9.6</strong> and, for agent replies, a
-compatible Claude Code or Codex session. The <a href="https://github.com/PropterMalone/xo-kit/blob/c498b0cdbbe50967be522dba7c12a0bd2b483e09/kit/flows/prose.md">agent
+compatible Claude Code or Codex session. The <a href="https://github.com/PropterMalone/xo-kit/blob/51ec89a84ae117ac2374f88c0c53e1726a54218b/kit/flows/prose.md">agent
 guide</a> covers the download and launch commands.</p>
 <p><strong>Windows + Claude:</strong> the tested route needs
 <code>--allow-windows-claude-all-access</code>. It disables Deno’s
 permission sandbox, giving the process broad access to files, programs
 and the network. Use it only if you’re comfortable trusting Prose with
 that access. The default launcher does not enable it.</p>
-<p><strong>Mac:</strong> prior RC1 editor and browser checks passed; the changed RC2 runtime has not been run natively on macOS.</p>
+<p><strong>Mac:</strong> prior RC1 editor and browser checks passed; the changed RC3 runtime has not been run natively on macOS.</p>
 <p>Text read by a cloud agent goes to its provider. Keep the local
 session URL private and stop the server when you’re done.</p>
 <details>
 <summary>Download checks and testing notes</summary>
 
-<p>Version <strong>0.1.0-rc.2</strong>: <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-05-prose-rc.2/prose-0.1.0-rc.2-source.zip">source
-ZIP</a> · <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-05-prose-rc.2/prose-0.1.0-rc.2-source.zip.sha256">checksum
+<p>Version <strong>0.1.0-rc.3</strong>: <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-13-prose-rc.3/prose-0.1.0-rc.3-source.zip">source
+ZIP</a> · <a href="https://github.com/PropterMalone/xo-kit/releases/download/xo-2026-11-13-prose-rc.3/prose-0.1.0-rc.3-source.zip.sha256">checksum
 file</a></p>
-<p>RC2 source ZIP: <strong>4,112,214 bytes</strong>. The changed runtime has not been run natively on Windows or macOS. Prior RC1 platform observations are historical, not RC2 recertification; local Linux runtime checks and 10 synthetic browser scenario groups are not real-model/agent end-to-end acceptance.</p>
+<p>RC3 source ZIP: <strong>4,139,722 bytes</strong>. Native RC3 Windows
+and macOS checks have not been run. Prior RC1 platform observations and
+RC2 Linux/synthetic browser checks are historical, not RC3
+recertification. Local extracted-archive direct Delete browser checks
+are not real-model/agent end-to-end acceptance.</p>
 <p>SHA256:
-<code>4dc9aa8bcf3974be454744eae3766dffaeb15315df41fe8da6a2309d218d1f26</code></p>
+<code>6a3b5ee15110f24e13316b317c3c3b8a95888198ec987bb55a0bcb167c0d8f91</code></p>
 <p>For the prior RC1 runtime, the Windows x64 Claude workflow was checked with Claude Code 2.1.316,
 Deno 2.9.6 and Edge. Mac ARM64 runtime/browser checks used simulated
 agent replies; Mac real-agent handling remains unverified. A cached
